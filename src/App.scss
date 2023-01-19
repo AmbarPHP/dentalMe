@@ -1,0 +1,29 @@
+
+@import "custom";
+
+.demo-blocks {
+  background-color: #f1f4f8;
+
+  .block {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    -webkit-box-shadow: 0 0 0.75rem rgb(0 0 0 / 8%);
+    box-shadow: 0 0 0.75rem rgb(0 0 0 / 8%);
+    border: 1px solid #d9e2ef;
+    border-radius: 0.25rem;
+    background-color: #fff;
+  }
+}
+
+.bg-contrast {
+  background-color: #fff!important;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.font-md {
+  font-size: 1.75rem!important;
+}

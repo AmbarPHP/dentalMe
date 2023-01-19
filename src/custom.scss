@@ -1,0 +1,36 @@
+ $primary:#3B71CA;
+ $secondary:#9FA6B2;
+ $success:#14A44D;
+ $info:#54B4D3;
+ $warning:#E4A11B;
+ $danger:#DC4C64;
+ $light:#FBFBFB;
+ $dark:#332D2D;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+ "light":       $light,
+  "dark":       $dark
+);
+$white: $light;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 700px,
+  md: 900px,
+  lg: 1200px,
+  xl: 1500px,
+  xxl: 2300px
+);
+$container-max-widths: (
+  sm: 600px,
+  md: 800px,
+  lg: 1100px,
+  xl: 1300px,
+  xxl: 2000px
+);
+@import "../node_modules/bootstrap/scss/bootstrap";
