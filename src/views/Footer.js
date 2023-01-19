@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaWhatsapp , FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -12,7 +13,9 @@ const Footer = () => {
                     <div class="col-md-2">
                         <h6 class="py-2 bold text-uppercase">Company</h6>
                         <nav class="nav flex-column">
-                            <a class="nav-item py-2" href="about.html">About</a> <a class="nav-item py-2" href="#">Services</a> <a class="nav-item py-2" href="blog/blog-grid.html">Blog</a>
+                             <a class="nav-item py-2" href="#">About</a> {/*about.html */}
+                            <a class="nav-item py-2" href="#">Services</a>
+                            <a class="nav-item py-2" href="blog/blog-grid.html">Blog</a>
                         </nav>
                     </div>
                     <div class="col-md-2">
@@ -36,14 +39,17 @@ const Footer = () => {
                         <div class="col-md-8">
                             <nav class="nav justify-content-center justify-content-md-end">
                                 <a href="#" class="btn btn-circle btn-sm btn-secondary me-3 op-4">
-                                    <i class="fab fa-facebook">
-                                    </i>
-                                </a> <a href="#" class="btn btn-circle btn-sm btn-secondary me-3 op-4">
-                                    <i class="fab fa-twitter">
-                                    </i>
+                                    
+                                {/* <FontAwesomeIcon icon="fa-brands fa-facebook-f" /> */}
+                                <FaFacebook />
+                                    
+                                </a> 
+                                <a href="#" class="btn btn-circle btn-sm btn-secondary me-3 op-4">
+                                <FaTwitter />
+                                 
                                 </a> <a href="#" class="btn btn-circle btn-sm btn-secondary op-4">
-                                    <i class="fab fa-instagram">
-                                    </i>
+                                <FaWhatsapp  />
+                         
                                 </a>
                             </nav>
                         </div>

@@ -1,5 +1,39 @@
 
 @import "custom";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+.section-heading {
+  margin: 0;
+  font-family: Poppins,sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #6d768b;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(22,28,45,0);
+
+  .bold{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 700;
+      font-size: 2.875rem;
+      color: $primary;
+  }
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: 1rem;
+    font-weight: 400;
+    color:$dark;
+}
+
+}
+
+
+
+
+
 
 .demo-blocks {
   background-color: #f1f4f8;
@@ -14,16 +48,46 @@
     background-color: #fff;
   }
 }
-
-.bg-contrast {
-  background-color: #fff!important;
+.bg-primary {
+  background-color: #53f!important;
 }
 
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #6d768b;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(22, 28, 45, 0)
+}
+
+.text-contrast {
+  color: #fff!important;
+}
+.font-md {
+  font-size: 1.75rem!important;
+}
+
+.bold, strong {
+  font-weight: 700!important;
+}
+.gradient-primary-dark {
+  background-image: -webkit-gradient(linear,left bottom,right top,from($primary),to($dark));
+  background-image: linear-gradient(to right top,$primary,$dark);
+}
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
 }
 
-.font-md {
-  font-size: 1.75rem!important;
+.text-secondary {
+  color: #506690!important;
 }
+.text-light {
+  color: #f1f4f8 !important
+}
+
+

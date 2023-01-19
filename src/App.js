@@ -1,14 +1,20 @@
 import './App.scss';
-import  Header  from './components/Header';
-import  Main  from './components/Main';
-import  Footer  from './components/Footer';
+import  Header2  from './views/Header2';
+import  Header  from './views/Header';
+import  Main  from './views/Main';
+import  Footer  from './views/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
+      
+      
+              <Header2></Header2> 
+              <Header></Header> 
+              <Main></Main>
+              <Footer></Footer>
+    
+      
     </div>
   );
 }

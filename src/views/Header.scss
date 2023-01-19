@@ -1,0 +1,25 @@
+@import '../custom';
+
+.st-nav-menu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   
+   justify-content: space-around;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: $primary;
+
+    .text-white{
+        color: rgb(112, 59, 59);
+        font-weight: 700;
+        
+    }
+
+}
+
+img.logo{
+    height: 60px;
+    width: auto;
+}
