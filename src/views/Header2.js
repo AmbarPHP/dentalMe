@@ -12,7 +12,7 @@ export default function Header2() {
         <div >
 
 
-            <Navbar  className="st-nav-menu  fixed-top " id="main-nav">
+            <Navbar  className="st-nav-menu" id="main-nav">
                 <Container >
                     <Nav className="me-auto">
                         <Navbar.Brand href="#home">
