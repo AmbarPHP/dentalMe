@@ -53,6 +53,7 @@
   background-color: #53f!important;
 }
 
+
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
@@ -65,8 +66,18 @@ body {
   -webkit-tap-highlight-color: rgba(22, 28, 45, 0)
 }
 
+// 1 colores y formatos  para los textos
+.text-center {
+  text-align: center !important
+}
 .text-contrast {
   color: #fff!important;
+}
+.text-secondary {
+  color: #506690!important;
+}
+.text-light {
+  color: #f1f4f8 !important
 }
 .font-md {
   font-size: 1.75rem!important;
@@ -76,21 +87,93 @@ body {
   font-weight: 700!important;
 }
 
-.gradient-primary-dark {
-  background-image: -webkit-gradient(linear,left bottom,right top,from($primary),to($dark));
-  background-image: linear-gradient(to right top,$primary,$dark);
-}
-
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
 }
 
-.text-secondary {
-  color: #506690!important;
+//2 backgrounds colors
+.gradient-primary-dark {
+  background-image: -webkit-gradient(linear,left bottom,right top,from($primary),to($dark));
+  background-image: linear-gradient(to right top,$primary,$dark);
 }
-.text-light {
-  color: #f1f4f8 !important
+
+
+.swiper-container .swiper-pagination-top {
+  bottom: auto;
+  top: 0
 }
+
+.swiper-pagination.highlight-active .swiper-pagination-bullet {
+  will-change: width;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out
+}
+
+.swiper-pagination.highlight-active .swiper-pagination-bullet-active {
+  width: 18px;
+  border-radius: 4px
+}
+
+.swiper-container-rtl .swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: none
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: none
+}
+
+.swiper-button.rounded-circle {
+  background-image: none;
+  background-color: #fff;
+  width: 3rem;
+  height: 3rem;
+  outline: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.swiper-nav-thumbs .nav-link {
+  padding: .5rem .75rem
+}
+
+.swiper-nav-thumbs .thumb {
+  width: 1.75rem;
+  height: 1.75rem;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out
+}
+
+.swiper-nav-thumbs .thumb.active {
+  -webkit-transform: scale(1.75);
+  transform: scale(1.75)
+}
+
+.swiper-center-nav .swiper-button {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+
+.swiper-center-nav .swiper-button:hover {
+  background-color: #53f;
+  color: #fff
+}
+
+.swiper-center-nav .swiper-button-prev {
+  left: 0;
+  top: 50%
+}
+
 
 

@@ -4,6 +4,7 @@ import  HeaderOP  from './views/HeaderOp';
 import  Main  from './views/Main';
 import  Footer  from './views/Footer';
 import BarraSup from './views/BarraSup';
+import Nosotros from './views/Nosotros';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       
           <BarraSup></BarraSup>
           <Header></Header> 
-              {/* <Main></Main>
-              <Footer></Footer> */}
+        
+              {/* <Main></Main>*/}
+              <Footer></Footer> 
     
       
     </div>
