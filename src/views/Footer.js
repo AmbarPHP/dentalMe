@@ -1,10 +1,11 @@
 import React from 'react';
 import { FaWhatsapp , FaFacebook, FaTwitter } from 'react-icons/fa';
+import Container from 'react-bootstrap/Container';
 
 const Footer = () => {
     return (
         <footer class="site-footer section">
-            <div class="container pb-3 b-t">
+            <Container className="pb-3 b-t">
                 <div class="row gap-y text-center text-md-start">
                     <div class="col-md-4 me-auto">
                         <img src="img/logo.png" alt="" class="logo"/>
@@ -54,7 +55,7 @@ const Footer = () => {
                             </nav>
                         </div>
                     </div>
-            </div>
+            </Container>
         </footer>
     );
 };
