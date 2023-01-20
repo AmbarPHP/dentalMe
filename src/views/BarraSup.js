@@ -7,14 +7,13 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 export default function BarraSup() {
   const styles = {
-    container: {
+    section: {
       display: 'flex',
       justifyContent: 'space-around',
       paddingTop: '15px',
       paddingBottom: '15px',
-   
       margin:'auto',
-      backgroundColor:'#ddd'
+      backgroundColor:'#f1f4f8'
     },
     row:{
       //backgroundColor:'red',
@@ -33,7 +32,7 @@ export default function BarraSup() {
 
   return (
 
-      <Container style={styles.container} >
+      <Container style={styles.section} >
         <Row style={styles.row} className=" gap-y align-items-center "  >
 
           <Col lg={10} >
