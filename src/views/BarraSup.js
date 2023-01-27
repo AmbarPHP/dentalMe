@@ -14,20 +14,8 @@ export default function BarraSup() {
       paddingBottom: '15px',
       margin:'auto',
       backgroundColor:'#f1f4f8'
-    },
-    row:{
-      //backgroundColor:'red',
-      width:'200%',
-    },
-    col:{
-      backgroundColor:'#dd6',
-      width:'80%',
-    },
-    col2:{
-      backgroundColor:'#ab4',
-      width:'20%',
-      float:"right"
     }
+  
   }
 
   return (

@@ -1,62 +1,94 @@
 import React from 'react';
-import { FaWhatsapp , FaFacebook, FaTwitter } from 'react-icons/fa';
-import Container from 'react-bootstrap/Container';
+
+import { FaWhatsapp, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { Container, Row, Col } from 'react-bootstrap';
+import logo from "../assets/img/logo.png";
+import "./Footer.scss"
 
 const Footer = () => {
     return (
-        <footer class="site-footer section">
-            <Container className="pb-3 b-t">
-                <div class="row gap-y text-center text-md-start">
-                    <div class="col-md-4 me-auto">
-                        <img src="img/logo.png" alt="" class="logo"/>
-                            <p> <span className='font-md'>Medical</span>, a carefully crafted and powerful HTML5 template, it's perfect to showcase your startup or software</p>
-                    </div>
-                    <div class="col-md-2">
-                        <h6 class="py-2 bold text-uppercase">Company</h6>
-                        <nav class="nav flex-column">
-                             <a class="nav-item py-2" href="#">About</a> {/*about.html */}
-                            <a class="nav-item py-2" href="#">Services</a>
-                            <a class="nav-item py-2" href="blog/blog-grid.html">Blog</a>
-                        </nav>
-                    </div>
-                    <div class="col-md-2">
-                        <h6 class="py-2 bold text-uppercase">Product</h6>
-                        <nav class="nav flex-column">
-                            <a class="nav-item py-2" href="#">Features</a> <a class="nav-item py-2" href="#">API</a> <a class="nav-item py-2" href="#">Customers</a>
-                        </nav>
-                    </div>
-                    <div class="col-md-2">
-                        <h6 class="py-2 bold text-uppercase">Channels</h6>
-                        <nav class="nav flex-column">
-                            <a class="nav-item py-2" href="#">Careers</a> <a class="nav-item py-2" href="#">Contact</a> <a class="nav-item py-2" href="#">Search</a>
-                        </nav>
-                    </div>
-                </div>
-                <hr class="mt-5"/>
-                    <div class="row small align-items-center">
-                        <div class="col-md-4">
-                            <p class="mt-2 mb-md-0 text-secondary text-center text-md-start">© 2021 5studios. All Rights Reserved</p>
+        <Container className="">
+            <footer className=" section">
+                <Container className="bg-contrast">
+                    
+                    <Row className="gap-y">
+                        <div class="col-md-3  ">
+                            <h6 className="bold d-flex justify-content-center mb-0 mt-2">Horarios</h6>
+                                <p className="d-flex justify-content-center mb-0 small">
+                                    Lunes a Viernes 9 a 2 PM y 4 a 8 PM
+                                </p>
+                                <p className="d-flex justify-content-center mb-0 small">
+                                    Sabados 9 a 2 PM y 4 a 8 PM
+                                </p>
+                                <p className="d-flex justify-content-center mb-0 small">
+                                    Domingo Cerrado
+                                </p>
+                                
                         </div>
-                        <div class="col-md-8">
-                            <nav class="nav justify-content-center justify-content-md-end">
-                                <a href="#" class="btn btn-circle btn-sm btn-secondary me-3 op-4">
-                                    
-                                {/* <FontAwesomeIcon icon="fa-brands fa-facebook-f" /> */}
+                        <div className="col-md-3">
+                        <h6 className="bold  d-flex justify-content-center mb-0 mt-2">Citas</h6>
+                          
+    
+                            <p class="text-secondary d-flex justify-content-center">Whatsapp</p>
+                            <div className='columna-doble d-flex justify-content-center align-items-center'>
+                                <span> <FaWhatsapp className='icon-whatsap' />33-23 342-134</span>
+                                
+                            </div>
+                           
+                            
+                        </div>
+                        <div className='col-md-3'>
+                          
+                            <h6 class="bold  d-flex justify-content-center mb-0 mt-2">Ubícanos</h6>
+                                <p className="d-flex justify-content-center mb-0 small">
+                                Plaza Manglar local #2323,
+                                </p>
+                                <p className="d-flex justify-content-center mb-0 small">
+                                 Av. de la Cultura Col del Valle
+                                </p>
+                                <p className="d-flex justify-content-center mb-0 small">
+                                Tepic Nayarit, 
+                                </p>
+                                <p className="d-flex justify-content-center mb-0 small">
+
+                                    <a href="mailto:yourmail@domain.com">yourmail@domain.com</a>
+                                </p>
+                            
+                        </div>
+                        <div class="col-md-3">
+                        <h6 class="bold  d-flex justify-content-center mb-0 mt-2">Siguenos</h6>
+                            
+                            <div class="d-flex flex-row  justify-content-center mb-0 small text-secondary">
+                                
+                                <nav className="nav  my-4">
+                                <a href="#" className="me-4 font-regular text-primary">
                                 <FaFacebook />
-                                    
-                                </a> 
-                                <a href="#" class="btn btn-circle btn-sm btn-secondary me-3 op-4">
+                                </a> <a href="#" className="me-4 font-regular text-primary">
                                 <FaTwitter />
-                                 
-                                </a> <a href="#" class="btn btn-circle btn-sm btn-secondary op-4">
-                                <FaWhatsapp  />
-                         
+
+                                </a> <a href="#" className="me-4 font-regular text-primary">
+                                <FaWhatsapp />
+
+                                </a> <a href="#" className="font-regular text-primary">
+                                <FaInstagram />
+
                                 </a>
-                            </nav>
+                                </nav>
+                            </div>
+                                <div class="d-flex flex-row  justify-content-center mb-0 small text-secondary">
+                                <img src={logo} alt="" class="logo" />
+                                </div>
+                                
+                            
                         </div>
-                    </div>
-            </Container>
-        </footer>
+                    </Row>
+                  
+
+
+                </Container>
+            </footer >
+        </Container >
+
     );
 };
 

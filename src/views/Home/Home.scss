@@ -1,0 +1,69 @@
+.img-logo{
+    
+    width: 38px;
+}
+
+
+// Diseño Large or Desktop
+@media (min-width:1200px) {
+    .img-section2{
+        height: 100%;
+        width: auto;
+        padding: 0%;
+        margin-left: 0%;
+    }
+    .bg-img{
+        opacity: 0.8;
+        background-image: url("../../assets/img/dientes/light_background1.png");
+        //background-color: black;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+        
+    }
+    .bt-size-md{
+        width: 100px;
+       height: 38px;
+    }
+}
+
+
+// Diseño Mobile
+@media (max-width:700px) {
+    // Nota: "aplicac para section 2 -->los guters y los margin estan en una clase de bootstrap, pero no puedo quitar los margin laterales sin modificarla"
+    .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+        // --bs-gutter-x: 1.5rem;
+        // --bs-gutter-y: 0;
+        width: 120%!important;
+        // padding-right: calc(var(--bs-gutter-x) * 0.5);
+        // padding-left: calc(var(--bs-gutter-x) * 0.5);
+        // margin-right: auto;
+        // margin-left: auto;
+    }
+    .img-section2{
+        height: auto;
+        width: 100%;
+        padding: 0%;
+        margin-left: 0%;
+    }
+    .bg-img{
+        opacity: 0.8;
+        background-image: url("../../assets/img/dientes/light_background1.png");
+        //background-color: black;
+        width: 100%;
+        padding: 0%;
+        margin-right: 0%;
+        margin-left: 0%;
+        
+    }
+
+    .bt-size-md{
+        width: 10px;
+        margin-right: 15%;
+    }
+}
+.text-center{
+    //height: 200px;
+    margin-top: 25%;
+}
+
