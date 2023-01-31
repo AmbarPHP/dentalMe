@@ -7,6 +7,8 @@ import Nosotros from './views/Conocemos/Nosotros';
 import Home from './views/Home';
 import Header from "./views/Header";
 import BarraSup from './views/BarraSup';
+import Login from "./components/Login";
+import RegistrationForm from "./components/RegistrationForm";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Route path="/servicios" element={<Servicios />}></Route>
       <Route path="/especiales" element={<Footer />}></Route>
       <Route path="/nosotros" element={<Nosotros/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
+      <Route path="/registration" element={<RegistrationForm/>}></Route>
     </Routes>
   </Router>
 

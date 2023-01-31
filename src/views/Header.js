@@ -22,22 +22,13 @@ export default function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="">
+                        <Nav className="text-primary bold">
                             <Nav.Link href="/home" className='text-contrast'>INICIO</Nav.Link>
                             <Nav.Link href="/servicios" className='text-contrast'>SERVICIOS  DENTALES</Nav.Link>
                             <Nav.Link href="/especiles" className='text-contrast'>ESPECIALES</Nav.Link>
                             <Nav.Link href="/nosotros" className='text-contrast'>NOSOTROS</Nav.Link>
-                            <NavDropdown title="Servicios" className='text-contrast' id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1" className='text-secondary'>Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2" className='text-secondary'>
-                                    Another action
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3" className='text-secondary'>Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4" className='text-secondary'>
-                                    Separated link
-                                </NavDropdown.Item>
-                            </NavDropdown>
+                            <Nav.Link href="/login" className='text-contrast'>LOGIN</Nav.Link>
+                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
