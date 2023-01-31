@@ -75,9 +75,17 @@
    background-color: #f1f4f8 !important;
 }
 .gb-primary-img{
-  background-image: url("./assets/img/carrusel2.png");
-  opacity: 0.8;
-  color: rgba( $primary, .7 );
+  background-image: url("https://picsum.photos/1920/1200/?random&amp;gravity=south");
+  background-color:rgba(85,51,255,.5)!important;
+  background-size: cover;
+}
+
+.overlay{
+
+//background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1));
+background-color: rgba(23, 10, 89, 0.7);
+z-index : 10;
+height: 50vh;
 }
 
 .bg-hero{

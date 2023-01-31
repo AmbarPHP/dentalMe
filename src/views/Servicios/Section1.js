@@ -1,12 +1,16 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import "./Inicio.scss";
+import ListaPrecios from './ListaPrecios';
 
 export default function Section1() {
 
   
     return (
         <Container  className="content">
+            <Row>
+                <ListaPrecios></ListaPrecios>
+            </Row>
             <Row>
                 <span className="title-inicio">Laboratorio</span>
                 <p className="text-big-18">

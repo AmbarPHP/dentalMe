@@ -13,7 +13,7 @@ import Section6 from './Servicios/Section6';
 export default function Servicios() {
   return (
     <div>
-            <Section6></Section6>
+          <Section6></Section6>
            <Section1></Section1>
            <Section2></Section2>
            <Section3></Section3>

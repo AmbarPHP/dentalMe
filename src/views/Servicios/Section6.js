@@ -4,17 +4,21 @@ import logo from "../../assets/img/logo.png"
 
 export default function Section6() {
   return (
-    <Container className='d-flex justify-content-center' >
-        <Row className=" gb-primary-img ">
+    <div className='gb-primary-img'>
+
+   
+    <Container className=' overlay  h-80 d-flex justify-content-center ' >
+        <div className="  d-flex justify-content-center flex-column mt-5">
         
-                    <h1 className='text-light bold '>Somos expertos en </h1>
-                    <li className='text-light'>Implantología Oral</li>
-                    <li className='text-light'>Endodoncia</li>
-                    <li className='text-light'>Periodoncia</li>
-                    <li className='text-light'>Maxilofacial</li>
-                    <li className='text-light'>Ortodoncia</li>
+                    <h1 className='text-light bold  mx-auto mb-5'>Somos expertos en </h1>
+                    <h2 className='text-light mx-auto'>Implantología Oral</h2>
+                    <h2 className='text-light  mx-auto'>Endodoncia</h2>
+                    <h2 className='text-light  mx-auto'>Periodoncia</h2>
+                    <h2 className='text-light  mx-auto'>Maxilofacial</h2>
+                    <h2 className='text-light  mx-auto'>Ortodoncia</h2>
             
-        </Row>
+        </div>
     </Container>
+    </div>
   )
 }
