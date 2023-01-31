@@ -3,6 +3,21 @@
     width: 38px;
 }
 
+.hero{
+    background-image: url("https://picsum.photos/1920/1200/?random&amp;gravity=south");
+    background-color:rgba(85,51,255,.5)!important;
+    background-size: cover;
+    height: 400px;
+}
+
+.overlay{
+
+//background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1));
+background-color: rgba(29, 16, 96, 0.2);
+z-index : 10;
+height: 10vh;
+}
+
 
 // Diseño Large or Desktop
 @media (min-width:1200px) {
