@@ -7,11 +7,13 @@ export default function Section1() {
 
   
     return (
-        <Container  className="content">
-            <div className='row bg-hero'>
-                 <img src={hero} className="img-logo" /> 
-                <h1 className="text-big mx-auto">Tu clínica odontologica integral</h1>
-                <button className='btn btn-primary btn-lg'>Conocenos</button>
+        <Container  className="content gb-primary-img  mb-5">
+            <div className='row overlay d-flex flex-row'>
+                <h1 className="bold d-block text-light justify-content-center mx-auto">Tu clínica odontológica integral</h1>
+                {/* <button className='btn btn-primary'>Conocenos</button> */}
+                <h2 className="display-4 display-md-3 display-lg-2 text-contrast mt-5 mt-md-0">Bienvenido a 
+                <span className="bold d-block">Dental healt</span></h2>
+                
             </div>
         
         </Container>

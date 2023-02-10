@@ -1,0 +1,6 @@
+
+    [
+        { "id" :1,"descripcion":"implantex","precio":2300.40 },
+        { "id" :2,"descripcion":"Endodoncia","precio":3300.30 },
+        { "id" :3,"descripcion":"Implantacion Oral","precio":5300.60 }
+    ]

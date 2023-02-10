@@ -16,7 +16,12 @@ height: 100vh;
     height: 100vh;
 }
 
-
+//button 
+button#registration{
+  .hover{
+    background-color: aqua;
+  }
+}
 .form-label {
     font-weight: 700;
     color: #2b354f;

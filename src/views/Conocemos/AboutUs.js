@@ -12,9 +12,10 @@ export default function AboutUs() {
 				  <Col className="col-md-6  p-4">
 					
 					  <hr className="short"/>
-					  <h6 style={{padding:"1%"}}>CLINICA DENTAL </h6>
+					  <h6 >CLINICA DENTAL </h6>
 			
-					  <p style={{padding:"1%"}} className='text-primary text-justify' >En Medica-Dental, somos una clínica dental integral.  Nos especializamos en cualquier tratamiento, desde una extracción simple, hasta un tratamiento complicado y estético.Ahora estamos en el mejor lugar de Tepic para brindar la mejor atención a lo mejores precios.</p>
+					  <p  className='bold text-contrast ' >
+						En Medica-Dental, somos una clínica dental integral.  Nos especializamos en cualquier tratamiento, desde una extracción simple, hasta un tratamiento complicado y estético.Ahora estamos en el mejor lugar de Tepic para brindar la mejor atención a lo mejores precios.</p>
             <hr className="short"/>
 					  {/* <a className="btn btn-secondary" href="https://www.vozdental.mx/nosotros/" role="button">CONÓCENOS</a> */}
 					

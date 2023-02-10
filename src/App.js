@@ -10,6 +10,7 @@ import BarraSup from './views/BarraSup';
 import Login from "./components/Login";
 import RegistrationForm from "./components/RegistrationForm";
 
+
 function App() {
   return (
 <Router>

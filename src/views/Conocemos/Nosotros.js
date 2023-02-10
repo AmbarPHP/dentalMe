@@ -4,6 +4,7 @@ import doc1 from "../../assets/img/Doctores/doc1.png";
 import doc2 from "../../assets/img/Doctores/doc2.png";
 import doc3 from "../../assets/img/Doctores/doc3.png";
 import doc4 from "../../assets/img/Doctores/doc4.png";
+
 import Nosotros2 from './Nosotros2';
 
 
@@ -12,6 +13,7 @@ export default function Nosotros() {
     return (
         <div > 
         <Container>
+        
             <Row>
                 <div className="col-sm-12 text-center">
                     <h3 className="title text-uppercase">General dentists</h3>
