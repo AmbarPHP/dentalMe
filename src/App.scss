@@ -1,6 +1,11 @@
 
 @import "custom";
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body {
+  font-family: "Montserrat";
+}
 
 .section {
   background-color: #f1f4f8;
@@ -25,7 +30,7 @@
     font-size: 1rem;
     font-weight: 300;
     line-height: 1.5;
-    color: #6d768b;
+    color: $gray;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(22,28,45,0);
@@ -91,19 +96,6 @@ height: 50vh;
   background-image: url("./assets/img/dientes/hero.png");
 }
 
-body {
-  margin: 0;
-  font-family: Sofia+Sans, sans-serif;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #6d768b;
-  background-color: #fff;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(22, 28, 45, 0)
-}
-
-
 
 
 //-------------------------
@@ -155,7 +147,7 @@ body {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 

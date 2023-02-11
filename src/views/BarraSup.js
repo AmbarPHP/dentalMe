@@ -6,17 +6,7 @@ import logo from "../assets/img/logo.png";
 import "./BarraSup.scss";
 
 export default function BarraSup() {
-  const styles = {
-    section: {
-      display: 'flex',
-      justifyContent: 'space-around',
-      paddingTop: '15px',
-      paddingBottom: '15px',
-      margin: 'auto',
-      backgroundColor: '#ccc'
-    }
 
-  }
 
   return (
 

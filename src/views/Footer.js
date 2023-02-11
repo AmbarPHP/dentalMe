@@ -7,12 +7,12 @@ import "./Footer.scss"
 
 const Footer = () => {
     return (
-        <Container className="content">
+        <Container className="contentainer">
          
                 <Container>
                     <Row className=" gb-light gap-y pt-5">
                         <div class="col-md-3 ">
-                            <h6 className="bold d-flex justify-content-center mb-0 ">Horarios</h6>
+                            <h5 className="bold d-flex justify-content-center mb-0 ">Horarios</h5>
                                 <p className="d-flex justify-content-center mb-0 small mt-3">
                                     Lunes a Viernes 9 a 2 PM y 4 a 8 PM
                                 </p>
@@ -25,7 +25,7 @@ const Footer = () => {
                                 
                         </div>
                         <div className="col-md-3">
-                        <h6 className="bold  d-flex justify-content-center mb-0 mt-2">Citas</h6>
+                        <h5 className="bold  d-flex justify-content-center mb-0 mt-2">Citas</h5>
                           
     
                             <p class="text-secondary d-flex justify-content-center mt-3 ">Whatsapp</p>
@@ -38,7 +38,7 @@ const Footer = () => {
                         </div>
                         <div className='col-md-3'>
                           
-                            <h6 class="bold  d-flex justify-content-center mb-0 mt-2">Ubícanos</h6>
+                            <h5 class="bold  d-flex justify-content-center mb-0 mt-2">Ubícanos</h5>
                                 <p className="d-flex justify-content-center mb-0 small mt-3">
                                 Plaza Manglar local #2323,
                                 </p>
@@ -55,7 +55,7 @@ const Footer = () => {
                             
                         </div>
                         <div class="col-md-3">
-                        <h6 class="bold  d-flex justify-content-center mb-0 mt-2">Siguenos</h6>
+                        <h5 class="bold  d-flex justify-content-center mb-0 mt-2">Siguenos</h5>
                             
                             <div class="d-flex flex-row  justify-content-center mb-0 small text-secondary">
                                 

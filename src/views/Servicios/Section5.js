@@ -6,9 +6,9 @@ import bg_diente2 from "../../assets/img/dientes/background_diente2.png";
 import bg_diente3 from "../../assets/img/dientes/background_diente3.png";
 import bg_diente4 from "../../assets/img/dientes/background_diente4.png";
 
-export default function Section2() {
+export default function Section5() {
   return (
-    <Container name="section5" className="content" style={{paddingBottom:4+"rem", paddingTop:4+"rem"}}>
+    <Container name="section2" className="content" style={{paddingBottom:4+"rem", paddingTop:4+"rem"}}>
         <Row className='gb-light' >
             <Col>
              <img className='img-responsponsive' src={bg_diente1}/>
@@ -16,7 +16,7 @@ export default function Section2() {
             <Col>
             <img src={diente1}/>
             <h3 className='text-primary bold'> Servicios Esteticos </h3> 
-                    <ul>
+                    <ul className='lead'>
                         <li>Blanqueamientos</li>
                         <li>Carilla de porcelana</li>
                         <li>Carillas directas de resina</li>
@@ -29,7 +29,7 @@ export default function Section2() {
             <Col>
             <img src={diente1}/>
             <h3 className='text-primary bold'> Restauracion </h3> 
-                    <ul>
+                    <ul className='lead'>
                         <li>Blanqueamientos</li>
                         <li>Carilla de porcelana</li>
                         <li>Carillas directas de resina</li>
@@ -53,7 +53,7 @@ export default function Section2() {
             <Col>
             <img src={diente1}/>
             <h3 className='text-primary bold'> Prótesis fijas y removibles </h3> 
-                    <ul>
+                    <ul className='lead'>
                     <li>Coronas de porcelana en zirconia</li>
                         <li>Coronas de porcelana en alúmina</li>
                         <li>Coronas de porcelana prensada </li>
@@ -67,7 +67,7 @@ export default function Section2() {
             <Col>
             <img src={diente1}/>
             <h3 className='text-primary bold'> Otros servicios generales </h3> 
-                    <ul>
+                    <ul className='lead'>
                         <li> <span> <img src={diente1} className="tamaño-diente" /></span> Otros servicios generales</li>
                         <li> <span> <img src={diente1} className="tamaño-diente" /></span> Rayos X</li>
                         <li> <span> <img src={diente1} className="tamaño-diente" /></span> Diagnóstico clínico con cámara intraoral </li>

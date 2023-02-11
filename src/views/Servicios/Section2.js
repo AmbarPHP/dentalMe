@@ -4,7 +4,7 @@ import logo from "../../assets/img/logo.png"
 
 export default function Section2() {
   return (
-    <Container  className="content bg-light">
+    <Container  name="section2" className=" bg-light">
     <Row className='div-diente gb-primary'>
         <div className='d-flex justify-content-center  align-items-center flex-row'>
             <div className='p-3'>
@@ -12,7 +12,7 @@ export default function Section2() {
                 <h1 className='text-light text-big-18 bold'>hoy mismo</h1>
             </div>
             <div>
-                <img src={logo}  /> 
+                {/* <img src={logo}  />  */}
             </div>
         </div>
     
@@ -27,7 +27,7 @@ export default function Section2() {
         
     <Row>
         <Col className='d-flex justify-content-center flex-column'>
-        <p className="text-big-18">
+        <p className="lead">
             Al realizar el blanqueamiento dental:
         </p>
         <p className="numero-grande">
@@ -36,7 +36,7 @@ export default function Section2() {
         <h1 className="text-primary bold">
           Gratis
         </h1>
-        <p className="text-big-18">
+        <p className="lead">
             <span className='text-primary bold'>Consulta</span>
             <span className='text-secondary bold'>+</span>
             <span className='text-primary bold' >diagnóstico</span>
@@ -47,7 +47,7 @@ export default function Section2() {
         </Col>
         <Col>
         
-        <p className="text-big-18">
+        <p className="lead">
         Al realizarte tu limpieza dental en la primera cita:
        </p>
         <p className="numero-grande">
@@ -56,7 +56,7 @@ export default function Section2() {
         <h1 className="text-primary bold">
           Gratis
         </h1>
-        <p className="text-big-18 text-primary bold">
+        <p className="lead text-primary bold">
       
                 Diagnóstico y Radiografía
             

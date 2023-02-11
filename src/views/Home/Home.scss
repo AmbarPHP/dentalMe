@@ -13,12 +13,28 @@
 .overlay {
 
     //background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1));
-    background-color: rgba(29, 16, 96, 0.2);
-    z-index: 10;
-    height: 10vh;
+     background-color: rgba(29, 16, 96, 0.2);
+    // z-index: 10;
+    height: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    border-radius: calc(.25rem - 1px)
 }
-
-
+.row-space{
+     height: '100%';
+     align-items: 'center' ;
+     padding: 24px, 24px, 40px;
+    }
+.position-relative{
+    z-index: 999;
+    position: relative;
+    right: 0px;
+    top:-85px;
+}    
 // Diseño Large or Desktop
 @media (min-width:1200px) {
     .img-section2 {

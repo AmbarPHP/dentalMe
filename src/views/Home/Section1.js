@@ -7,7 +7,7 @@ export default function Section1() {
 
   
     return (
-        <Container  className="content gb-primary-img  mb-5">
+        <Container name="section1" className="content d-flex  container-fluid   gb-primary-img ">
             <div className='row overlay d-flex flex-row'>
                 <h1 className="bold d-block text-light justify-content-center mx-auto">Tu clínica odontológica integral</h1>
                 {/* <button className='btn btn-primary'>Conocenos</button> */}

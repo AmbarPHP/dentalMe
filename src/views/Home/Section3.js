@@ -5,7 +5,7 @@ import "./Home.scss";
 
 export default function Section3() {
   return (
-    <div className='container d-flex  container-fluid  bg-img'>
+    <div name="section2" className='content d-flex  container-fluid  bg-img'>
         <div className='row'> 
             <div className='col-lg-4  col-sm-12 d-flex justify-content-center align-items-center' >
                 <h1 className='text-primary text-center'> En mi CDA somos expertos en </h1>
