@@ -8,7 +8,7 @@ export default function Section2() {
     <Row className='div-diente gb-primary'>
         <div className='d-flex justify-content-center  align-items-center flex-row'>
             <div className='p-3'>
-                <h1 className='text-secondary text-big-18 bold'>Haz una cita</h1>
+                <h1 className='text-light text-big-18 bold'>Haz una cita</h1>
                 <h1 className='text-light text-big-18 bold'>hoy mismo</h1>
             </div>
             <div>

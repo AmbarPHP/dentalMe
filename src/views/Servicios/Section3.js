@@ -6,13 +6,13 @@ export default function Section1() {
 
   
     return (
-        <Container  className="content  gradient-primary-dark">
+        <Container  name="section3" className="content mb-5 gradient-primary-dark">
             <Row className='d-flex justtify-content-center'>
                 <span className="title-inicio text-light ">¡Usa un paquete y ahorra!</span>
               
             </Row>
-            <Row >
-                <Col className='bg-light mx-3 mb-3'>
+            <Row style={{paddingBottom:4+"rem"}}>
+                <Col className='bg-light mx-3 mb-5'>
                     <h1 className='text-primary '> Paquete <span className='text-secondary'>1</span></h1> 
                     <ul>
                         <li>Consulta</li>
@@ -21,7 +21,7 @@ export default function Section1() {
                     </ul>
                     <p className='text-center'>$950</p>
                 </Col>
-                <Col className='bg-primary mx-3 mb-3'>
+                <Col className='bg-primary mx-3 mb-5'>
                 <h1 className='text-light'>Paquete <span className='text-secondary'>2</span></h1> 
                     <ul>
                         <li  className='text-light'>Blanqueamiento</li>
@@ -30,7 +30,7 @@ export default function Section1() {
                     </ul>
                     <p className='text-center text-light'>$3,500</p>
                 </Col>
-                <Col className='bg-light mx-3 mb-3'>
+                <Col className='bg-light mx-3 mb-5'>
                 <h1 className='text-primary'>Paquete <span className='text-secondary'>3</span></h1> 
                     <ul>
                         <li>Limpieza</li>
@@ -39,7 +39,7 @@ export default function Section1() {
                     </ul>
                     <p className='text-center'>$500</p>
                  </Col>
-                <Col className='bg-primary  mx-3 mb-3'>
+                <Col className='bg-primary  mx-3 mb-5'>
                 <h1 className='text-light'>Paquete <span className='text-secondary'>4</span></h1> 
                     <ul>
                         <li   className='text-light'>Consulta</li>

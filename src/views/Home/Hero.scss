@@ -1,0 +1,18 @@
+.hero-container{
+    display: flex;
+    width: 80vw;
+    height: 640px;
+    opacity: 1;
+}
+
+.overlay-blue {
+    //background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1));
+    background-color: rgba(29, 16, 96, 0.2);
+    z-index: 10;
+    height: 10vh;
+}
+.left-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

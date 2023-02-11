@@ -55,10 +55,10 @@ function RegistrationForm() {
     )
     const reviewData=(name, value)=>{
         if(!datos.name.trim()){
-            mensage.nombre="faltan el nombre";
+            //mensage.nombre="faltan el nombre";
         }
         if(!datos.apelldo.trim()){
-            mensage.apellido="faltan el apellido";
+           // mensage.apellido="faltan el apellido";
         }
         
         return true;

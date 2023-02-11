@@ -3,10 +3,11 @@
 
 .content {
     margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 90px;
+    margin-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     justify-content: center;
-
+    background-color: #f1f4f8;
 
     .title-inicio {
         font-family: "Montserrat";
@@ -21,9 +22,6 @@
         padding-bottom: 40px;
         padding-top: 40px;
     }
-
-
-    
 
     .numero-grande {
         font-family: "Montserrat";

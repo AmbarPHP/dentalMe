@@ -1,9 +1,9 @@
 import React from 'react';
-import { FaWhatsapp , FaFacebook, FaTwitter,FaInstagram,FaYoutube } from 'react-icons/fa';
-import { BiMap, BiPhoneCall} from "react-icons/bi";
-import {Container, Row, Col} from 'react-bootstrap';
-
-
+import { FaWhatsapp, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
+import { BiMap, BiPhoneCall } from "react-icons/bi";
+import { Container, Row, Col } from 'react-bootstrap';
+import logo from "../assets/img/logo.png";
+import "./BarraSup.scss";
 
 export default function BarraSup() {
   const styles = {
@@ -12,34 +12,41 @@ export default function BarraSup() {
       justifyContent: 'space-around',
       paddingTop: '15px',
       paddingBottom: '15px',
-      margin:'auto',
-      backgroundColor:'#f1f4f8'
+      margin: 'auto',
+      backgroundColor: '#ccc'
     }
-  
+
   }
 
   return (
 
-      <Container style={styles.section} >
-        <Row style={styles.row} className=" gap-y align-items-center "  >
 
-          <Col lg={10} >
-            <span style={{paddingLeft :"20px"}}> <BiMap/> Plaza Manglar local #100 </span>
-            <span style={{paddingLeft :"20px"}}>  <FaWhatsapp  />Tel: 311 346 789 </span >
-            <span style={{paddingLeft :"20px"}} > contacto@medica-dental</span>     
-          </Col>
-          <Col lg={2}  >
-            <span style={{paddingLeft :"20px"}}> <FaFacebook /> </span>
-            <span style={{paddingLeft :"20px"}}>  <FaTwitter />  </span >
-            <span style={{paddingLeft :"20px"}} >  <FaInstagram/></span> 
-            <span style={{paddingLeft :"20px"}} >  <FaYoutube /></span>   
-          </Col>
-      </Row>
-     
-      </Container>
+    <Container className="sup-area">
+      <div className="rd-navbar-brand">
+        <a href="/inicio">
+          <img className="brand-logo-dark" src="#" /></a>
+      </div>
+      <div className="contacts-wrap">
+        <address className="contact-info reveal-sm-inline-block text-start offset-none">
+          <div className="p unit unit-spacing-xs unit-horizontal">
+            <div className="unit-left"><span className="icon icon-xs icon-circle icon-white-17 mdi mdi-phone"></span></div>
+            <div className="unit-body">
+              <a className="text-white" href="tel:#">1-800-1234-567</a><br/><a className="text-white" href="tel:#">1-800-3214-654</a></div>
+          </div>
+        </address>
+        <address className="contact-info reveal-sm-inline-block text-start">
+          <div className="p unit unit-horizontal unit-spacing-xs">
+            <div className="unit-left"><span className="icon icon-xs icon-circle icon-white-17 mdi mdi-map-marker"></span></div>
+            <div className="unit-body">
+              <a className="text-white" href="#">2130 Fulton Street San Diego<br/>CA 94117-1080 USA</a></div>
+          </div>
+        </address>
+      </div>
+    </Container>
 
-  
+
+
   )
-  }
+}
 
 

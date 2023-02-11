@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import "./Inicio.scss";
-import ListaPrecios from './ListaPrecios';
+import ListaPrecios from '../Servicios/ListaPrecios';
 
 export default function Section1() {
 

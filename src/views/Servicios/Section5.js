@@ -8,8 +8,8 @@ import bg_diente4 from "../../assets/img/dientes/background_diente4.png";
 
 export default function Section2() {
   return (
-    <Container  className="content">
-        <Row className='gb-light'>
+    <Container name="section5" className="content" style={{paddingBottom:4+"rem", paddingTop:4+"rem"}}>
+        <Row className='gb-light' >
             <Col>
              <img className='img-responsponsive' src={bg_diente1}/>
             </Col>

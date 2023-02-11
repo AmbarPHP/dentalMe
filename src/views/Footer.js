@@ -7,14 +7,13 @@ import "./Footer.scss"
 
 const Footer = () => {
     return (
-        <Container className="">
-            <footer className=" section">
-                <Container className="bg-contrast">
-                    
-                    <Row className="gap-y">
-                        <div class="col-md-3  ">
-                            <h6 className="bold d-flex justify-content-center mb-0 mt-2">Horarios</h6>
-                                <p className="d-flex justify-content-center mb-0 small">
+        <Container className="content">
+         
+                <Container>
+                    <Row className=" gb-light gap-y pt-5">
+                        <div class="col-md-3 ">
+                            <h6 className="bold d-flex justify-content-center mb-0 ">Horarios</h6>
+                                <p className="d-flex justify-content-center mb-0 small mt-3">
                                     Lunes a Viernes 9 a 2 PM y 4 a 8 PM
                                 </p>
                                 <p className="d-flex justify-content-center mb-0 small">
@@ -29,7 +28,7 @@ const Footer = () => {
                         <h6 className="bold  d-flex justify-content-center mb-0 mt-2">Citas</h6>
                           
     
-                            <p class="text-secondary d-flex justify-content-center">Whatsapp</p>
+                            <p class="text-secondary d-flex justify-content-center mt-3 ">Whatsapp</p>
                             <div className='columna-doble d-flex justify-content-center align-items-center'>
                                 <span> <FaWhatsapp className='icon-whatsap' />33-23 342-134</span>
                                 
@@ -40,7 +39,7 @@ const Footer = () => {
                         <div className='col-md-3'>
                           
                             <h6 class="bold  d-flex justify-content-center mb-0 mt-2">Ubícanos</h6>
-                                <p className="d-flex justify-content-center mb-0 small">
+                                <p className="d-flex justify-content-center mb-0 small mt-3">
                                 Plaza Manglar local #2323,
                                 </p>
                                 <p className="d-flex justify-content-center mb-0 small">
@@ -86,7 +85,7 @@ const Footer = () => {
 
 
                 </Container>
-            </footer >
+         
         </Container >
 
     );
