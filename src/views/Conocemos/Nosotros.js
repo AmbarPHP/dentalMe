@@ -7,19 +7,16 @@ import doc4 from "../../assets/img/Doctores/team4.jpg";
 
 import Nosotros2 from './Nosotros2';
 
-import Menu from"../Menu";
-import BarraSup from "../BarraSup";
-import Footer from "../Footer";
+
 
 export default function Nosotros() {
     return (
             
-            <Container className='content  mb-4' style={{"backgroundColor":"gray"}}>
-            <BarraSup></BarraSup>
-            <Menu></Menu>
-                <Row className='justify-content-center align-items-center'>
-                    <Col lg={12} className=" mt-5">
-                        <h3 className="text-light text-uppercase mb-5">Nuestro equipo de Dentistas</h3>
+            <Container className='content  mb-4 bg-light' >
+         
+                <Row >
+                    <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
+                        <h3 className="text-primary  bold mb-5" style={{ fontSize: 3 + "rem" }} >Nuestro equipo de Dentistas</h3>
                     </Col>
                 </Row>
                 <Row >
@@ -116,7 +113,6 @@ export default function Nosotros() {
                 </Row>
 
 
-              <Footer></Footer>
             </Container>
 
             // <Nosotros2></Nosotros2>

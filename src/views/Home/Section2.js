@@ -16,7 +16,7 @@ export default function Section2() {
                     <h5 className=' text-light  bold mt-5 text-uppercase mx-5'> 
                     <span className='text-contrast'>
                         <FaCalendarAlt />
-                        </span  > Horario apertura 
+                        </span  > Horario 
                         </h5>
                         <hr className='text-light me-5 mb-5'/>                       
                         <ul className='text-light text-big-18  mx-2 '>

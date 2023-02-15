@@ -2,11 +2,11 @@ import React from "react";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import './App.scss';
 import Servicios from './views/Servicios/Servicios';
-import Footer from './views/Footer';
+import Footer from './components/Footer';
 import Nosotros from './views/Conocemos/Nosotros';
 import Home from './views/Home/Home';
-import Menu from "./views/Menu";
-import BarraSup from './views/BarraSup';
+import Menu from "./components/Menu";
+import BarraSup from './components/BarraSup';
 import Login from "./components/Login";
 import RegistrationForm from "./components/RegistrationForm";
 import Hero from "./views/Home/Hero";
@@ -19,6 +19,7 @@ function App() {
     
    
     <Routes>
+    <Route path="/" element={<Home />}></Route>
       <Route path="/home" element={<Home />}></Route>
       <Route path="/servicios" element={<Servicios />}></Route>
       <Route path="/especiales" element={<Footer />}></Route>

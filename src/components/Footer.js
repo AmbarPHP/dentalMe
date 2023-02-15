@@ -11,7 +11,7 @@ const Footer = () => {
          
                 <Container>
                     <Row className=" gb-light gap-y pt-5 text-light ">
-                        <div class="col-md-4 ">
+                        <div className"col-md-4 ">
                             <h5 className="bold d-flex justify-content-center mb-0 mt-2">Horarios</h5>
                             <hr/>
                                 <p className="d-flex justify-content-center mb-0 ">
@@ -28,7 +28,7 @@ const Footer = () => {
                         <div className="col-md-4">
                         <h5 className="bold d-flex justify-content-center mb-0 mt-2">Citas:</h5>
                         <hr/>
-                        <div class="d-flex flex-row  justify-content-center mb-0 small text-light pb-3">
+                        <div className="d-flex flex-row  justify-content-center mb-0 small text-light pb-3">
                                 
                                 
                                 <a href="https://www.facebook.com/HealthSmileCenter/" 
@@ -57,7 +57,7 @@ const Footer = () => {
                         </div>
                         <div className='col-md-4'>
                           
-                            <h5 class="bold d-flex justify-content-center mb-0 mt-2">Dirección:</h5>
+                            <h5 className="bold d-flex justify-content-center mb-0 mt-2">Dirección:</h5>
                             <hr/>
                                 <p className="d-flex justify-content-center mb-0 mt-3">
                                 Plaza Manglar, Int. 2 
@@ -71,12 +71,12 @@ const Footer = () => {
                               
                             
                         </div>
-                        {/* <div class="col-md-3">
-                        <h5 class="bold d-flex justify-content-center mb-0 mt-2">Siguenos:</h5>
+                        {/* <div className"col-md-3">
+                        <h5 className"bold d-flex justify-content-center mb-0 mt-2">Siguenos:</h5>
                             
                            
-                                <div class="d-flex flex-row  justify-content-center mb-0 small text-secondary">
-                                <img src={logo} alt="" class="logo" />
+                                <div className"d-flex flex-row  justify-content-center mb-0 small text-secondary">
+                                <img src={logo} alt="" className"logo" />
                                 </div>
                                 
                             

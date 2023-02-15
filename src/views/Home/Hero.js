@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container, Row, Col,Button } from 'react-bootstrap';
+import {  Row, Col,Button } from 'react-bootstrap';
 import "./Hero.scss";
-import Menu from"../Menu";
-import BarraSup from "../BarraSup";
+import Menu from"../../components/Menu";
+import BarraSup from "../../components/BarraSup";
 
 export default function Hero() {
   return (
@@ -24,7 +24,7 @@ export default function Hero() {
                         <Button className='btn_round  mt-4'>
                             <a className="text-dark bold text-uppercase" 
                             href="make-an-appointment.html">
-                              Haz una cita</a>
+                              Citas: 311 269 79 23</a>
                         </Button>
                        
                       

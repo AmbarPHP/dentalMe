@@ -45,10 +45,12 @@
     }
 
     .bg-img {
-        opacity: 0.8;
-        background-image: url("../../assets/img/dientes/light_background1.png");
+        opacity: 1;
+        //background-image: url("../../assets/img/dientes/light_background1.png");
+        background-image: url("../../assets/img/dental6.jpg");
         //background-color: black;
-        width: 100%;
+        background-size: cover;
+        //width: 100%;
         padding: 0%;
         margin: 0%;
 
