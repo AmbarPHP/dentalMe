@@ -8,12 +8,12 @@ export default function Hero() {
   return (
    
         <div className='gb-primary-img-resina2 ' >
-            <Row className="overlay-blue ">
+            <Row className="overlay-blue h-100">
             <BarraSup></BarraSup>
             <Menu></Menu>
             </Row>
             <Row className=" d-lg-flex align-middle mt-5 mx-0 overlay-blue h-100">
-            <div className="">
+            
               <Col  md={{ span: 5, offset: 1 }} className="mt-5" sm={12} >
                     
                     
@@ -30,7 +30,7 @@ export default function Hero() {
                       
             
                 </Col>
-                </div> 
+                
                
             </Row>
         </div>

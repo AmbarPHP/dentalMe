@@ -7,12 +7,12 @@ import "./Footer.scss"
 
 const Footer = () => {
     return (
-        <Container className="contentainer bg-primary pb-5">
+        <div className=" bg-primary  pt-3" style={{height:300+"px", fontSize:20+"px"}}>
          
-                <Container>
-                    <Row className=" gb-light gap-y pt-5 text-light ">
-                        <div className"col-md-4 ">
-                            <h5 className="bold d-flex justify-content-center mb-0 mt-2">Horarios</h5>
+            
+                    <Row className=" gb-light gap-y pt-0 mt-0 text-light ">
+                        <div className="col-md-4 ">
+                            <h5 className="bold d-flex justify-content-center mb-0 mt-5">Horarios</h5>
                             <hr/>
                                 <p className="d-flex justify-content-center mb-0 ">
                                     Lunes a Viernes 9 a 2 PM y 4 a 8 PM
@@ -26,7 +26,7 @@ const Footer = () => {
                                 
                         </div>
                         <div className="col-md-4">
-                        <h5 className="bold d-flex justify-content-center mb-0 mt-2">Citas:</h5>
+                        <h5 className="bold d-flex justify-content-center mb-0 mt-5">Citas:</h5>
                         <hr/>
                         <div className="d-flex flex-row  justify-content-center mb-0 small text-light pb-3">
                                 
@@ -57,7 +57,7 @@ const Footer = () => {
                         </div>
                         <div className='col-md-4'>
                           
-                            <h5 className="bold d-flex justify-content-center mb-0 mt-2">Dirección:</h5>
+                            <h5 className="bold d-flex justify-content-center mb-0 mt-5">Dirección:</h5>
                             <hr/>
                                 <p className="d-flex justify-content-center mb-0 mt-3">
                                 Plaza Manglar, Int. 2 
@@ -72,7 +72,7 @@ const Footer = () => {
                             
                         </div>
                         {/* <div className"col-md-3">
-                        <h5 className"bold d-flex justify-content-center mb-0 mt-2">Siguenos:</h5>
+                        <h5 className"bold d-flex justify-content-center mb-0 mt-5">Siguenos:</h5>
                             
                            
                                 <div className"d-flex flex-row  justify-content-center mb-0 small text-secondary">
@@ -85,9 +85,9 @@ const Footer = () => {
                   
 
 
-                </Container>
+                
          
-        </Container >
+        </div>
 
     );
 };

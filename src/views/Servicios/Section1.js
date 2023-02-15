@@ -6,17 +6,19 @@ export default function Section1() {
 
   
     return (
-        <Container  name="section1"  style={{backgroundColor:"#ccc"}} 
-        className="container  gradient-primary-dark">
-            <Row className='d-flex justtify-content-center'>
-                <span className="title-inicio text-light ">¡Usa un paquete y ahorra!</span>
-              
-            </Row>
-            <Row style={{paddingBottom:4+"rem"}}>
+        <Container  name="section1" 
+        className="container  gradient-primary-dark mt-0 pt-5 pb-5">
+             <Row >
+                    <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
+                        <h3 className="text-light  bold mb-5" 
+                        style={{ fontSize: 3 + "rem" }} >Con nuestros páquetes ahorras</h3>
+                    </Col>
+                </Row>
+            <Row >
                 <Col className='bg-light mx-3 mb-5'>
                 <Row style={{ height:'70%',alignItems: 'center'}} >
                     <h1 className='text-primary mt-3 '> Paquete <span className='text-secondary'>1</span></h1> 
-                    <ul className='lead mt-3'>
+                    <ul className='lead mt-3 mx-3'>
                         <li>Consulta</li>
                         <li>Radiografía</li>
                         <li>Limpieza</li>
@@ -29,27 +31,27 @@ export default function Section1() {
                 <Col className='bg-primary mx-3 mb-5'>
                 <Row style={{ height:'70%',alignItems: 'center'}} >
                 <h1 className='text-light mt-3'>Paquete <span className='text-secondary'>2</span></h1> 
-                    <ul className='lead'>
+                    <ul className='lead mx-3'>
                         <li  className='text-light'>Blanqueamiento</li>
                         <li  className='text-light'>Limpieza</li>
                         <li  className='text-light'>Pulido de dientes</li>
                     </ul>
                     </Row>
                     <Row style={{ height:'30%',alignItems: 'center'}} >
-                    <p className='text-center text-light  lead bold'>$3500</p>
+                    <p className='text-center text-light  lead bold'>$3600</p>
                     </Row>
                 </Col>
                 <Col className='bg-light mx-3 mb-5' >
                     <Row style={{ height:'70%',alignItems: 'center'}} >
                     <h1 className='text-primary mt-3'>Paquete <span className='text-secondary'>3</span></h1> 
-                    <ul className='lead'>
+                    <ul className='lead mx-3'>
                         <li>Limpieza</li>
                         <li>Pulido de dientes</li>
                         <li>Aplicacion de fluor</li>
                     </ul>
                     </Row>
                     <Row style={{ height:'30%',alignItems: 'center'}} >
-                    <p className='text-center  lead bold'>$500</p>
+                    <p className='text-center  lead bold'>$600</p>
                     </Row>
             
                     
@@ -60,7 +62,7 @@ export default function Section1() {
                 
                 <Row style={{ height:'70%',alignItems: 'center'}} >
                 <h1 className='text-light mt-3'>Paquete <span className='text-secondary'>4</span></h1> 
-                    <ul className='lead'>
+                    <ul className='lead mx-3'>
                         <li   className='text-light'>Consulta</li>
                         <li   className='text-light'>Valoracion</li>
                         <li   className='text-light'>Camara intraoral</li>
@@ -68,7 +70,7 @@ export default function Section1() {
                     </ul>
                     </Row>
                     <Row style={{ height:'30%',alignItems: 'center'}} >
-                    <p className='text-center text-light  lead bold'>$500</p>
+                    <p className='text-center text-light  lead bold'>$600</p>
                     </Row>
                  </Col>
             </Row>

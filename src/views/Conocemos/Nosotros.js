@@ -16,7 +16,8 @@ export default function Nosotros() {
          
                 <Row >
                     <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
-                        <h3 className="text-primary  bold mb-5" style={{ fontSize: 3 + "rem" }} >Nuestro equipo de Dentistas</h3>
+                        <h3 className="text-secondary  bold mb-5" 
+                        style={{ fontSize: 3 + "rem" }} >Somo profesionales </h3>
                     </Col>
                 </Row>
                 <Row >
@@ -32,9 +33,9 @@ export default function Nosotros() {
                                     <h5 className='pt-5'>
                                         <a href="#" className="text-light bold">Dr. Jose Robles</a>
                                     </h5>
-                                    <div >Dentista</div>
+                                    <div style={{fontSize:"1.5rem"}}>Dentista</div>
                                     <div >
-                                        <span className="sc_team_item_description_span">Lorem ipsum dolor sit amet, consectetur...</span>
+                                        <span >Lorem ipsum dolor sit amet, consectetur...</span>
                                     </div>
                                
                                   
@@ -54,9 +55,9 @@ export default function Nosotros() {
                               <h5 className='pt-5'>
                                   <a href="#" className="text-light bold">Dr. Martha Gala</a>
                               </h5>
-                              <div >Dentista</div>
+                              <div style={{fontSize:"1.5rem"}}>Dentista</div>
                               <div >
-                                  <span className="sc_team_item_description_span">Lorem ipsum dolor sit amet, consectetur...</span>
+                                  <span >Lorem ipsum dolor sit amet, consectetur...</span>
                               </div>
                          
                             
@@ -76,9 +77,9 @@ export default function Nosotros() {
                               <h5 className='pt-5'>
                                   <a href="#" className="text-light bold">Dr. Samuel Montes</a>
                               </h5>
-                              <div >Dentista</div>
+                              <div style={{fontSize:"1.5rem"}}>Dentista</div>
                               <div >
-                                  <span className="sc_team_item_description_span">Lorem ipsum dolor sit amet, consectetur...</span>
+                                  <span className="">Lorem ipsum dolor sit amet, consectetur...</span>
                               </div>
                          
                             
@@ -98,9 +99,9 @@ export default function Nosotros() {
                               <h5 className='pt-5'>
                                   <a href="#" className="text-light bold">Dr. Maria Mora</a>
                               </h5>
-                              <div >Dentista</div>
+                              <div style={{fontSize:"1.5rem"}}>Dentista</div>
                               <div >
-                                  <span className="sc_team_item_description_span">Lorem ipsum dolor sit amet, consectetur...</span>
+                                  <span className="">Lorem ipsum dolor sit amet, consectetur...</span>
                               </div>
                          
                             
