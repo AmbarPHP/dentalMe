@@ -1,21 +1,19 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap';
-
+import Resina from "../../assets/img/carrusel/carrusel4.png"
 export default function Section5() {
     return (
-        <Container className='d-flex  container-fluid  '>
-            <Row className="justify-content-lg-left  hero-container gb-primary-img">
+        <Container name="section5-home" className='d-flex  container-fluid  '>
+            <Row className="justify-content-lg-left  hero-container gb-primary-img-resina3">
                 <div className="overlay h-100" >
                     <Col md={{ span: 5, offset: 1 }} style={{ paddingTop: 10 + 'rem' }} sm={12} >
 
-
-
-                        <h1 style={{ fontSize: 4 + "rem" }} className='text-light'>Diagnósticos <br /> mas efectivos</h1>
+                        <h1 style={{ fontSize: 4 + "rem" }} className='text-light'>Diagnosticos rapidos y eficientes</h1>
                         <h4 className=" text-white">Le ofrecemos el mas amplio rango de diagnostico,desde Rayos X hasta PruebasX.</h4>
 
-                        <Button variant="light">
+                        <Button variant="light" className='mt-3'>
                             <a class="btn btn-ellipse btn-white offset-top-30"
-                                href="/opoitment">Consultas Gratis</a>
+                                href="/opoitment">Diagnosticos Gratis</a>
                         </Button>
 
 

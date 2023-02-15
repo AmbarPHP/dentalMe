@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/img/logo.png";
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -15,21 +15,19 @@ export default function Menu() {
 
     return (
         
-            <Navbar  expand="lg" className="menu-container ">
+            <Navbar  expand="lg" className="menu-container" >
                
-                    <Navbar.Brand href="#home" style={{marginLeft: 2 + '%'}}>
-                        <img src={logo} className="logo"/>
-                    </Navbar.Brand>
+                    
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     
-                    <Navbar.Collapse id="basic-navbar-nav" style={{marginLeft: 20 + '%'}} >
-                        <Nav >
-                            <Nav.Link href="/home" className='text-contrast text-uppercase'>Inicio</Nav.Link>
+                    <Navbar.Collapse id="basic-navbar-nav" className='margin-20'  >
+                        <Nav className='font-20' >
+                            <Nav.Link href="/home"  className='text-contrast text-uppercase'>Inicio</Nav.Link>
                             <Nav.Link href="/servicios" className='text-contrast text-uppercase'>Servicios</Nav.Link>
-                            <Nav.Link href="/especiles" className='text-contrast text-uppercase'>Encuentra un doctor</Nav.Link>
-                            <Nav.Link href="/nosotros" className='text-contrast text-uppercase'>Especialidades</Nav.Link>
-                            <Nav.Link href="/login" className='text-contrast text-uppercase'>testimoniales</Nav.Link>
-                            <Nav.Link href="/login" className='text-contrast text-uppercase'>Citas</Nav.Link>
+                            <Nav.Link href="/about" className='text-contrast text-uppercase'>Nuestro equipo</Nav.Link>
+                            <Nav.Link href="/especialidades" className='text-contrast text-uppercase'>Especialidades</Nav.Link>
+                            <Nav.Link href="/testimoniales" className='text-contrast text-uppercase'>testimoniales</Nav.Link>
+                            <Nav.Link href="/citas" className='text-contrast text-uppercase'>Citas</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 

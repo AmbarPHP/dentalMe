@@ -5,21 +5,25 @@ import rounded3 from "../../assets/img/carrusel/carrusel3.png"
 import rounded4 from "../../assets/img/carrusel/carrusel4.png"
 
 export default function Section4() {
-    const rounded = "https://mdbcdn.b-cdn.net/img/new/avatars/9.webp";
+    
 
 
     return (
 
-        <Container name="section4" className="content bg-light " >
-            <Row className="mb-5 d-flex justify-content-center align-items-center flex-row" >
-                <h1 className='text-secondary bold' style={{fontFamily:"Montserrat", fontSize:3+"rem"}}>El mejor y mas avanzado tratamiento</h1>
+        <Container name="section4-home" className="content bg-light alpha-4 mb-5" >
+            <Row className="mb-5 mt-5 d-flex justify-content-end  flex-row" >
+            <Col  md={6} lg={8} sm= {12} >  
+            <h1 className='text-secondary bold font-3rem' >Nuestros servicios</h1>  </Col>
+                
             </Row>
            
             <Row>
                 <Col  md={6} lg={4} >
                     <Row >
 
-                        <img className="rounded-pill" alt="avatar1" src={rounded2} style={{maxWidth:100+"%", height:"auto"}}/>
+                        <img className="rounded-pill" alt="avatar1" 
+                        src={rounded2} 
+                        style={{maxWidth:100+"%", height:"auto"}}/>
 
                     </Row>
                     <Row>

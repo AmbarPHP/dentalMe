@@ -14,17 +14,17 @@ import Hero from "./views/Home/Hero";
 function App() {
   return (
 <Router>
-    <BarraSup></BarraSup>
-    <Menu></Menu>
+    {/* <BarraSup></BarraSup> */}
+    {/* <Menu></Menu> */}
     
    
     <Routes>
       <Route path="/home" element={<Home />}></Route>
       <Route path="/servicios" element={<Servicios />}></Route>
       <Route path="/especiales" element={<Footer />}></Route>
-      <Route path="/nosotros" element={<Nosotros/>}></Route>
-      <Route path="/login" element={<Login/>}></Route>
-      <Route path="/registration" element={<RegistrationForm/>}></Route>
+      <Route path="/about" element={<Nosotros/>}></Route>
+      <Route path="/especialidades" element={<Login/>}></Route>
+      <Route path="/testimoniales" element={<RegistrationForm/>}></Route>
     </Routes>
   </Router>
 

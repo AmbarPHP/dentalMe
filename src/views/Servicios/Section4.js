@@ -6,7 +6,7 @@ import { FaWhatsapp , FaFacebook, FaTwitter,FaInstagram,FaYoutube } from 'react-
 export default function Section4() {
     return (
         <Container className="d-flex content ">
-            <Row>
+            <Row >
                 <Col className="lg-3 md-3 mx-5">
                     <p className="title-inicio text-secondary"> 
                     Suscribete a <span className='text-primary'>nuestras novedades</span></p>

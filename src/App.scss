@@ -7,11 +7,14 @@ body {
   font-family: "Montserrat";
 }
 
+p,h1,h2,h3,h4,h5 {
+  font-family:"Montserrat";
+}
 .section {
   background-color: #f1f4f8;
   font-family: Poppins, sans-serif;
   display:flex;
-  justify-content:center;
+  -content:center;
   align-items: center;
 
   .block-light {
@@ -106,13 +109,25 @@ height: 50vh;
   line-height: "1.6em";
   color: "#575452";
 }
+.font-1rem{
+  font-size: 1rem;
+}
+.font-2rem{
+  font-size: 2rem;
+}
+.font-20{
+  font-size: 20px;
+}
+.font-3rem{
+  font-size: 3rem;
+}
 
 // 1 colores y formatos  para los textos
 .text-center {
   text-align: center !important
 }
 .text-contrast {
-  color: #fff!important;
+  color: #ffffff73!important;
 }
 .text-secondary {
   color: #506690!important;
