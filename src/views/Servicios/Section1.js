@@ -14,10 +14,16 @@ export default function Section1() {
                         style={{ fontSize: 3 + "rem" }} >Con nuestros páquetes ahorras</h3>
                     </Col>
                 </Row>
+                <Row >
+                    <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
+                        <h3 className="text-light  bold mb-5" 
+                    >Haz una cita hoy mismo, con nosotros ahorras tiempo y dinero</h3>
+                    </Col>
+                </Row>    
             <Row >
                 <Col className='bg-light mx-3 mb-5'>
                 <Row style={{ height:'70%',alignItems: 'center'}} >
-                    <h1 className='text-primary mt-3 '> Paquete <span className='text-secondary'>1</span></h1> 
+                    <h1 className='text-primary mt-3 '> Paquete <span className='text-secondary bold ms-2'>1</span></h1> 
                     <ul className='lead mt-3 mx-3'>
                         <li>Consulta</li>
                         <li>Radiografía</li>
@@ -25,12 +31,13 @@ export default function Section1() {
                     </ul>
                     </Row>
                     <Row style={{ height:'30%',alignItems: 'center'}} >
-                    <p className='text-center   lead bold'>$950</p>
+                    <p className='text-center text-secondary font-2rem bold'>$950</p>
                     </Row>
                 </Col>
                 <Col className='bg-primary mx-3 mb-5'>
+
                 <Row style={{ height:'70%',alignItems: 'center'}} >
-                <h1 className='text-light mt-3'>Paquete <span className='text-secondary'>2</span></h1> 
+                <h1 className='text-light mt-3'>Paquete <span className='text-secondary bold ms-2'>2</span></h1> 
                     <ul className='lead mx-3'>
                         <li  className='text-light'>Blanqueamiento</li>
                         <li  className='text-light'>Limpieza</li>
@@ -38,12 +45,12 @@ export default function Section1() {
                     </ul>
                     </Row>
                     <Row style={{ height:'30%',alignItems: 'center'}} >
-                    <p className='text-center text-light  lead bold'>$3600</p>
+                    <p className='text-center text-light font-2rem bold'>$3600</p>
                     </Row>
                 </Col>
                 <Col className='bg-light mx-3 mb-5' >
                     <Row style={{ height:'70%',alignItems: 'center'}} >
-                    <h1 className='text-primary mt-3'>Paquete <span className='text-secondary'>3</span></h1> 
+                    <h1 className='text-primary mt-3'>Paquete <span className='text-secondary bold ms-2'>3</span></h1> 
                     <ul className='lead mx-3'>
                         <li>Limpieza</li>
                         <li>Pulido de dientes</li>
@@ -51,7 +58,7 @@ export default function Section1() {
                     </ul>
                     </Row>
                     <Row style={{ height:'30%',alignItems: 'center'}} >
-                    <p className='text-center  lead bold'>$600</p>
+                    <p className='text-center text-primary font-2rem bold'>$600</p>
                     </Row>
             
                     
@@ -61,7 +68,7 @@ export default function Section1() {
                 <Col className='bg-primary  mx-3 mb-5'>
                 
                 <Row style={{ height:'70%',alignItems: 'center'}} >
-                <h1 className='text-light mt-3'>Paquete <span className='text-secondary'>4</span></h1> 
+                <h1 className='text-light mt-3'>Paquete <span className='text-secondary bold ms-2'>4</span></h1> 
                     <ul className='lead mx-3'>
                         <li   className='text-light'>Consulta</li>
                         <li   className='text-light'>Valoracion</li>
@@ -70,7 +77,7 @@ export default function Section1() {
                     </ul>
                     </Row>
                     <Row style={{ height:'30%',alignItems: 'center'}} >
-                    <p className='text-center text-light  lead bold'>$600</p>
+                    <p className='text-center text-light  font-2rem bold'>$600</p>
                     </Row>
                  </Col>
             </Row>
