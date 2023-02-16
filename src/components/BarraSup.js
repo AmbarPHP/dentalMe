@@ -13,41 +13,41 @@ export default function BarraSup() {
     <div className="sup-area">
       <Row className='desktop w-100'>
       <Col  lg={{ span: 1, offset: 1 }} >
-      <img src={logo} className="logo"/> <span className='text-light'> Health&Smile</span>
+      <img src={logo} className="logo"/> <span className='text-primary'> Health&Smile</span>
       </Col>
       <Col lg={{ span: 2, offset: 1 }} className="pb-3 pt-3" >
         <div className='columna-doble d-flex justify-content-center align-items-center'>
         <a href="#" style={{fontSize:38+"px"}} 
-        className="me-4 text-light bold ">
+        className="me-4 text-primary bold ">
               <FaWhatsapp />
 
-            </a> <span className=' text-light'> 311 269 7923</span>
+            </a> <span className=' text-primary'> 311 269 7923</span>
         </div>
       </Col>
       <Col lg={{ span: 3, offset: 0}} className="pb-3 pt-3" >
         <div className='columna-doble d-flex justify-content-center align-items-center'>
-        <a href="" style={{fontSize:38+"px"}} className="me-4 text-light bold">
+        <a href="" style={{fontSize:38+"px"}} className="me-4 text-primary bold">
               <FaMapMarkerAlt/>
             </a>
-          <span className='bold text-light pe-2'> Av. de la Cultura #94 Int.2 en Plaza Manglar </span>
+          <span className='bold text-primary pe-2'> Av. de la Cultura #94 Int.2 en Plaza Manglar </span>
         </div>
       </Col>
 
 
       <Col lg={{ span: 3, offset: 1 }} md={12} sm={12}
-       style={{ paddingTop: 0 + 'rem' }} sm={12} >
-        <div className="d-flex flex-row  justify-content-center mb-0 small text-secondary">
+       style={{ paddingTop: 0 + 'rem' }} >
+        <div className="d-flex flex-row  justify-content-center mb-0 font-2rem  text-primary">
 
-          
-            <a href="https://www.facebook.com/HealthSmileCenter/" className="me-4 font-regular text-light bold">
+            <a href="https://www.facebook.com/HealthSmileCenter/" 
+            className="me-4 bold">
               <FaFacebook/>
-            </a> <a href="#" className="me-4 font-regular  text-light bold">
+            </a> <a href="#" className="me-4  bold">
               <FaTwitter />
 
-            </a> <a href="#" className="me-4 font-regular  text-light bold ">
+            </a> <a href="#" className="me-4  bold ">
               <FaWhatsapp />
 
-            </a> <a href="#" className="font-regular  text-light bold ">
+            </a> <a href="#" className=" bold ">
               <FaInstagram />
 
             </a>

@@ -1,13 +1,13 @@
 @import '../custom';
 
 @media (max-width:700px) {
-    .st-nav-menu{
+    .menu-container{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
        justify-content: space-around;
         margin: 0px;
- 
+        border-radius: 80% 50%;
         list-style: none;
         background-color: $primary;
     
@@ -29,16 +29,20 @@
        // width: 100vw;
        // padding-top: '15px';
        // padding-bottom: '15px';
-       margin-left: 80%;
+       padding-left: 5%;
+       margin-left: 0%;
        margin-right:0%;
-       background-color:adjust-hue($color: #387fc7, $degrees: 0);
-       width: 80%;
+     
+       background-image: url("../assets/img/paralax.png");
+       background-size: cover;
+       width: 100%;
        z-index: 9;
       
        .text-contrast{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 15%;
+        font-family: 'Montserrat';
         font-weight: 700;
-        color: $primary;}
+        color:$dark;}
    }
 }
 
@@ -50,10 +54,11 @@
         // width: 100vw;
         // padding-top: '15px';
         // padding-bottom: '15px';
+        border-radius:  25% 25%;
         margin-left: 10%;
         margin-right:0%;
-        background-color:adjust-hue($color: #387fc7, $degrees: 0);
-        width: 80%;
+        background-color:$primary;
+        width: 800px;
         z-index: 9;
         
     }

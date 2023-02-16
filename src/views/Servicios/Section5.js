@@ -8,12 +8,13 @@ import bg_diente4 from "../../assets/img/dientes/background_diente4.png";
 
 export default function Section5() {
   return (
-    <Container name="section2" className="content" style={{paddingBottom:4+"rem", paddingTop:4+"rem"}}>
+    <Container name="section2" 
+    className="content" style={{paddingBottom:4+"rem", paddingTop:4+"rem"}}>
         <Row className='gb-light' >
-            <Col>
+            <Col lg={3}>
              <img className='img-responsponsive' src={bg_diente1}/>
             </Col>
-            <Col>
+            <Col lg={3}>
             <img src={diente1}/>
             <h3 className='text-primary bold'> Servicios Esteticos </h3> 
                     <ul className='lead'>
@@ -26,7 +27,7 @@ export default function Section5() {
                     </ul>
                     
             </Col>
-            <Col>
+            <Col lg={3}>
             <img src={diente1}/>
             <h3 className='text-primary bold'> Restauracion </h3> 
                     <ul className='lead'>
@@ -39,7 +40,7 @@ export default function Section5() {
                     </ul>
                     
             </Col>
-            <Col>
+            <Col lg={3}>
              <img className='img-responsponsive' src={bg_diente2}/>
             </Col>
           
