@@ -126,9 +126,7 @@ height: 50vh;
 .text-center {
   text-align: center !important
 }
-.text-contrast {
-  color: #ffffff73!important;
-}
+
 .text-secondary {
   color: #506690!important;
 }
@@ -144,6 +142,9 @@ height: 50vh;
 
 .text-info {
   color:$info !important
+}
+.text-contrast{
+  color: $contrast;
 }
 
 .font-md {

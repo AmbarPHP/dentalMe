@@ -10,6 +10,7 @@ export default function Section1() {
         className=" gradient-primary-dark mt-0 pt-5 pb-5">
              <Row >
                     <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
+                       
                         <h3 className="text-light  bold mb-5" 
                         style={{ fontSize: 3 + "rem" }} >Con nuestros páquetes ahorras</h3>
                     </Col>
@@ -23,7 +24,7 @@ export default function Section1() {
             <Row >
                 <Col className='bg-light mx-3 mb-5'>
                 <Row style={{ height:'70%',alignItems: 'center'}} >
-                    <h1 className='text-primary mt-3 '> Paquete <span className='text-secondary bold ms-2'>1</span></h1> 
+                    <h1 className='text-primary mt-3 ' > Paquete <span className='text-secondary bold ms-2'>1</span></h1> 
                     <ul className='lead mt-3 mx-3'>
                         <li>Consulta</li>
                         <li>Radiografía</li>
@@ -37,7 +38,7 @@ export default function Section1() {
                 <Col className='bg-primary mx-3 mb-5'>
 
                 <Row style={{ height:'70%',alignItems: 'center'}} >
-                <h1 className='text-light mt-3'>Paquete <span className='text-secondary bold ms-2'>2</span></h1> 
+                <h1 className='text-light mt-3'>Paquete <span className='text-contrast bold ms-2'>2</span></h1> 
                     <ul className='lead mx-3'>
                         <li  className='text-light'>Blanqueamiento</li>
                         <li  className='text-light'>Limpieza</li>
@@ -50,7 +51,8 @@ export default function Section1() {
                 </Col>
                 <Col className='bg-light mx-3 mb-5' >
                     <Row style={{ height:'70%',alignItems: 'center'}} >
-                    <h1 className='text-primary mt-3'>Paquete <span className='text-secondary bold ms-2'>3</span></h1> 
+                    <h1 className='text-primary mt-3'>Paquete
+                     <span className='text-secondary bold ms-2'>3</span></h1> 
                     <ul className='lead mx-3'>
                         <li>Limpieza</li>
                         <li>Pulido de dientes</li>
@@ -68,7 +70,7 @@ export default function Section1() {
                 <Col className='bg-primary  mx-3 mb-5'>
                 
                 <Row style={{ height:'70%',alignItems: 'center'}} >
-                <h1 className='text-light mt-3'>Paquete <span className='text-secondary bold ms-2'>4</span></h1> 
+                <h1 className='text-light mt-3'>Paquete <span className='text-contrast bold ms-2'>4</span></h1> 
                     <ul className='lead mx-3'>
                         <li   className='text-light'>Consulta</li>
                         <li   className='text-light'>Valoracion</li>
