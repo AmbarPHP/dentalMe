@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Main from '../Others/Main';
 import Footer from '../../components/Footer';
 
 import Section1 from './Section1';
