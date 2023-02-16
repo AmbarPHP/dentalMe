@@ -6,8 +6,8 @@ export default function Section1() {
 
   
     return (
-        <Container  name="section1" 
-        className="container  gradient-primary-dark mt-0 pt-5 pb-5">
+        <div name="section1-servicios" 
+        className=" gradient-primary-dark mt-0 pt-5 pb-5">
              <Row >
                     <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
                         <h3 className="text-light  bold mb-5" 
@@ -75,6 +75,6 @@ export default function Section1() {
                  </Col>
             </Row>
 
-        </Container>
+        </div>
     )
 }
