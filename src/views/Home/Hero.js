@@ -17,14 +17,14 @@ export default function Hero() {
               <Col  md={{ span: 5, offset: 1 }} className="mt-5" sm={12} >
                     
                     
-                      <h1 className='text-light ms-auto mx-auto mb-0 bold font-3rem'  >
+                      <h1 className='text-secondary ms-auto mx-auto mb-0 bold font-3rem'  >
                       Health & Smile </h1> 
-                      <span className='text-contrast font-2rem' >Dental Center</span>
-                        <h4 className='text-contrast pt-5' >Clínica dental, realizamos odontología integral, cirugías, implantes ortodoncia y prótesis</h4>
+                      <span className='text-secondary font-2rem' >Dental Center</span>
+                        <h4 className='text-secondary pt-5' >Clínica dental, realizamos odontología integral, cirugías, implantes ortodoncia y prótesis</h4>
                         <Button className='btn_round  mt-4'>
-                            <a className="text-light bold text-uppercase" 
+                            <a className="text-primary bold text-uppercase" 
                             href="make-an-appointment.html">
-                              Citas: 311 269 79 23</a>
+                              <span className='me-2'>Citas: </span>311 269 79 23</a>
                         </Button>
                        
                       
