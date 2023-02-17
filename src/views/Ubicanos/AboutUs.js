@@ -2,35 +2,29 @@ import React from 'react'
 
 import {Container, Row, Col} from 'react-bootstrap';
 
-import horario from "../../assets/img/horario.png"
 
 
 export default function AboutUs() {
   return (
     <Container className="section">
     <Row>
-				  <Col className="col-md-6  p-4">
+				  <Col className="col-md-6  px-4">
 					
 					  <hr className="short"/>
-					  <h6 >CLINICA DENTAL </h6>
+					  <h3 className='text-secondary mb-5'>CLINICA DENTAL </h3>
 			
-					  <p  className='bold text-contrast ' >
+					  <p  className='bold text-primary font-20 ' >
 						En Medica-Dental, somos una clínica dental integral.  Nos especializamos en cualquier tratamiento, desde una extracción simple, hasta un tratamiento complicado y estético.Ahora estamos en el mejor lugar de Tepic para brindar la mejor atención a lo mejores precios.</p>
             <hr className="short"/>
 					  {/* <a className="btn btn-secondary" href="https://www.vozdental.mx/nosotros/" role="button">CONÓCENOS</a> */}
 					
 				  </Col>
-				  <Col className="col-md-6 p-4">
+				  <Col className="col-md-6 px-4">
 					
 					  	<div className="shedule-front">
-							
-
-                {/* <div className="clock">
-                <img src={horario} alt="Llámanos y programa tu cita en los horarios disponibles."/>
-                </div>  */}
               			
 					  <hr className="short"/>
-								<h6  className='bold text-uppercase '>Horarios de atención</h6>
+					  <h3 className='text-secondary text-uppercase mb-5'> Horarios de atención</h3>
 								<p>Llámanos y programa tu cita en los horarios disponibles.</p>
                 <p>Av. Cultura No. 255A</p>
                 <p>Col. Universidad Tepic, Nay.</p>
