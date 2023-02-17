@@ -20,10 +20,10 @@ export default function Servicios() {
          <Section5></Section5>
          <Section2></Section2>
          
-         {/* <Section6></Section6>  */}
-            {/*<Section4></Section4>
-           
-           */}
+        {/* <Section6></Section6>  */}
+        {/*<Section4></Section4>
+
+        */}
            <Footer></Footer>
     </div>
   );

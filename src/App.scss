@@ -128,7 +128,7 @@ height: 50vh;
 }
 
 .text-secondary {
-  color: #506690!important;
+  color: $secondary !important;
 }
 .text-light {
   color: #f1f4f8 !important
@@ -136,8 +136,11 @@ height: 50vh;
 .text-dark {
   color: #2b354f !important
 }
+.text-gray{
+  color:$gray;
+}
 .text-primary {
-  color: #53f !important
+  color:$primary!important
 }
 
 .text-info {
