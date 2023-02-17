@@ -4,7 +4,10 @@ import doc1 from "../../assets/img/Doctores/team1.jpg";
 import doc2 from "../../assets/img/Doctores/team2.jpg";
 import doc3 from "../../assets/img/Doctores/team3.jpg";
 import doc4 from "../../assets/img/Doctores/team4.jpg";
+
 import Nosotros2 from './Nosotros2';
+import Banner from '../../components/Banner';
+import Footer from '../../components/Footer';
 
 export default function Nosotros() {
 
@@ -34,7 +37,8 @@ export default function Nosotros() {
     }
     ]
     return (
-
+        <div>
+        <Banner name="Nosotros"></Banner>
         <Container className='content  mb-4 bg-light' >
 {/* TODO poner los datos en un map y repetir por 4  */}
             <Row >
@@ -81,7 +85,7 @@ export default function Nosotros() {
 
         </Container>
 
-        // <Nosotros2></Nosotros2>
-
+        <Footer></Footer>
+</div>
     )
 }
