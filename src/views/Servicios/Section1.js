@@ -11,8 +11,8 @@ export default function Section1() {
              <Row >
                     <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
                        
-                        <h3 className="text-light  bold mb-5" 
-                        style={{ fontSize: 3 + "rem" }} >Con nuestros páquetes ahorras</h3>
+                        <h3 className="text-light  bold mb-5 font-3rem" 
+                        >Con nuestros páquetes ahorras</h3>
                     </Col>
                 </Row>
                 <Row >
@@ -22,7 +22,7 @@ export default function Section1() {
                     </Col>
                 </Row>    
             <Row >
-                <Col className='bg-light mx-3 mb-5'>
+                <Col className='bg-light mx-5 mb-5'>
                 <Row style={{ height:'70%',alignItems: 'center'}} >
                     <h1 className='text-primary mt-3 ' > Paquete <span className='text-secondary bold ms-2'>1</span></h1> 
                     <ul className='lead mt-3 mx-3'>
