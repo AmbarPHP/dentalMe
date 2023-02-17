@@ -25,9 +25,9 @@ export default function Menu() {
                             <Nav.Link href="/home"  className='text-light text-uppercase'>Inicio</Nav.Link>
                             <Nav.Link href="/servicios" className='text-light text-uppercase'>Servicios</Nav.Link>
                             <Nav.Link href="/about" className='text-light text-uppercase'>Nuestro equipo</Nav.Link>
-                            <Nav.Link href="/especialidades" className='text-light text-uppercase'>Especialidades</Nav.Link>
+                            <Nav.Link href="/especialidades" className='text-light text-uppercase'>Ubicanos</Nav.Link>
                             <Nav.Link href="/testimoniales" className='text-light text-uppercase'>testimoniales</Nav.Link>
-                            <Nav.Link href="/citas" className='text-light text-uppercase'>Citas</Nav.Link>
+
                         </Nav>
                     </Navbar.Collapse>
                 
