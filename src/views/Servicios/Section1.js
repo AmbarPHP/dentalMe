@@ -67,10 +67,10 @@ export default function Section1() {
                  </Col>
 
                  
-                <Col className='bg-primary  mx-3 mb-5'>
+                <Col className='bg-primary  mx-3 mb-5 mx-5'>
                 
                 <Row style={{ height:'70%',alignItems: 'center'}} >
-                <h1 className='text-light mt-3'>Paquete <span className='text-contrast bold ms-2'>4</span></h1> 
+                <h1 className='text-light mt-3 '>Paquete <span className='text-contrast bold ms-2'>4</span></h1> 
                     <ul className='lead mx-3'>
                         <li   className='text-light'>Consulta</li>
                         <li   className='text-light'>Valoracion</li>
