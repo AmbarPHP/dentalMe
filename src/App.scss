@@ -78,7 +78,7 @@ p,h1,h2,h3,h4,h5 {
   background-image: linear-gradient(to right top,$secondary,$secondary-light);
 }
 .bg-light{
-   background-color: #f1f4f8 !important;
+   background-color: $gray !important;
 }
 .gb-primary-img{
   background-image: url("https://picsum.photos/1920/1200/?random&amp;gravity=south");

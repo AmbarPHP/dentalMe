@@ -11,6 +11,7 @@ import Footer from '../../components/Footer';
 import Nosotros from '../Conocemos/Nosotros';
 import Testimonial from '../Testimonials/Testimonial';
 import Ubicanos from '../Ubicanos/Ubicanos';
+import "../Home/Home.scss";
 
 export default function Home() {
   return (
