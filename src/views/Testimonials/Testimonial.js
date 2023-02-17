@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import Banner from '../../components/Banner';
+import Footer from '../../components/Footer';
 
 export default function Testimonial() {
     const data = [{
@@ -23,7 +24,10 @@ export default function Testimonial() {
         title: "Contador de Nissan"
     }]
     return (
+        <div>
+        <Banner name="Testimoniales"></Banner>
         <Container className="container" style={{ height: "auto", fontSize: 20 + "px" }}>
+            
             <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
                 <h3 className="text-primary  bold mb-5" style={{ fontSize: 3 + "rem" }} >Testimoniales</h3>
             </Col>
@@ -54,5 +58,8 @@ export default function Testimonial() {
 
             </Row>
         </Container>
+        <Footer></Footer>
+        </div>
+
     )
 }
