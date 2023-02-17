@@ -14,7 +14,7 @@ export default function Section4() {
             <Row className="mb-5 mt-5 d-flex justify-content-end  flex-row" >
             <Col  md={6} lg={8} sm= {12} >  
             <h1 className='text-secondary bold font-3rem' >Nuestros servicios</h1>  </Col>
-                
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, voluptatum, atque maxime dignissimos magni laborum illo adipisci perspiciatis, accusamus incidunt laudantium aperiam quidem. Beatae ut illum at praesentium non fuga.</p>
             </Row>
            
             <Row>
