@@ -8,6 +8,7 @@ export default function Section1() {
     return (
         <div name="section1-servicios" 
         className=" gradient-primary-dark mt-0 pt-5 pb-5">
+            <Container>
              <Row >
                     <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
                        
@@ -22,7 +23,7 @@ export default function Section1() {
                     </Col>
                 </Row>    
             <Row >
-                <Col className='bg-light mx-5 mb-5'>
+                <Col className='bg-light mx-5 mb-5' >
                 <Row style={{ height:'70%',alignItems: 'center'}} >
                     <h1 className='text-primary mt-3 ' > Paquete <span className='text-secondary bold ms-2'>1</span></h1> 
                     <ul className='lead mt-3 mx-3'>
@@ -84,6 +85,7 @@ export default function Section1() {
                  </Col>
             </Row>
 
-        </div>
+            </Container>
+            </div>
     )
 }
