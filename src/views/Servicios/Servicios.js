@@ -17,10 +17,11 @@ export default function Servicios() {
          
          <Section1></Section1>
          <Section5></Section5>
+         <ListaPrecios></ListaPrecios>  
          <Section2></Section2>
          
       
-        <ListaPrecios></ListaPrecios>  
+        
      
        
        
