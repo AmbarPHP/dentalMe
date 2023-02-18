@@ -10,7 +10,7 @@ export default function ListaPrecios() {
 
         {
           data && data.length > 0 && data.map((item) =>
-            <Col lg={4} key={item.id} className='bg-primary mx-auto  pt-5'>
+            <Col lg={3} key={item.id} className='bg-primary mx-5  px-5'>
               <h3 className='text-light bold '><span> {item.descripcion} </span></h3>
                 <img style={{height:260+"px", width:"auto"}} src={require('../../assets/img/productos/' + item.picture + '.png')} />
                 
