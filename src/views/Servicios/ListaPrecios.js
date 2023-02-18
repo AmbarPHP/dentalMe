@@ -1,52 +1,28 @@
 import { React, useEffect, useState } from 'react';
 import data from "./data.json";
-import thumb from "../../assets/img/dientes/diente1.png"
+import {Container, Row, Col} from "react-bootstrap"
 
 export default function ListaPrecios() {
-
-  // const getData=()=>{
-
-  //     fetch('./data.json'
-  //     ,{
-  //       headers : { 
-  //         'Content-Type': 'application/json',
-  //         'Accept': 'application/json'
-  //        }
-  //     }
-  //     )
-  //       .then(function(response){
-  //         console.log("respuesta :",response)
-  //         return data=response.json();
-  //       })
-  //       .then(function(myJson) {
-  //         console.log(myJson);
-  //       });
-  //   }
-  //   useEffect(()=>{
-  //     getData()
-  //   },[])
-  console.log("data:", data);
-
   return (
-    <div className="d-flex w-100 " >
-      <div className="row align-items-center mx-auto  ">
-        <h1 className='text-primary d-flex justify-content-center mt-5 mb-5'>Servicios </h1>
+    <div className="my-5 " >
+      <Row className="d-flex justify-content-center align-items-start mx-auto bg-light ">
+        <h1 className='text-primary d-flex justify-content-center font-3rem bold my-5 '>Otro Servicios </h1>
 
         {
           data && data.length > 0 && data.map((item) =>
-            <div className='col-md-4 col-lg-4 mx-auto d-flex justify-content-center align-items-centerimage-background cover'>
-              <div className='d-flex flex-column'> 
-                <img src={thumb} styles="height:10px"/>
-                <h3><span> {item.descripcion} </span></h3>
-                <p>Los precios son validos hasta el 1 de septiembre</p>
-                <p>Incluye revision y tiene garantia </p>
-                <h2>${item.precio}</h2>
-              </div>
-            </div>
+            <Col lg={4} key={item.id} className='bg-primary mx-auto  pt-5'>
+              <h3 className='text-light bold '><span> {item.descripcion} </span></h3>
+                <img style={{height:260+"px", width:"auto"}} src={require('../../assets/img/productos/' + item.picture + '.png')} />
+                
+                <p className='text-light font-20'>Los precios son validos hasta el 1 de septiembre</p>
+                <p className='text-contrast font-20'>Incluye revision y tiene garantia </p>
+                <h2 className='text-light bold' >${item.precio}</h2>
+              
+            </Col>
 
           )
         }
-      </div>
+      </Row>
     </div>
   );
 }
