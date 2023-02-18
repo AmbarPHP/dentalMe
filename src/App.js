@@ -10,8 +10,8 @@ import Login from "./components/Login";
 import RegistrationForm from "./components/RegistrationForm";
 import Hero from "./views/Home/Hero";
 import TestimonialPage  from "./views/Testimonials/TestimonialPage";
-import Ubicanos from "./views/Ubicanos/Ubicanos";
 import AboutUsPage from "./views/Conocemos/AboutUsPage";
+import UbicanosPage from "./views/Ubicanos/UbicanosPage";
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
       <Route path="/home" element={<Home />}></Route>
       <Route path="/servicios" element={<ServicePage/>}></Route>
       <Route path="/about" element={<AboutUsPage/>}></Route>
-      <Route path="/ubicacion" element={<Ubicanos/>}></Route>
+      <Route path="/ubicacion" element={<UbicanosPage/>}></Route>
       <Route path="/testimoniales" element={<TestimonialPage/>}></Route>
     </Routes>
   </Router>

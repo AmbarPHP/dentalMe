@@ -9,15 +9,15 @@ import AboutUs from './AboutUs';
 export default function Ubicanos() {
   return (
     <div >
-      <Banner name="Ubicanos"></Banner>
-      <AboutUs></AboutUs>pinterest
+      
+      <AboutUs></AboutUs>
        <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
                     <h3 className="text-primary  bold mb-5"
                         style={{ fontSize: 3 + "rem" }} >Nos ubicamos aqui</h3>
                 </Col>
       <img src={mapa}/>
       
-      <Footer></Footer>
+    
     </div>
   )
 }
