@@ -10,7 +10,7 @@ import BarraSup from './components/BarraSup';
 import Login from "./components/Login";
 import RegistrationForm from "./components/RegistrationForm";
 import Hero from "./views/Home/Hero";
-import Testimonial from "./views/Testimonials/Testimonial";
+import TestimonialPage  from "./views/Testimonials/TestimonialPage";
 import Ubicanos from "./views/Ubicanos/Ubicanos";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
       <Route path="/servicios" element={<Servicios />}></Route>
       <Route path="/about" element={<Nosotros/>}></Route>
       <Route path="/ubicacion" element={<Ubicanos/>}></Route>
-      <Route path="/testimoniales" element={<Testimonial/>}></Route>
+      <Route path="/testimoniales" element={<TestimonialPage/>}></Route>
     </Routes>
   </Router>
 

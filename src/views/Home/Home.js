@@ -9,9 +9,10 @@ import Section5 from './Section5';
 import Section6 from './Section6';
 import Footer from '../../components/Footer';
 import Nosotros from '../Conocemos/Nosotros';
-import Testimonial from '../Testimonials/Testimonial';
+
 import Ubicanos from '../Ubicanos/Ubicanos';
 import "../Home/Home.scss";
+import Testimonial from '../Testimonials/Testimonial';
 
 export default function Home() {
   return (
