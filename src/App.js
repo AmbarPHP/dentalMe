@@ -3,7 +3,6 @@ import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import './App.scss';
 import ServicePage from './views/Servicios/ServicePage';
 import Footer from './components/Footer';
-import Nosotros from './views/Conocemos/Nosotros';
 import Home from './views/Home/Home';
 import Menu from "./components/Menu";
 import BarraSup from './components/BarraSup';
@@ -12,6 +11,7 @@ import RegistrationForm from "./components/RegistrationForm";
 import Hero from "./views/Home/Hero";
 import TestimonialPage  from "./views/Testimonials/TestimonialPage";
 import Ubicanos from "./views/Ubicanos/Ubicanos";
+import AboutUsPage from "./views/Conocemos/AboutUsPage";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
     <Route path="/" element={<Home />}></Route>
       <Route path="/home" element={<Home />}></Route>
       <Route path="/servicios" element={<ServicePage/>}></Route>
-      <Route path="/about" element={<Nosotros/>}></Route>
+      <Route path="/about" element={<AboutUsPage/>}></Route>
       <Route path="/ubicacion" element={<Ubicanos/>}></Route>
       <Route path="/testimoniales" element={<TestimonialPage/>}></Route>
     </Routes>

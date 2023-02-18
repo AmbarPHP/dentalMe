@@ -39,7 +39,7 @@ export default function Nosotros() {
     ]
     return (
         <div>
-            <Banner name="Nosotros"></Banner>
+          
             <Container className='content  mb-4 bg-light' >
                 {/* TODO poner los datos en un map y repetir por 4  */}
                 <Row >
@@ -88,7 +88,7 @@ export default function Nosotros() {
             </Container>
             {/* ==Contiene la informacion de los doctores , revisalo antes de borrarlo== */}
             {/* <Nosotros2/> */}
-            <Footer></Footer>
+        
         </div>
     )
 }
