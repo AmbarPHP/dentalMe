@@ -15,7 +15,7 @@ export default function Servicios() {
   return (
     <div>
          
-         <Banner name="Servicios"></Banner>
+         
          <Section1></Section1>
          <Section5></Section5>
          <Section2></Section2>
@@ -24,7 +24,7 @@ export default function Servicios() {
         {/*<Section4></Section4>
 
         */}
-           <Footer></Footer>
+          
     </div>
   );
 }

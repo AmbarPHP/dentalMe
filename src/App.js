@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import './App.scss';
-import Servicios from './views/Servicios/Servicios';
+import ServicePage from './views/Servicios/ServicePage';
 import Footer from './components/Footer';
 import Nosotros from './views/Conocemos/Nosotros';
 import Home from './views/Home/Home';
@@ -23,7 +23,7 @@ function App() {
     <Routes>
     <Route path="/" element={<Home />}></Route>
       <Route path="/home" element={<Home />}></Route>
-      <Route path="/servicios" element={<Servicios />}></Route>
+      <Route path="/servicios" element={<ServicePage/>}></Route>
       <Route path="/about" element={<Nosotros/>}></Route>
       <Route path="/ubicacion" element={<Ubicanos/>}></Route>
       <Route path="/testimoniales" element={<TestimonialPage/>}></Route>
