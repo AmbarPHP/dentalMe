@@ -33,9 +33,9 @@ export default function Testimonial() {
             <Row className="mt-5 mb-3">
 
                 {
-                    data.map((item) => {
+                    data.map((item, index) => {
                         return (
-                            <Col lg={6} sm={12} md={12} >
+                            <Col lg={6} sm={12} md={12} key={index} >
                                 <p className="font-italic text-gray-dark">
                                     <q className='font-20'>{item.testimonial}</q>
                                 </p>
