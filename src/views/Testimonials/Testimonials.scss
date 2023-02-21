@@ -1,8 +1,21 @@
-@import "custom";
-.rounded-circle{
-    width: 30px;
-    height: 30px ;
-    border-radius:25% ;
-    border-color:$contrast ;
-    border-style:"solid"
+@import "../../custom.scss";
+.row .round-circle{
+    width: 40%;
+    height: 40% ;
+    border-radius:50% ;
+    border-style:"solid";
+
 }
+
+
+
+.quote-classic {
+    background-color: aqua;
+    font-size: 24px;
+    line-height: 1.33333;
+}
+
+
+
+
+

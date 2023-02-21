@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-
+import "./Testimonials.scss";
 
 export default function Testimonial() {
     const data = [{
@@ -23,11 +23,11 @@ export default function Testimonial() {
         title: "Contador de Nissan"
     }]
     return (
-      
-        
+
+
         <Container className="container" style={{ height: "auto", fontSize: 20 + "px" }}>
-            
-            <Col className='d-flex justify-content-center align-items-center mt-5' lg={12} >
+
+            <Col className='d-flex justify-content-around align-items-end mt-5' lg={12} >
                 <h3 className="text-primary  bold mb-5 font-3rem"  >Testimoniales</h3>
             </Col>
             <Row className="mt-5 mb-3">
@@ -35,19 +35,27 @@ export default function Testimonial() {
                 {
                     data.map((item, index) => {
                         return (
-                            <Col lg={6} sm={12} md={12} key={index} >
-                                <p className="font-italic text-gray-dark">
-                                    <q className='font-20'>{item.testimonial}</q>
-                                </p>
+                            <Col lg={{ span: 3, offset: 1 }} sm={12} md={12} key={index} className='quote-clasic'>
 
-                                <hr className='text-contrast bold'/>
-                                <img
-                                    className="rounded-circle"
-                                    src={require('../../assets/img/Doctores/' + item.picture + '.png')} />
-                                <h5 className="quote-author text-capitalize font-weight-bold text-primary">
-                                    <cite className="text-normal">{item.by}</cite>
-                                </h5>
-                                <p className="quote-desc  text-gray font-italic">{item.title}</p>
+                                <Row >
+                                    <q className='font-italic text-gray '>{item.testimonial}</q>
+                                </Row>
+                                <Row className='d-flex align-items-stretch'>
+
+                                    <img
+                                        className="round-circle"
+                                        src={require('../../assets/img/Doctores/' + item.picture + '.png')} />
+
+                                    <div className='"quote-meta unit flex-row unit-spacing-sm align-items-center">'>
+                                        <h5 className="quote-author text-capitalize font-weight-bold text-primary">
+                                            <cite className="text-normal">{item.by}</cite>
+                                        </h5>
+                                    </div>
+                                    <p className="quote-desc  text-gray font-italic">{item.title}</p>
+                                </Row>
+
+
+
                             </Col>
                         )
                     })
@@ -56,8 +64,8 @@ export default function Testimonial() {
 
             </Row>
         </Container>
-        
-      
+
+
 
     )
 }
