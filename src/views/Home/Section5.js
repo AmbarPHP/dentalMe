@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import Resina from "../../assets/img/carrusel/carrusel4.png"
 export default function Section5() {
     return (
-        <div name="section5-home" className='d-flex  container-fluid  '>
+        <Container name="section5-home" className='d-flex  container-fluid  '>
             <Row className="justify-content-lg-left  hero-container gb-primary-img-resina3">
                 <div className="overlay h-100" >
                     <Col md={{ span: 5, offset: 1 }} style={{ paddingTop: 10 + 'rem' }} sm={12} >
@@ -19,6 +19,6 @@ export default function Section5() {
 
                 </div>
             </Row>
-        </div>
+        </Container>
     )
 }
