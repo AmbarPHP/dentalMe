@@ -69,7 +69,7 @@ export default function Nosotros() {
                                             </h5>
                                             <div className=' text-light font-1rem' >{item.title}</div>
                                             <div >
-                                                <span className=' text-secondary font-1rem text-regular' >{item.description}</span>
+                                                <span className=' text-light font-1rem text-regular' >{item.description}</span>
                                             </div>
 
                                         </Row>
