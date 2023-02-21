@@ -2,11 +2,11 @@ import React from 'react'
 
 import {Container, Row, Col} from 'react-bootstrap';
 
-
+//TODO: borrar, siempre no me gusto
 
 export default function AboutUs() {
   return (
-    <Container className="section">
+    <div className="section">
     <Row>
 				  <Col className="col-md-6  px-4">
 					
@@ -53,7 +53,7 @@ export default function AboutUs() {
 					  
 				  </Col>
 		</Row>
-  </Container>
+  </div>
 
   )
 }
