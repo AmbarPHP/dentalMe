@@ -6,17 +6,32 @@ export default function Section4() {
     const data = [{
         title_banner: "AboutUs",
         description:"We hire the best specialists to deliver top-notch diagnostic services for you.",
-        picture: "carrusel4",
+        picture: "servicios1",
     },
     {
         title_banner: "Equipo Moderno",
         description:"We use the first-class medical equipment for timely diagnostics of various diseases.",
-        picture: "carrusel2",
+        picture: "servicios2",
     },
     {
         title_banner: "Servicio de Emergencias",
         description: "Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.",
-        picture: "carrusel3",
+        picture: "servicios3",
+    },
+    {
+        title_banner: "AboutUs",
+        description:"We hire the best specialists to deliver top-notch diagnostic services for you.",
+        picture: "servicios4",
+    },
+    {
+        title_banner: "Equipo Moderno",
+        description:"We use the first-class medical equipment for timely diagnostics of various diseases.",
+        picture: "servicios5",
+    },
+    {
+        title_banner: "Servicio de Emergencias",
+        description: "Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.",
+        picture: "servicios6",
     }
 ];
 
@@ -40,7 +55,7 @@ export default function Section4() {
                                         <img
                                     className="rounded-pill"
                                     style={{ maxWidth: 100 + "%", height: "auto" }}
-                                    src={require('../../assets/img/carrusel/' + item.picture + '.png')} />
+                                    src={require('../../assets/img/servicios/' + item.picture + '.png')} />
                                     </Row>
                                     <Row>
                                         <h4 className="bold text-primary mt-5">{item.title_banner}</h4>
