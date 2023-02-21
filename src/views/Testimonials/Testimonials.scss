@@ -1,0 +1,8 @@
+@import "custom";
+.rounded-circle{
+    width: 30px;
+    height: 30px ;
+    border-radius:25% ;
+    border-color:$contrast ;
+    border-style:"solid"
+}
