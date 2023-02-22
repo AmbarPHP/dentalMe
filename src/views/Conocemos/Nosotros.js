@@ -53,7 +53,7 @@ export default function Nosotros() {
                         datos.map((item, index) => {
                             return (
 
-                                <Col lg={3} sm={6} className="pe-5">
+                                <Col lg={3} sm={6} key={index} className="pe-5">
                                     <div style={{ backgroundColor: "#cc5", height: "auto", padding: "1px", zIndex: "999" }}>
                                         <Row className="mt-5">
 
