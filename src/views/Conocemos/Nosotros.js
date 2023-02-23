@@ -54,7 +54,7 @@ export default function Nosotros() {
                             return (
 
                                 <Col lg={3} sm={6} key={index} className="pe-5">
-                                    <div style={{ backgroundColor: "#cc5", height: "auto", padding: "1px", zIndex: "999" }}>
+                                    <div className='picture-border'>
                                         <Row className="mt-5">
 
                                             <img
