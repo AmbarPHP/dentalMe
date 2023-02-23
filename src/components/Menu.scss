@@ -5,15 +5,37 @@
     top:0px;
     transition: .3s ease-in-out;
     overflow: hidden;
-    background-color: #c02323;
+    background-image: -webkit-gradient(linear,left bottom,right top,from($secondary),to($secondary-light));
+    background-image: linear-gradient(to right top,$primary,$secondary);
+   
+    a:hover{
+     
     
+        transform: translateY(0);
+        transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+        background-color: $contrast;// #c02323;
+        text-transform: capitalize;
+        border-radius: 100px;
+        color: $secondary;
+    }     
 }
+
 .fixed-before{
     position: fixed;
     top:80px;
     transition: .3s ease-in-out;
     overflow: hidden;
     background-color:$secondary; //#233dc0;
+    a:hover{
+     
+    
+        transform: translateY(0);
+        transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+        background-color: $contrast;// #c02323;
+        text-transform: capitalize;
+        border-radius: 100px;
+        color: $secondary;
+    }   
    
 }
 
