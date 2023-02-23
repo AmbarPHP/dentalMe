@@ -4,23 +4,23 @@ import "./Testimonials.scss";
 
 export default function Testimonial() {
     const data = [{
-        testimonial: "Yo quisera agradecerle al personal de la Dra ,incluyendo al laboratorista, por facilitar mi cirugia el dia 9 de Enero",
+        testimonial: "Yo quisera agradecerle al personal de la Dra, incluyendo al laboratorista, por facilitar mi cirugia el dia 9 de Enero.",
         by: "Martha Solana",
         picture: "doc3",
-        title: "Profesor de la universidad UAN"
+        title: "Paciente"
     },
     {
-        testimonial: "Yo admiro su dedicacion,su trabajo es inpecable dia  12 de Enero",
+        testimonial: "Yo admiro su dedicacion, su trabajo es inpecable, publicado el dia  12 de Enero.",
         by: "Bryan Bunch",
         picture: "doc1",
         title: "Paciente"
     }
         ,
     {
-        testimonial: "Me gusta mucho su trabajo, son muy profesionales",
+        testimonial: "Me gusta mucho su trabajo, son muy profesionales.",
         by: "Issac Levi",
         picture: "doc2",
-        title: "Contador de Nissan"
+        title: "Paciente"
     }]
     return (
 
@@ -35,23 +35,28 @@ export default function Testimonial() {
                 {
                     data.map((item, index) => {
                         return (
-                            <Col lg={{ span: 3, offset: 1 }} sm={12} md={12} key={index} className='quote-clasic'>
+                            <Col lg={{ span: 3, offset: 1}} sm={12} md={12} key={index} className='quote-clasic'>
 
                                 <Row >
-                                    <q className='font-italic text-gray '>{item.testimonial}</q>
+                                    <q className='font-20 text-gray '>{item.testimonial}</q>
                                 </Row>
                                 <Row className='d-flex align-items-stretch'>
-
+                                    <Col className='my-5'>
                                     <img
                                         className="round-circle"
                                         src={require('../../assets/img/Doctores/' + item.picture + '.png')} />
-
+                                    </Col>
+                                    
+                                    <Col className='my-5'>
                                     <div className='"quote-meta unit flex-row unit-spacing-sm align-items-center">'>
                                         <h5 className="quote-author text-capitalize font-weight-bold text-primary">
-                                            <cite className="text-normal">{item.by}</cite>
+                                            <cite className="font-20 bold">{item.by}</cite>
                                         </h5>
                                     </div>
                                     <p className="quote-desc  text-gray font-italic">{item.title}</p>
+                                    </Col>
+
+                                    
                                 </Row>
 
 
