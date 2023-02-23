@@ -7,7 +7,9 @@ export default function Banner({name}) {
   return (
     <div className='overlay-blue  h-100'>
         <div className='gb-primary-img-servicios ' >          
-            <Row className="pt-5 pb-5">
+            <Row className="py-5">
+              {/* haciendo mas espacio en el bg
+              <div style={{height:100+"px"}}></div> */}
             <Menu></Menu>
             </Row>
             <Row className="mb-5 mt-5 d-flex justify-content-center  flex-row" >
