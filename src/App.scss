@@ -1,7 +1,7 @@
 
 @import "custom";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 body {
   font-family: "Montserrat";
@@ -58,7 +58,7 @@ height: 50vh;
 
 
 
-//-------------------------
+//-------------FONTS SIZES------------
 
 .text-big-18 {
   font-family: "Montserrat";
@@ -77,34 +77,6 @@ height: 50vh;
 }
 .font-3rem{
   font-size: 3rem;
-}
-
-// 1 colores y formatos  para los textos
-.text-center {
-  text-align: center !important
-}
-
-.text-secondary {
-  color: $secondary !important;
-}
-.text-light {
-  color: #f1f4f8 !important
-}
-.text-dark {
-  color: #2b354f !important
-}
-.text-gray{
-  color:$gray;
-}
-.text-primary {
-  color:$primary!important
-}
-
-.text-info {
-  color:$info !important
-}
-.text-contrast{
-  color: $contrast;
 }
 
 .font-md {
@@ -126,6 +98,35 @@ height: 50vh;
   font-size: 1rem;
   font-weight: 400;
 }
+
+
+// 1 colores y formatos  para los textos
+.text-center {
+  text-align: center !important
+}
+//-------------FONT COLOR------------
+.text-secondary {
+  color: $secondary !important;
+}
+.text-light {
+  color: #f1f4f8 !important
+}
+.text-dark {
+  color: #2b354f !important
+}
+.text-gray{
+  color:$gray;
+}
+.text-primary {
+  color:$primary!important
+}
+.text-info {
+  color:$info !important
+}
+.text-contrast{
+  color: $contrast;
+}
+
 
 //2 backgrounds colors
 
