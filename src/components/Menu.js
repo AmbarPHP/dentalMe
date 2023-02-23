@@ -11,40 +11,32 @@ import "./Menu.scss";
 
 
 export default function Menu() {
-      const stickyRef = useRef(null);
+   
      const [sticky, setSticky]=useState(false);
-     const [offset, setOffset]=useState(0);
-     const [variant, setVariant]=useState('');
+
 
       useEffect(() => {
         const handleScroll = () => {
             
-            const altura_hero=480;
+            const altura_hero=380;
             if(window.scrollY > altura_hero){
                         setSticky(true);
-                        console.log("true",window.scrollY)
-                        setOffset(window.scrollY);
-                        setVariant(`position:'fixed ',top:${offset}`);
-                        console.log("variant", variant);
+                      
                     }
                     else {
                         setSticky(false);
-                        console.log("false",window.scrollY)
+                        
                     }
 
         };
         window.addEventListener('scroll', handleScroll);
   
-      }, [setSticky,offset]);
+      }, [setSticky]);
 
       
 
     return (
-        // 
-        //className={`${sticky && 'fixed'}`} //"" menu-container
-        //style={{position:'fixed ',top:80}}
-        //style={{position:'fixed ',top:80}} 
-        //5:44 style={{variant}} 
+
             <Navbar  expand="lg"   className={`${sticky ?' fixed1 ':'fixed-before'}`} style={{position:'fixed '}}  >
                
                     
