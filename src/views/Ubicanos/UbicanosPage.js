@@ -11,6 +11,7 @@ export default function UbicanosPage() {
   return (
     <div >
       <Banner name="Ubicanos"></Banner>
+      <AboutUs></AboutUs>
       <Ubicanos/>
       
       <Footer></Footer>
