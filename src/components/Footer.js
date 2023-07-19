@@ -14,7 +14,7 @@ const Footer = () => {
                     <h5 className="bold d-flex justify-content-start mb-0 mt-5">Horarios</h5>
                     <hr />
                     <Row>
-                        <div className="d-flex justify-content-start mx-5" >
+                        <div className="d-flex flex-column justify-content-start " >
                             <p>
                                 Lunes a Viernes 9 a 2 PM y 4 a 8 PM
                             </p>
@@ -30,19 +30,20 @@ const Footer = () => {
 
 
                 </div>
-                <div className='col-lg-4'>
+                <Col lg={{ span: 4, offset: 0 }} className="p-0">
                     <h5 className="bold d-flex justify-content-start mb-0 mt-5">Dirección:</h5>
                     <hr />
 
-                    <div className='row'>
+                    <Row>
 
-                        <Col lg={{ span: 1, offset: 0 }} className="p-0">
+                        {/* <Col lg={{ span: 4, offset: 0 }} className="p-0">
                             <span> <a href="https://www.facebook.com/HealthSmileCenter/"
                                 className="  icon-circle text-primary">
                                 <FaMapMarkerAlt className='icon-whatsap' />
                             </a></span>
-                        </Col>
-                        <Col lg={{ span: 11, offset: 0 }} className="d-flex justify-content-start my-0">
+                        </Col> */}
+                        <Col lg={{ span: 11, offset: 0 }}
+                            className="d-flex flex-column justify-content-start my-0">
 
                             <p >
                                 Plaza Manglar, Int. 2
@@ -54,16 +55,16 @@ const Footer = () => {
                                 Los Fresnos Oriente, 63190 Tepic, Nay.
                             </p>
                         </Col>
-                    </div>
+                    </Row>
 
 
 
 
 
-                </div>
+                </Col>
 
                 <div className="col-lg-4">
-                    <h5 className="bold d-flex justify-content-start mb-0 mt-5">Citas:</h5>
+                    <h5 className="bold d-flex justify-content-start mb-0 mt-5">Redes sociales:</h5>
 
                     <hr />
 
@@ -85,6 +86,10 @@ const Footer = () => {
                         <a href="https://www.facebook.com/HealthSmileCenter/"
                             className=" icon-circle  text-primary">
                             <FaInstagram className='icon-style' />
+                        </a>
+                        <a href="https://www.facebook.com/HealthSmileCenter/"
+                            className=" icon-circle  text-primary">
+                            <FaYoutube className='icon-style' />
                         </a>
 
                     </div>
