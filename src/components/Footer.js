@@ -16,19 +16,19 @@ const Footer = () => {
                     <hr />
                     <div className='row'>
                         <div d-flex justify-content-start mx-5 >
-                        <p>
-                        Lunes a Viernes 9 a 2 PM y 4 a 8 PM
-                    </p>
-                    <p>
-                        Sábados 9 a 2 PM y 4 a 8 PM
-                    </p>
-                    <p>
-                        Domingo Cerrado
-                    </p>
+                            <p>
+                                Lunes a Viernes 9 a 2 PM y 4 a 8 PM
+                            </p>
+                            <p>
+                                Sábados 9 a 2 PM y 4 a 8 PM
+                            </p>
+                            <p>
+                                Domingo Cerrado
+                            </p>
                         </div>
 
                     </div>
-                  
+
 
                 </div>
                 <div className='col-lg-4'>
@@ -36,15 +36,15 @@ const Footer = () => {
                     <hr />
 
                     <div className='row'>
-                    
-                        <Col lg={{span:1, offset:0}} className="p-0">
-                        <span> <a href="https://www.facebook.com/HealthSmileCenter/"
+
+                        <Col lg={{ span: 1, offset: 0 }} className="p-0">
+                            <span> <a href="https://www.facebook.com/HealthSmileCenter/"
                                 className="  icon-circle text-primary">
                                 <FaMapMarkerAlt className='icon-whatsap' />
                             </a></span>
                         </Col>
-                        <Col  lg={{span:11, offset:0}} classname="d-flex justify-content-start my-0">
-                            
+                        <Col lg={{ span: 11, offset: 0 }} className="d-flex justify-content-start my-0">
+
                             <p >
                                 Plaza Manglar, Int. 2
                             </p>
@@ -102,7 +102,7 @@ const Footer = () => {
 
                 </div>
 
-                 {/* <div className="col-lg-1">
+                {/* <div className="col-lg-1">
                         <h5 className="bold d-flex justify-content-center mb-0 mt-5">Clinica</h5>
                         <h5 className="d-flex justify-content-center mb-0 mt-5">Dental& healt</h5>
                            
