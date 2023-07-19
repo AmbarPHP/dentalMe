@@ -5,10 +5,11 @@ import Menu from "../../components/Menu";
 import BarraSup from "../../components/BarraSup";
 
 export default function Hero() {
+  /* Muestra el menu y la barra superior */
   return (
     <div className='overlay-blue  h-100'>
       <div className='gb-primary-img-resina2 ' >
-        <Row className="">
+        <Row className="" >
 
           <BarraSup></BarraSup>
           <Menu></Menu>
@@ -17,8 +18,6 @@ export default function Hero() {
         <Row className=" d-lg-flex align-middle mt-5 mb-5 mx-0  h-100">
 
           <Col md={{ span: 5, offset: 1 }} className="mt-5" sm={12} >
-
-
             <h1 className='text-secondary ms-auto mx-auto mb-0 bold font-3rem'  >
               Health & Smile </h1>
             <span className='text-secondary font-2rem' >Dental Center</span>
