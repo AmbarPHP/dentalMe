@@ -1,11 +1,11 @@
-import {React, useEffect, useRef,useState }from "react";
+import { React, useEffect, useRef, useState } from "react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
 // react-bootstrap components
 
 
 function Maps() {
-    
+
   // const mapRef = useRef(null);
   // const [map, setMap] = useState();
 
@@ -34,7 +34,7 @@ function Maps() {
   //   });
 
   //   const contentString =
-  //     '<div class="info-window-content"><h2>Light Bootstrap Dashboard PRO React</h2>' +
+  //     '<div className"info-window-content"><h2>Light Bootstrap Dashboard PRO React</h2>' +
   //     "<p>A premium Admin for React-Bootstrap, Bootstrap, React, and React Hooks.</p></div>";
 
   //   const infowindow = new google.maps.InfoWindow({
@@ -46,11 +46,11 @@ function Maps() {
   //   });
   // }, []);
   // return (
-  
+
   //     <div className="map-container">
   //       <div id="map" ref={mapRef}></div>
   //     </div>
-   
+
   // );
 }
 
