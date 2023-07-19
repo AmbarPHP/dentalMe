@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import Resina from "../../assets/img/carrusel/carrusel4.png"
+import { Row, Col, Button } from 'react-bootstrap';
+// import Resina from "../../assets/img/carrusel/carrusel4.png"
 export default function Section5() {
     return (
         <div name="section5-home" className='d-flex  container-fluid  '>
@@ -12,13 +12,13 @@ export default function Section5() {
                         <h4 className=" text-white">Le ofrecemos el mas amplio rango de diagnostico,desde Rayos X hasta PruebasX.</h4>
 
                         <Button variant="light" className='mt-3'>
-                            <a class="btn btn-ellipse btn-white offset-top-30"
+                            <a className="btn btn-ellipse btn-white offset-top-30"
                                 href="/opoitment">Diagnosticos Gratis</a>
                         </Button>
                     </Col>
 
                 </div>
-            </Row>
-        </div>
+            </Row >
+        </div >
     )
 }
