@@ -9,13 +9,12 @@ const Footer = () => {
     return (
         <div name="div_container_footer" className=" bg-primary pt-3" style={{ height: 300 + "px", fontSize: 20 + "px" }}>
 
-
             <Row className=" gb-light gap-y pt-0 mx-5 text-light ">
                 <div className="col-lg-4">
                     <h5 className="bold d-flex justify-content-start mb-0 mt-5">Horarios</h5>
                     <hr />
-                    <div className='row'>
-                        <div d-flex justify-content-start mx-5 >
+                    <Row>
+                        <div className="d-flex justify-content-start mx-5" >
                             <p>
                                 Lunes a Viernes 9 a 2 PM y 4 a 8 PM
                             </p>
@@ -27,7 +26,7 @@ const Footer = () => {
                             </p>
                         </div>
 
-                    </div>
+                    </Row>
 
 
                 </div>
@@ -73,16 +72,19 @@ const Footer = () => {
 
                         <a href="https://www.facebook.com/HealthSmileCenter/"
                             className="me-4  icon-circle text-primary">
-                            <FaFacebook className='icon-whatsap' />
+                            <FaFacebook className='icon-style' />
                         </a>
-                        <a href="#" className="me-4 icon-circle  text-primary">
-                            <FaTwitter className='icon-whatsap' />
+                        <a href="https://www.facebook.com/HealthSmileCenter/"
+                            className="me-4 icon-circle  text-primary">
+                            <FaTwitter className='icon-style' />
                         </a>
-                        <a href="#" className="me-4 icon-circle  text-primary">
-                            <FaWhatsapp className='icon-whatsap' />
+                        <a href="https://www.facebook.com/HealthSmileCenter/"
+                            className="me-4 icon-circle  text-primary">
+                            <FaWhatsapp className='icon-style' />
                         </a>
-                        <a href="#" className=" icon-circle  text-primary">
-                            <FaInstagram className='icon-whatsap' />
+                        <a href="https://www.facebook.com/HealthSmileCenter/"
+                            className=" icon-circle  text-primary">
+                            <FaInstagram className='icon-style' />
                         </a>
 
                     </div>
@@ -112,13 +114,13 @@ const Footer = () => {
                                 
                             
                 </div>  */}
-            </Row>
+            </Row >
 
 
 
 
 
-        </div>
+        </div >
 
     );
 };
