@@ -17,7 +17,9 @@ import Testimonial from '../Testimonials/Testimonial';
 export default function Home() {
   return (
     <div>
+      {/* es la imagen principal la que llama la atencion */}
       <Hero></Hero>
+      {/* aqui las secciones seran los componentes en la carpeta home */}
       {/* <Section2></Section2> */}
       {/* ==========Paquetes==================== */}
       <Section1></Section1>
@@ -28,7 +30,7 @@ export default function Home() {
 
       {/* ===========Nosotros=========================*/}
       <Nosotros></Nosotros>
- {/* ==========Dignosticos rapidos==================== */}
+      {/* ==========Dignosticos rapidos==================== */}
       <Section5></Section5>
       <Testimonial></Testimonial>
       <Ubicanos></Ubicanos>
