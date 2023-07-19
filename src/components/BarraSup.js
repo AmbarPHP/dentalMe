@@ -10,7 +10,7 @@ export default function BarraSup() {
 
 
   return (
-    <div className="sup-area">
+    <div name="div_container_barra_sup" className="sup-area">
       <Row className='desktop w-100 ' style={{ display: 'inline-style' }}>
         <Col lg={{ span: 1, offset: 1 }} >
           <img src={logo} alt={"logo"} className="logo" /> <span className='text-primary'> Health&Smile</span>

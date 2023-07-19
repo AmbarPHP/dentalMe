@@ -1,16 +1,16 @@
 import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 export default function Section4() {
     const data = [{
         title_banner: "AboutUs",
-        description:"We hire the best specialists to deliver top-notch diagnostic services for you.",
+        description: "We hire the best specialists to deliver top-notch diagnostic services for you.",
         picture: "servicios1",
     },
     {
         title_banner: "Equipo Moderno",
-        description:"We use the first-class medical equipment for timely diagnostics of various diseases.",
+        description: "We use the first-class medical equipment for timely diagnostics of various diseases.",
         picture: "servicios2",
     },
     {
@@ -20,12 +20,12 @@ export default function Section4() {
     },
     {
         title_banner: "AboutUs",
-        description:"We hire the best specialists to deliver top-notch diagnostic services for you.",
+        description: "We hire the best specialists to deliver top-notch diagnostic services for you.",
         picture: "servicios4",
     },
     {
         title_banner: "Equipo Moderno",
-        description:"We use the first-class medical equipment for timely diagnostics of various diseases.",
+        description: "We use the first-class medical equipment for timely diagnostics of various diseases.",
         picture: "servicios5",
     },
     {
@@ -33,7 +33,7 @@ export default function Section4() {
         description: "Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.",
         picture: "servicios6",
     }
-];
+    ];
 
 
     return (
@@ -49,22 +49,23 @@ export default function Section4() {
                 {
                     data.map((item, index) => {
                         return (
-                       
-                                <Col md={6} lg={4} key={index}>
-                                    <Row >
-                                        <img
-                                    className="rounded-pill"
-                                    style={{ maxWidth: 100 + "%", height: "auto" }}
-                                    src={require('../../assets/img/servicios/' + item.picture + '.png')} />
-                                    </Row>
-                                    <Row>
-                                        <h4 className="bold text-primary mt-5">{item.title_banner}</h4>
-                                        <p>{item.description}</p>
-                                    </Row>
 
-                                </Col>
-                            
-                           
+                            <Col md={6} lg={4} key={index}>
+                                <Row >
+                                    <img
+                                        alt="rounded_pill"
+                                        className="rounded-pill"
+                                        style={{ maxWidth: 100 + "%", height: "auto" }}
+                                        src={require('../../assets/img/servicios/' + item.picture + '.png')} />
+                                </Row>
+                                <Row>
+                                    <h4 className="bold text-primary mt-5">{item.title_banner}</h4>
+                                    <p>{item.description}</p>
+                                </Row>
+
+                            </Col>
+
+
                         )
                     })
                 }
