@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaWhatsapp, FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
-import { BiMap, BiPhoneCall } from "react-icons/bi";
+// import { BiMap, BiPhoneCall } from "react-icons/bi";
 import { Row, Col } from 'react-bootstrap';
 import logo from "../assets/img/logo.png";
 import "./BarraSup.scss";
@@ -26,7 +26,7 @@ export default function BarraSup() {
         </Col>
         <Col lg={{ span: 3, offset: 0 }} className="pb-3 pt-3" >
           <div className='columna-doble d-flex justify-content-center align-items-center'>
-            <a href="" style={{ fontSize: 38 + "px" }} className="me-4 text-primary bold">
+            <a href="http://localhost/" style={{ fontSize: 38 + "px" }} className="me-4 text-primary bold">
               <FaMapMarkerAlt />
             </a>
             <span className='bold text-primary pe-2'> Av. de la Cultura #94 Int.2 en Plaza Manglar </span>
