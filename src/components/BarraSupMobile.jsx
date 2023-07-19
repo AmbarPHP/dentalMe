@@ -1,31 +1,35 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import logo from "../assets/img/logo.png";
 import "./BarraSup.scss";
 
 export default function BarraSupMobile() {
     return (
-        <div name="div_container_mobile_barra_sup" className="sup-area" index="999" >
-            <Row className='mobile' style={{ backgroundColor: 'red', fontSize: "18px", display: "block" }}>
-                <Col md={12} className="pb-3 pt-3" >
-                    <div className='columna-doble d-flex justify-content-start ms-2 align-items-center'>
-                        <a href="https://www.facebook.com/HealthSmileCenter/" style={{ fontSize: 38 + "px" }}
-                            className="me-4 text-light bold ">
-                            <FaWhatsapp />
-                        </a>
-                        <span className=' text-light'> 311 269 7923</span>
-                    </div>
-                </Col>
-                <Col md={12} sm={12} className="pb-3 pt-3" >
-                    <div className='columna-doble d-flex justify-content-start ms-2 align-items-center'>
-                        <a href="https://www.facebook.com/HealthSmileCenter/" style={{ fontSize: 38 + "px" }} className="me-4 text-light bold">
-                            <FaMapMarkerAlt />
-                        </a>
-                        <span className='bold text-light pe-3'> Av. de la Cultura #94 Int.2 en Plaza Manglar </span>
-                    </div>
-                </Col>
+        <Container name="div_container_mobile_barra_sup"  >
+            <Row style={{ fontSize: "18px", zIndex: "1" }}>
+                <div className=' d-flex justify-content-center ms-2 align-items-center'>
+                    <a href="https://www.facebook.com/HealthSmileCenter/"
+                        style={{ fontSize: "38px" }}
+                        className="me-4 text-primary ">
+                        <FaWhatsapp />
+                    </a>
+                    <span className='text-primary'> 311 269 7923</span>
+                </div>
+
             </Row>
-        </div>
+            <Row>
+
+                <div className='d-flex justify-content-start ms-2 align-items-center'>
+                    <a href="https://www.facebook.com/HealthSmileCenter/"
+                        style={{ fontSize: "38px" }}
+                        className="me-4 text-primary ">
+                        <FaMapMarkerAlt />
+                    </a>
+                    <span className='text-primary pe-3'> Av. de la Cultura #94 Int.2 en Plaza Manglar </span>
+                </div>
+
+            </Row>
+        </Container >
     );
 }
