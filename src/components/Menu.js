@@ -33,12 +33,12 @@ export default function Menu() {
 
     return (
         // SE DESPLAZA CUANDO EL SCRIOLL AVANZA 380, POR ESO TIENE EL EVENT LISTENER
-        <Navbar expand="lg" className={`${sticky ? 'position_initial' : 'position_fixed'} mt-0 mb-2  `}
+        <Navbar expand="lg" className={`menu-container  ${sticky ? 'position_initial' : 'position_fixed'} mt-0 mb-2  `}
             style={{ position: 'fixed ', maxWidth: "100%" }}  >
 
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <p>DENTAL CLINIC</p>
+            <p className='text-white'>Clínica Dental</p>
             <Navbar.Collapse id="basic-navbar-nav" className='margin-20'  >
                 <Nav className='font-20 p-4' >
                     <Nav.Link href="/home" className='text-light text-uppercase'>Inicio</Nav.Link>

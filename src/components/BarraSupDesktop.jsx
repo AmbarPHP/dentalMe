@@ -14,10 +14,10 @@ export default function BarraSupDesktop() {
                 </Col>
                 <Col lg={{ span: 2, offset: 1 }} className="pb-3 pt-3" >
                     <div className='columna-doble d-flex justify-content-center align-items-center'>
-                        <a href="http://locahost:3000/" className="me-4 text-primary bold ">
+                        <a href="http://locahost:3000/" style={{ fontSize: 38 + "px" }} className="me-4 text-primary bold ">
                             <FaWhatsapp />
                         </a>
-                        <span className='text-primary'> 311 269 7923</span>
+                        <span className='bold text-primary'> 311 269 7923</span>
                     </div>
                 </Col>
                 <Col lg={{ span: 3, offset: 0 }} className="pb-3 pt-3" >
