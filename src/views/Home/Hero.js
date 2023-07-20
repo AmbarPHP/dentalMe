@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <div className='overlay-blue  h-100'>
       <div className='gb-primary-img-resina2 ' >
-        <Row className="" >
+        <Row  >
 
           <BarraSup></BarraSup>
           <Menu></Menu>
@@ -27,12 +27,7 @@ export default function Hero() {
                 href="make-an-appointment.html">
                 <span className='me-2'>Citas: </span>311 269 79 23</a>
             </Button>
-
-
-
           </Col>
-
-
         </Row>
 
       </div>
