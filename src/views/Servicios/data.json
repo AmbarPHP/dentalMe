@@ -2,6 +2,6 @@
     [
         { "id" :3,"descripcion":"Implantacion Oral+coronal de metal-ceramica","precio":5300.60 ,"picture": "product3"},
         { "id" :1,"descripcion":"Corona de zirconio","precio":2300.40, "picture": "product1" },
-        { "id" :2,"descripcion":"Endodoncia","precio":3300.30 ,"picture": "product2"}
+        { "id" :2,"descripcion":"Endodoncia","precio":1300.30 ,"picture": "product2"}
         
     ]
