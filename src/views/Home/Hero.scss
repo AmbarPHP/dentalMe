@@ -11,8 +11,8 @@ p,h1,h2,h3,h4,h5 {
 }
 
 .overlay-blue {
-    //background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1));
-    background-color: rgba(29, 16, 96, 0.2);
+    /* background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1)); */
+    background-color:#fff;
     z-index: 10;
     height: 10vh;
 }
@@ -23,14 +23,19 @@ p,h1,h2,h3,h4,h5 {
 }
 
 .btn_round{
+    position: absolute;
+    left: 680px;
+    top:480px;
     border-radius: 23px;
-    width: 350px;
+    width: 300px;
     text-decoration: none;
     background-color: aliceblue;
+    margin :100px 100px;
     padding: 10px 10px;
     border-style: none;
     a{
         font-style: none;
+
     }
     }
 

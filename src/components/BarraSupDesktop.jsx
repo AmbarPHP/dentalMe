@@ -4,17 +4,17 @@ import { Row, Col } from 'react-bootstrap';
 import logo from "../assets/img/logo.png";
 import "./BarraSup.scss";
 
-export default function BarraSupDesktop() {
+export default function     BarraSupDesktop() {
     return (
         <div name="div_container_desk_barra_sup" className="sup-area" index="999" >
             <Row className='desktop w-100 ' >
                 <Col lg={{ span: 1, offset: 1 }} >
-                    <img src={logo} alt={"logo"} className="logo" />
+                    <img src={logo} alt={"logo"} style={{ height:"6rem"}} className="logo" />
                     <span className='text-primary'> Health&Smile</span>
                 </Col>
                 <Col lg={{ span: 2, offset: 1 }} className="pb-3 pt-3" >
                     <div className='columna-doble d-flex justify-content-center align-items-center'>
-                        <a href="http://locahost:3000/" style={{ fontSize: 38 + "px" }} className="me-4 text-primary bold ">
+                        <a href="http://locahost:3000/" style={{ fontSize: 38 + "px" }} className="me-4 text-primary ">
                             <FaWhatsapp />
                         </a>
                         <span className='bold text-primary'> 311 269 7923</span>
