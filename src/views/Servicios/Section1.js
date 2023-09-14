@@ -68,53 +68,57 @@ export default function Section1() {
         </Col>
       </Row>
       <div className="d-flex justify-content-around">
-        <Col
-          className="  bg-light px-5  mx-3 mb-5"
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-        >
-          <PackageCard
-            packageName="Paquete"
-            price={950}
-            items={["Consulta", "Radiografía", "Limpieza"]}
-            color="light"
-            number={"1"}
-          />
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={6} className="bg-primary mx-3 mb-5">
-          <PackageCard
-            packageName="Paquete"
-            price={3600}
-            items={["Blanqueamiento", "Limpieza", "Pulido de dientes"]}
-            color="primary"
-            number={"2"}
-          />
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={6} className="bg-light mx-3 mb-5">
-          <PackageCard
-            packageName="Paquete"
-            price={600}
-            items={["Limpieza", "Pulido de dientes", "Aplicación de fluor"]}
-            color="light"
-            number={"3"}
-          />
-        </Col>
-        <Col xs={12} sm={12} md={6} lg={6} className="bg-primary  mx-3 mb-5 ">
-          <PackageCard
-            packageName="Paquete"
-            price={600}
-            items={[
-              "Consulta",
-              "Valoración",
-              "Camara intra-oral",
-              "Radiografía",
-            ]}
-            color="primary"
-            number={"4"}
-          />
-        </Col>
+        <Row>
+          <Col
+            className="  bg-light px-5  mx-3 mb-5"
+            xs={12}
+            sm={12}
+            md={6}
+            lg={6}
+          >
+            <PackageCard
+              packageName="Paquete"
+              price={950}
+              items={["Consulta", "Radiografía", "Limpieza"]}
+              color="light"
+              number={"1"}
+            />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={6} className="bg-primary mx-3 mb-5">
+            <PackageCard
+              packageName="Paquete"
+              price={3600}
+              items={["Blanqueamiento", "Limpieza", "Pulido de dientes"]}
+              color="primary"
+              number={"2"}
+            />
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={12} sm={12} md={6} lg={6} className="bg-light mx-3 mb-5">
+            <PackageCard
+              packageName="Paquete"
+              price={600}
+              items={["Limpieza", "Pulido de dientes", "Aplicación de fluor"]}
+              color="light"
+              number={"3"}
+            />
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={6} className="bg-primary  mx-3 mb-5 ">
+            <PackageCard
+              packageName="Paquete"
+              price={600}
+              items={[
+                "Consulta",
+                "Valoración",
+                "Camara intra-oral",
+                "Radiografía",
+              ]}
+              color="primary"
+              number={"4"}
+            />
+          </Col>
+        </Row>
       </div>
     </div>
   );
