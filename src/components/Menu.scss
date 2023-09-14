@@ -25,10 +25,9 @@
     top: 8px;
     transition: .3s ease-in-out;
     overflow: hidden;
-    background-color: $secondary; //#233dc0;
+
 
     a:hover {
-
 
         transform: translateY(0);
         transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);

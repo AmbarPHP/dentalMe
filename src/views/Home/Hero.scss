@@ -11,7 +11,7 @@ p,h1,h2,h3,h4,h5 {
 }
 
 .overlay-blue {
-    /* background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1)); */
+    background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1));
     background-color:#fff;
     z-index: 10;
     height: 10vh;
@@ -24,9 +24,9 @@ p,h1,h2,h3,h4,h5 {
 
 .btn_round{
     position: absolute;
-    left: 680px;
+    left: 180px;
     top:480px;
-    border-radius: 23px;
+    border-radius: 100%;
     width: 300px;
     text-decoration: none;
     background-color: aliceblue;

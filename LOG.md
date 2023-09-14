@@ -6,3 +6,5 @@ Hoy estuve trabajando con componentes simples, solo recordando un poco de boostr
 [] estuve cambiandolos en los componentes Hero.js, Home.js
 []El cambio de la imagen Hero, trabaje con una herramienta llamada figma, para editarla
 []ahora voy a hacer el cambio reponsivo.
+
+https://themes.muffingroup.com/be/medic/
