@@ -31,10 +31,10 @@ export default function Hero() {
           <div className=" mt-5 mb-5 mx-5">
             <Button>
               <a
-                className="text-light bold font-1rem text-uppercase"
+                className="text-light bold font-1rem"
                 href="make-an-appointment.html"
               >
-                <span className="me-2"></span>311 269 79 23
+                <span className="ml-5"></span>311 269 79 23
               </a>
             </Button>
           </div>
