@@ -3,7 +3,13 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function PackageCard({ packageName, price, items, color, number }) {
   return (
-    <div className={`package-card bg-${color}  lg-3 md-6 mx-3 mb-5`}>
+    <Col
+      xs={12}
+      sm={6}
+      md={6}
+      lg={6}
+      className={`package-card bg-${color}  lg-3 md-6 sm-6 mb-5`}
+    >
       <div style={{ height: "50%", alignItems: "center" }}>
         <h1
           className={`text-${
@@ -11,7 +17,13 @@ function PackageCard({ packageName, price, items, color, number }) {
           } mt-3 text-center`}
         >
           {packageName}{" "}
-          <span className="text-secondary bold d-block mt-2">{number}</span>
+          <span
+            className={`text-${
+              color === "light" ? "primary" : "light"
+            } bold d-block mt-2`}
+          >
+            {number}
+          </span>
         </h1>
         <ul
           className={`lead mx-3 ${
@@ -32,13 +44,13 @@ function PackageCard({ packageName, price, items, color, number }) {
           ${price}
         </p>
       </div>
-    </div>
+    </Col>
   );
 }
 
 export default function Section1() {
   return (
-    <div
+    <Container
       name="section1-servicios"
       className="gradient-primary-dark mt-0 pt-5 pb-5"
     >
@@ -56,9 +68,8 @@ export default function Section1() {
       </Row>
       <Row>
         <Col
-          className="d-flex justify-content-center align-items-center mx-0"
-          style={{ backgroundColor: "red" }}
-          xs={12}
+          className="d-flex justify-content-center align-items-center mx-0 gradient-primary-dark"
+          sm={12}
           md={12}
           lg={12}
         >
@@ -69,57 +80,44 @@ export default function Section1() {
       </Row>
       <div className="d-flex justify-content-around">
         <Row>
-          <Col
-            className="  bg-light px-5  mx-3 mb-5"
-            xs={12}
-            sm={12}
-            md={6}
-            lg={6}
-          >
-            <PackageCard
-              packageName="Paquete"
-              price={950}
-              items={["Consulta", "Radiografía", "Limpieza"]}
-              color="light"
-              number={"1"}
-            />
-          </Col>
-          <Col xs={12} sm={12} md={6} lg={6} className="bg-primary mx-3 mb-5">
-            <PackageCard
-              packageName="Paquete"
-              price={3600}
-              items={["Blanqueamiento", "Limpieza", "Pulido de dientes"]}
-              color="primary"
-              number={"2"}
-            />
-          </Col>
+          <PackageCard
+            packageName="Paquete"
+            price={950}
+            items={["Consulta", "Radiografía", "Limpieza"]}
+            color="light"
+            number={"1"}
+          />
+
+          <PackageCard
+            packageName="Paquete"
+            price={3600}
+            items={["Blanqueamiento", "Limpieza", "Pulido de dientes"]}
+            color="primary"
+            number={"2"}
+          />
         </Row>
         <Row>
-          <Col xs={12} sm={12} md={6} lg={6} className="bg-light mx-3 mb-5">
-            <PackageCard
-              packageName="Paquete"
-              price={600}
-              items={["Limpieza", "Pulido de dientes", "Aplicación de fluor"]}
-              color="light"
-              number={"3"}
-            />
-          </Col>
-          <Col xs={12} sm={12} md={6} lg={6} className="bg-primary  mx-3 mb-5 ">
-            <PackageCard
-              packageName="Paquete"
-              price={600}
-              items={[
-                "Consulta",
-                "Valoración",
-                "Camara intra-oral",
-                "Radiografía",
-              ]}
-              color="primary"
-              number={"4"}
-            />
-          </Col>
+          <PackageCard
+            packageName="Paquete"
+            price={600}
+            items={["Limpieza", "Pulido de dientes", "Aplicación de fluor"]}
+            color="light"
+            number={"3"}
+          />
+          <PackageCard
+            packageName="Paquete"
+            price={600}
+            items={[
+              "Consulta",
+              "Valoración",
+              "Camara intra-oral",
+              "Radiografía",
+            ]}
+            color="primary"
+            number={"4"}
+          />
         </Row>
       </div>
-    </div>
+    </Container>
   );
 }
