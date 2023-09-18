@@ -24,11 +24,11 @@ p,h1,h2,h3,h4,h5, div {
   background-color: $secondary-light!important
 }
 .bg-darker {
-  background-color: #161c2d !important
+  background-color: $primary-dark !important;
 }
 .gradient-primary-dark {
   background-image: -webkit-gradient(linear,left bottom,right top,from($secondary),to($secondary-light));
-  background-image: linear-gradient(to right top,$primary,$secondary);
+  background-image: linear-gradient(to left bottom,$primary-dark,$primary);
 }
 .gradient-primary-light {
   background-image: -webkit-gradient(linear,left bottom,right top,from($secondary),to($secondary-light));
@@ -45,8 +45,8 @@ p,h1,h2,h3,h4,h5, div {
 
 .overlay{
 
-//background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1));
-background-color: rgba(23, 10, 89, 0.7);
+  //background-image:linear-gradient(to right top,#e5e5e5,#f6f6f6);
+background-color: rgba($secondary, 0.7);
 z-index : 10;
 height: 50vh;
 }
@@ -112,7 +112,7 @@ height: 50vh;
   color: #f1f4f8 !important
 }
 .text-dark {
-  color: #2b354f !important
+  color: #343435 !important
 }
 .text-gray{
   color:$gray;
