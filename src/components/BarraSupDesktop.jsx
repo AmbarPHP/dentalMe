@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaMapMarkerAlt, FaWhatsapp, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import logo from "../assets/img/logo.png";
 import "./BarraSup.scss";
 
 export default function     BarraSupDesktop() {
     return (
-        <div name="div_container_desk_barra_sup" className="sup-area" index="999" >
+        
+        <Container className="sup-area" index="999" >
             <Row className='desktop w-100 ' >
                 
                 <Col lg={{ span: 2, offset: 1 }} className="pb-3 pt-3" >
@@ -49,6 +50,6 @@ export default function     BarraSupDesktop() {
                     {/* <span className='text-primary'> Health&Smile</span> */}
                 </Col>
             </Row>
-        </div>
+        </Container>
     );
 }
