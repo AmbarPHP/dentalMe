@@ -8,7 +8,7 @@ function PackageCard({ packageName, price, items, color, number }) {
       sm={6}
       md={6}
       lg={6}
-      className={`package-card bg-${color}  lg-3 md-6 sm-6 mb-5`}
+      className={`package-card bg-${color}  pe-5 col-lg-3 col-sm-12`}
     >
       <div style={{ height: "50%", alignItems: "center" }}>
         <h1
@@ -39,7 +39,7 @@ function PackageCard({ packageName, price, items, color, number }) {
         <p
           className={`text-center text-${
             color === "light" ? "primary" : "light"
-          } font-2rem bold`}
+          } font-2rem bold mt-5`}
         >
           ${price}
         </p>
