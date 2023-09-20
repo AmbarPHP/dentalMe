@@ -27,8 +27,12 @@ p,h1,h2,h3,h4,h5, div {
   background-color: $primary-dark !important;
 }
 .gradient-primary-dark {
-  background-image: -webkit-gradient(linear,left bottom,right top,from($secondary),to($secondary-light));
-  background-image: linear-gradient(to left bottom,$primary-dark,$primary);
+  
+  background-image: -webkit-gradient(linear, left bottom, right top, from($secondary), to($secondary-light));
+    background-image: linear-gradient(to left bottom, $primary-dark, $primary);
+    
+  // background-image: -webkit-gradient(linear, left bottom, right top, from($secondary), to($secondary-light));
+  //   background-image: linear-gradient(to left bottom, $primary-dark, $primary);
 }
 .gradient-primary-light {
   background-image: -webkit-gradient(linear,left bottom,right top,from($secondary),to($secondary-light));
