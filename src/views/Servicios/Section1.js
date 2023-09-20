@@ -8,7 +8,7 @@ function PackageCard({ packageName, price, items, color, number }) {
       sm={6}
       md={6}
       lg={6}
-      className={`package-card bg-${color}  pe-5 col-lg-3 col-sm-12`}
+      className={`package-card bg-${color}  px-5 col-lg-3 col-sm-12`}
     >
       <div style={{ height: "50%", alignItems: "center" }}>
         <h1
