@@ -20,16 +20,16 @@ export default function Home() {
       <Hero></Hero>
       {/* aqui las secciones seran los componentes en la carpeta home */}
       {/* <Section2></Section2> */}
-      {/* ==========Banner Resina==================== */}
-      <Section7></Section7>
-
       {/* ==========Nuestros Servicios=============== */}
       <Section4></Section4>
+
       {/* ==========Paquetes==================== */}
       <Section1></Section1>
 
       {/* ===========Nosotros=========================*/}
       <Nosotros></Nosotros>
+      {/* ==========Banner Resina==================== */}
+      <Section7></Section7>
       {/* ==========Banner Resina==================== */}
       <Section6></Section6>
       {/* ==========Dignosticos rapidos==================== */}
