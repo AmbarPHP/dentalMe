@@ -55,7 +55,7 @@ function OppointmentCard({ schedule, doctorName, items, color, number }) {
           <span
             // style={{ backgroundColor: "#ff6" }}
             className={`text-${
-              color === "light" ? "primary" : "light"
+              color === "light" ? "dark" : "light"
             }  d-block mt-2`}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ducimus

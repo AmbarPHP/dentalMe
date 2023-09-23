@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <Container
       name="div_container_footer"
-      className=" bg-primary pt-3"
+      className=" gradient-primary-dark pt-3"
       style={{ height: 300 + "px", fontSize: 20 + "px" }}
     >
       <Row className=" gb-light gap-y pt-0 mx-5 text-light ">

@@ -27,7 +27,7 @@ function PackageCard({ packageName, price, items, color, number }) {
         </h1>
         <ul
           className={`lead mx-3 ${
-            color === "light" ? "text-primary" : "text-light"
+            color === "light" ? "text-dark" : "text-light"
           }`}
         >
           {items.map((item, index) => (
