@@ -12,6 +12,7 @@ p,h1,h2,h3,h4,h5 {
     margin: 0%;
 }
 
+   @media (width: 799px) and (max-width:1199px) {
 .gb-dr_bg {
     //background-image: url("../../assets/img/carrusel/carrusel1.png");
     background-image: url("../../assets/img/DraHero_bg.png");
@@ -26,6 +27,24 @@ p,h1,h2,h3,h4,h5 {
     // background-size: 740px 940px;
     background-repeat: no-repeat;
 }
+   }
+ @media (width: 500px) and (max-width:798px) {
+     .gb-dr_bg {
+         background-image: url("../../assets/img/carrusel/carrusel1.png");
+         //background-image: url("../../assets/img/DraHero_bg.png");
+         // background-size: cover;
+         //border-radius: 100%;
+         background-size: 50vw;
+         //width: 190%;
+         // height: 740px;
+         // opacity: 1;
+         // padding-bottom: 5%;
+         margin-left: 80%;
+         // background-size: 740px 940px;
+         background-repeat: no-repeat;
+     }
+    }
+
 .gb-primary-img-resina2 {
     //background-image: url("../../assets/img/carrusel/carrusel1.png");
     background-image: url("../../assets/img/landing_theme1.png");

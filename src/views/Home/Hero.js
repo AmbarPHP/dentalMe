@@ -15,7 +15,7 @@ export default function Hero() {
         {/* cambie el tamaño de la imagend de hero en el css */}
 
         <Row>
-          <BarraSupDesktop></BarraSupDesktop>
+          <BarraSup></BarraSup>
           <Menu></Menu>
         </Row>
         <Row className=" d-lg-flex align-middle mt-5 mb-5 mx-0 ">
