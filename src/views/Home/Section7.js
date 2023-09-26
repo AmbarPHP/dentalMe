@@ -153,7 +153,7 @@ export default function Section7() {
     const specialists = getSpecialistName();
     console.log(specialists);
     setSpecialistName(specialists);
-  }, [specialistsName]);
+  }, []);
   return (
     <Container
       name="section7-home"
