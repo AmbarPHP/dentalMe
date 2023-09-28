@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import MenuMobile from "./BarraSupMobile";
+import MenuMobile from "./MenuMobile";
 
 import MenuDesktop from "./MenuDesktop";
 
@@ -23,5 +23,5 @@ export default function BarraSup() {
 
   DetectDiviseSize();
 
-  return <>{windowWidth <= 768 ? <MenuMobile /> : <MenuDesktop />}</>;
+  return <>{windowWidth < 571 ? <MenuMobile /> : <MenuDesktop />}</>;
 }

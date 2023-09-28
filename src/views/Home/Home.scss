@@ -35,64 +35,147 @@
     right: 0px;
     top:-85px;
 }    
-// Diseño Large or Desktop
-@media (min-width:1200px) {
-    .img-section2 {
-        height: 100%;
-        width: auto;
-        padding: 0%;
-        margin-left: 0%;
-    }
-    .bt-size-md {
-        width: 100px;
-        height: 38px;
-    }
 
-    // sectio6
-    .bg-img {
-        //opacity: 1;
-        //background-image: url("../../assets/img/dientes/light_background1.png");
-        //background-image: url("../../assets/img/dental6.jpg");
-        background-image: url("../../assets/img/redondo.png");
-        //background-color:$gray;
-        //background-size: cover;
-        width: 100vw;
-        height: 100%;
-        background-repeat: no-repeat;
-        padding: 0%;
-        margin-left: 0%;
 
-    }
-    .text-title-desktop{
-        color:$primary;
-        font-size: 3rem;
-    }
-      
-    .text-border-round-secondary{
-        border-radius: 90px;
-        background-color: $secondary;
-        padding: 10px;
-        width: 80%;
-        margin-left: 20%;
-    }
-    .text-border-round-light{
-        border-radius: 100px;
-        background-color: $light;
-        padding-left: 15px;
-        padding-top:10px;
-        width: 100%;
-        //margin-left: -40px;
-      
 
+/*
+///////////////////////////////////////////////////////////
+ TABLETAS ----Estilos para tabletas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .content {
+        /* Aplicar estilos específicos para tabletas aquí */
+        /* Ejemplo: Cambiar colores, tamaños de fuente, márgenes, etc. */
+        .gb-primary-img-resina1 {
+                //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
+                background-image: url("../../assets/img/DraHero_bg1_4.png");
+                background-size: cover;
+                background-size: 100vh;
+                //width: 190%;
+                height: 100%; //640px;
+                opacity: 1;
+                margin: 0%;
+                background-size: 1200px 640px;
+
+              
+            }
     }
 }
 
+/*  /////////////////////////////////////////////
+DESKTOP Estilos para pantallas de escritorio con un ancho mínimo de 769px */
+@media (min-width: 769px) {
+    .gb-primary-img-resina1 {
+            //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
+            background-image: url("../../assets/img/DraHero_bg1_4.png");
+            //background-size: cover;
+            background-size: 100vh;
+            //width: 190%;
+            height: 100%; //640px;
+            opacity: 1;
+            margin: 0%;
+            background-size: 1200px 640px;
+        }
+    .content {
+        /* Aplicar estilos específicos para escritorio aquí */
 
+    
+    .img-section2 {
+            height: 100%;
+            width: auto;
+            padding: 0%;
+            margin-left: 0%;
+        }
+    
+        .bt-size-md {
+            width: 100px;
+            height: 38px;
+        }
+    
+        // sectio6
+        .bg-img {
+            //opacity: 1;
+            //background-image: url("../../assets/img/dientes/light_background1.png");
+            //background-image: url("../../assets/img/dental6.jpg");
+            background-image: url("../../assets/img/redondo.png");
+            //background-color:$gray;
+            //background-size: cover;
+            width: 100vw;
+            height: 100%;
+            background-repeat: no-repeat;
+            padding: 0%;
+            margin-left: 0%;
+    
+        }
+    
+        .text-title-desktop {
+            color: $primary;
+            font-size: 3rem;
+        }
+    
+        .text-border-round-secondary {
+            border-radius: 90px;
+            background-color: $secondary;
+            padding: 10px;
+            width: 80%;
+            margin-left: 20%;
+        }
+    
+        .text-border-round-light {
+            border-radius: 100px;
+            background-color: $light;
+            padding-left: 15px;
+            padding-top: 10px;
+            width: 100%;
+            //margin-left: -40px;
+    
+    
+        }
+    }
+}
 
+/*
+////////////////////////////////////////////////////////////////////
+MOBILE Estilos para pantallas de escritorio con un ancho mínimo de 769px*/
+@media (max-width:571px) {
 
-
-// Diseño Mobile
-@media (max-width:1199px) {
+    .gb-primary-img-resina1 {
+            //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
+            background-image: url("../../assets/img/DraHero_bg1_mobile.png");
+            background-size: cover;
+            //background-size: 100vh;
+            width: 571px;
+            height: 500px;
+            opacity: 1;
+            margin: 0%;
+            background-size: 571px 500px;
+    
+            div.desktop {
+                display: none;
+            }
+    
+            div.mobile {
+                display: flex;
+                flex-direction: column;
+                div.position-right-1 {
+                        position: relative;
+                        top: -67px;
+                        left: 50%;
+                        width: 42%;
+                    }
+                 div.position-right{
+                        position: relative;
+                            top: -120px;
+                            left: 60%;
+                            width: 42%;
+                 }
+                div.position-down {
+                    position: relative;
+                        top: 80px;
+                        left: 10px;
+                        width: 69%;
+                }
+            }
+        }
 
     // Nota: "aplicac para section 2 -->los guters y los margin estan en una clase de bootstrap, pero no puedo quitar los margin laterales sin modificarla"
     .container,
@@ -104,12 +187,14 @@
     .container-sm {
         // --bs-gutter-x: 1.5rem;
         // --bs-gutter-y: 0;
-        width: 120% !important;
+        width: 100% !important;
         // padding-right: calc(var(--bs-gutter-x) * 0.5);
         // padding-left: calc(var(--bs-gutter-x) * 0.5);
         // margin-right: auto;
         // margin-left: auto;
     }
+
+        
 
     .img-section2 {
         height: auto;
@@ -141,16 +226,7 @@
 
 
 
-.gb-primary-img-resina1{
-    background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
-    background-size: cover;
-    background-size: 100vw;
-    //width: 190%;
-    height: 640px;
-    opacity: 1;
-    margin: 0%;
-    background-size: 1900px 640px;
-}
+
 .gb-primary-img-resina3{
     background-image: url("../../assets/img/carrusel/carrusel3.png");
     background-size: cover;

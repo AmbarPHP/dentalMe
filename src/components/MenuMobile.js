@@ -1,4 +1,4 @@
-import { React, useState} from "react"
+import { React, useState, useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Menu.scss";
@@ -22,26 +22,16 @@ export default function MenuMobile() {
 
   return (
     // SE DESPLAZA CUANDO EL SCRIOLL AVANZA 380, POR ESO TIENE EL EVENT LISTENER
+
     <Navbar
-      expand="lg"
-      className={`menu-container  ${
+      expand="sm"
+      className={`menu-container_mobile  ${
         sticky ? "position_fixed" : "position_initial"
-      } mt-4 mb-4  `}
-      style={{ position: "fixed ", maxWidth: "100%", marginLeft: "-100px" , backgroundColor:"#ff4" }}
+      }  `}
     >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Brand>
-        <img
-          alt=""
-          src={logo}
-          style={{ width: "350px", marginLeft: "5%" }}
-        ></img>
-      </Navbar.Brand>
-      <Navbar.Collapse
-        id="basic-navbar-nav"
-        className={?div_container_desktop:div_container_mobile}
-        // style={{ backgroundColor: "#f33" }}
-      >
+      <Navbar.Brand className="text-primary"> Health & Smile</Navbar.Brand>
+      <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="font-20 p-4 menu-colapsible">
           <Nav.Link href="/home" className=" text-uppercase">
             Inicio
