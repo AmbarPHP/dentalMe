@@ -3,7 +3,12 @@
 .sup-area{
     display: flex;
     flex-direction: row;
-    @media (width: 799px) and (max-width:1199px) {
+    // mobile
+    @media (max-width:571px) {
+        background-color: black;
+    }
+    // tablet
+    @media (max-width:572px) and (max-width: 768px) {
     
             .desktop{
                 background-color: rgba($primary, 1);
@@ -12,7 +17,8 @@
         
         
     }
-    @media (min-width:1199px) {
+    // desktop
+    @media (min-width:769px) {
         
             .mobile{
                 display: none;

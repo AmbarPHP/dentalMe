@@ -42,8 +42,12 @@ export default function Section4() {
   ];
 
   return (
-    <Container name="section4-home" className="content bg-light alpha-4 mb-5">
-      <Row className="d-flex justify-content-end  flex-row mb-5 mt-5 px-5 ">
+    <Container
+      name="section4-home"
+      className="content bg-light alpha-4 mb-5"
+      style={{ width: "100%", margin: " 0 auto" }}
+    >
+      <Row className="d-flex justify-content-between  flex-row mb-5 mt-5 mx-5">
         <Col md={6} lg={8} sm={12}>
           <h1 className="text-primary bold font-3rem">Nuestros servicios</h1>{" "}
         </Col>

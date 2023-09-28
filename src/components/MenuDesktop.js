@@ -24,7 +24,7 @@ export default function MenuDesktop() {
     // SE DESPLAZA CUANDO EL SCRIOLL AVANZA 380, POR ESO TIENE EL EVENT LISTENER
 
     <Navbar
-      expand="md"
+      expand="sm"
       className={`menu-container_desktop  ${
         sticky ? "position_fixed" : "position_initial"
       } mt-4 mb-4  `}
