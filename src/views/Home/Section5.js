@@ -25,15 +25,15 @@ export default function Section5() {
           <h1 style={{ fontSize: 1 + "rem" }} className="  bold text-dark">
             Acerca de nuestros servicios
           </h1>
-          <h4 className=" text-white" style={{ fontSize: 0.8 + "rem" }}>
+          <h4 className=" text-dark" style={{ fontSize: 0.8 + "rem" }}>
             Modernas instalaciones y tecnología para realizar todas tus
             evaluaciones.
           </h4>
-          <h4 className=" text-white" style={{ fontSize: 0.8 + "rem" }}>
+          <h4 className=" text-dark" style={{ fontSize: 0.8 + "rem" }}>
             Nuestra proridad es tu tranquilidad, con nosotros no temeras en
             venir al dentista.
           </h4>
-          <h4 className=" text-white" style={{ fontSize: 0.8 + "rem" }}>
+          <h4 className=" text-dark" style={{ fontSize: 0.8 + "rem" }}>
             Somos una clinica que te ofrece bienestar y estetica de calidad.
           </h4>
         </div>
@@ -44,15 +44,15 @@ export default function Section5() {
           </h4>
         </div>
         <div className="position-left-down">
-          <h4 className="text-uppercase text-white">Los mejores dentistas</h4>
-          <p>
+          <h4 className=" text-white">Los mejores dentistas</h4>
+          <p className=" text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum
             ex vero, tempore dicta veritatis, sed soluta adipisci.
           </p>
         </div>
         <div className="position-left-down-2">
           <h4 className="text-uppercase text-white">Tecnologia Dental</h4>
-          <p>
+          <p className=" text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum
             ex vero.
           </p>
