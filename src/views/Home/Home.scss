@@ -138,6 +138,27 @@ DESKTOP Estilos para pantallas de escritorio con un ancho mínimo de 769px */
 MOBILE Estilos para pantallas de escritorio con un ancho mínimo de 769px*/
 @media (max-width:571px) {
 
+    // section nuestros servicios deja de verse como se veia
+    #section4-home{
+        display:none;
+    }
+    #section4-home-mobile{
+        background-color: aqua;
+    }
+    // seccion Nosotros 
+    #sectionNosotros-home{
+        display: none;
+    }
+    #sectionNosotros-mobile {
+        background-color: aqua;
+    }
+    #sectionTestimonilas-home{
+        display: none;
+    }
+    #sectionTestimonilas-mobile{
+        background-color: aqua;
+    }
+
     .gb-primary-img-resina1 {
             //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
             background-image: url("../../assets/img/DraHero_bg1_mobile.png");
@@ -175,7 +196,7 @@ MOBILE Estilos para pantallas de escritorio con un ancho mínimo de 769px*/
                         width: 69%;
                 }
             }
-        }
+    }
 
     // Nota: "aplicac para section 2 -->los guters y los margin estan en una clase de bootstrap, pero no puedo quitar los margin laterales sin modificarla"
     .container,

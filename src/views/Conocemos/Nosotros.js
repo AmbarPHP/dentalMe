@@ -37,8 +37,8 @@ export default function Nosotros() {
     },
   ];
   return (
-    <div>
-      <Container className="content  mb-4 bg-light">
+    <Container className="content  mb-4 bg-light">
+      <div id="sectionNosotros-home">
         {/* TODO poner los datos en un map y repetir por 4  */}
         <Row>
           <Col
@@ -85,9 +85,8 @@ export default function Nosotros() {
             );
           })}
         </Row>
-      </Container>
-      {/* ==Contiene la informacion de los doctores , revisalo antes de borrarlo== */}
-      {/* <Nosotros2/> */}
-    </div>
+      </div>
+      <div id="sectionNosotros-home-mobile"></div>
+    </Container>
   );
 }

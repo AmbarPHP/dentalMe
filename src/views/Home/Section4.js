@@ -40,47 +40,51 @@ export default function Section4() {
       picture: "servicios6",
     },
   ];
-
+  // nuestros servicios
   return (
     <Container
-      name="section4-home"
       className="content bg-light alpha-4 mb-5"
       style={{ width: "100%", margin: " 0 auto" }}
     >
-      <Row className="d-flex justify-content-between  flex-row mb-5 mt-5 mx-5">
-        <Col md={6} lg={8} sm={12}>
-          <h1 className="text-primary bold font-3rem">Nuestros servicios</h1>{" "}
-        </Col>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-          voluptatum, atque maxime dignissimos magni laborum illo adipisci
-          perspiciatis, accusamus incidunt laudantium aperiam quidem. Beatae ut
-          illum at praesentium non fuga.
-        </p>
-      </Row>
+      <div id="section4-home">
+        <Row className="d-flex justify-content-between  flex-row mb-5 mt-5 mx-5">
+          <Col md={6} lg={8} sm={12}>
+            <h1 className="text-primary bold font-3rem">Nuestros servicios</h1>{" "}
+          </Col>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            voluptatum, atque maxime dignissimos magni laborum illo adipisci
+            perspiciatis, accusamus incidunt laudantium aperiam quidem. Beatae
+            ut illum at praesentium non fuga.
+          </p>
+        </Row>
 
-      <Row>
-        {data.map((item, index) => {
-          return (
-            <Col md={6} lg={4} key={index}>
-              <Row>
-                <img
-                  alt="rounded_pill"
-                  className="rounded-pill"
-                  style={{ maxWidth: 100 + "%", height: "auto" }}
-                  src={require("../../assets/img/servicios/" +
-                    item.picture +
-                    ".png")}
-                />
-              </Row>
-              <Row>
-                <h4 className="bold text-primary mt-5">{item.title_banner}</h4>
-                <p>{item.description}</p>
-              </Row>
-            </Col>
-          );
-        })}
-      </Row>
+        <Row>
+          {data.map((item, index) => {
+            return (
+              <Col md={6} lg={4} key={index}>
+                <Row>
+                  <img
+                    alt="rounded_pill"
+                    className="rounded-pill"
+                    style={{ maxWidth: 100 + "%", height: "auto" }}
+                    src={require("../../assets/img/servicios/" +
+                      item.picture +
+                      ".png")}
+                  />
+                </Row>
+                <Row>
+                  <h4 className="bold text-primary mt-5">
+                    {item.title_banner}
+                  </h4>
+                  <p>{item.description}</p>
+                </Row>
+              </Col>
+            );
+          })}
+        </Row>
+      </div>
+      <div id="section4-home-mobile"></div>
     </Container>
   );
 }
