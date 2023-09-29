@@ -64,6 +64,13 @@
 /*  /////////////////////////////////////////////
 DESKTOP Estilos para pantallas de escritorio con un ancho mínimo de 769px */
 @media (min-width: 769px) {
+    //section 5
+    #section5-home{
+        .mobile{
+            display:none;
+        }
+    }
+
     .gb-primary-img-resina1 {
             //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
             background-image: url("../../assets/img/DraHero_bg1_4.png");
@@ -73,7 +80,8 @@ DESKTOP Estilos para pantallas de escritorio con un ancho mínimo de 769px */
             height: 100%; //640px;
             opacity: 1;
             margin: 0%;
-            background-size: 1200px 640px;
+            background-repeat: no-repeat;
+            background-size: 1200px 540px;
         }
     .content {
         /* Aplicar estilos específicos para escritorio aquí */
@@ -158,6 +166,68 @@ MOBILE Estilos para pantallas de escritorio con un ancho mínimo de 769px*/
     #sectionTestimonilas-mobile{
         background-color: aqua;
     }
+    // section 6 
+          #sectionSection6-home{
+            display: none;
+          }
+        #sectionSection6-mobile{
+        background-color: aqua;
+        }
+    
+    //section 5 
+    #section5-home{
+        .mobile{
+            background-image: url(../../assets/img/HeroServicios.png);
+            width: 571px;
+                height: 857px;
+                background-repeat: no-repeat;
+                padding: 0%;
+                margin-left: 0%;
+                margin-top: 0%;
+                background-size: 571px 857px;
+
+                display: flex;
+                    flex-direction: column;
+                
+                    div.position-right-1 {
+                            position: relative;
+                                top: 421px;
+                                left: 50%;
+                                width: 42%;
+                    }
+                
+                    div.position-right-down {
+                       
+                        position: relative;
+                            top: 42px;
+                            left: 50%;
+                            width: 42%;
+                    }
+                
+                    div.position-left {
+                        position: relative;
+                            top: 30px;
+                            left: 2%;
+                            width: 31%;
+                    }
+                    div.position-left-down{
+                        position: relative;
+                            top: 95px;
+                            left: 2%;
+                            width: 31%;
+                    }
+                    div.position-left-down-2 {
+                        position: relative;
+                        top: 95px;
+                        left: 2%;
+                        width: 31%;
+                    }
+        }
+        
+        .desktop{
+            display:none;
+        }
+    }
 
     .gb-primary-img-resina1 {
             //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
@@ -175,26 +245,7 @@ MOBILE Estilos para pantallas de escritorio con un ancho mínimo de 769px*/
             }
     
             div.mobile {
-                display: flex;
-                flex-direction: column;
-                div.position-right-1 {
-                        position: relative;
-                        top: -67px;
-                        left: 50%;
-                        width: 42%;
-                    }
-                 div.position-right{
-                        position: relative;
-                            top: -120px;
-                            left: 60%;
-                            width: 42%;
-                 }
-                div.position-down {
-                    position: relative;
-                        top: 80px;
-                        left: 10px;
-                        width: 69%;
-                }
+               
             }
     }
 
@@ -244,8 +295,6 @@ MOBILE Estilos para pantallas de escritorio con un ancho mínimo de 769px*/
         color:$light;
     }
 }
-
-
 
 
 .gb-primary-img-resina3{
