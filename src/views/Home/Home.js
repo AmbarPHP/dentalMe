@@ -34,6 +34,7 @@ export default function Home() {
       <Section6></Section6>
       {/* ==========Dignosticos rapidos==================== */}
       <Section5></Section5>
+
       <Testimonial></Testimonial>
       <Ubicanos></Ubicanos>
       <Footer></Footer>

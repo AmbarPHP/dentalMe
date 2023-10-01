@@ -4,31 +4,30 @@ import "../../App.scss";
 
 export default function Section6() {
   return (
-    <Container name="section6-home" className="my-5 bg-secondary ">
-      <div id="sectionSection6-home">
+    // esto es un promocional
+    <Container id="section6-home" className="my-5 bg-secondary ">
+      <div className="desktop overlay">
         <Row className=" d-flex  align-items-start  mb-5">
+          <Col lg={6} sm={12} className="bg_right  px-5 my-5"></Col>
+
           <Col lg={6} sm={12} className="mt-5">
             <h1
               className="text-title-mobile text-title-desktop text-border-round-light
-           font-3rem  mb-3 px-5"
+           bold text-white font-3rem  mb-3 px-5"
             >
-              Beneficios de la <span>resina dental</span>
+              Ofertas <span> especiales</span>
             </h1>
+            <h1 className="text-white  mx-5"> 50% de descuento</h1>
+            <p className="text-dark mx-5">Aplicable: 25 Feb al 11 de Marzo</p>
 
             {/* text-border-round-primary text-light */}
 
-            <h4 className=" mt-5 px-5" style={{ color: "$secondary" }}>
+            <h4 className=" text-dark mt-5 px-5">
               Se adhiere a la superficie del diente.
             </h4>
-            <h4 className="  px-5 " style={{ color: "$secondary" }}>
-              Respeta la estetica dental.
-            </h4>
-            <h4 className=" px-5" style={{ color: "$secondary" }}>
-              Mantiene una apariencia natural
-            </h4>
-            <h4 className="px-5" style={{ color: "$secondary" }}>
-              Es practicamente inperceptible
-            </h4>
+            <h4 className=" text-dark px-5 ">Respeta la estetica dental.</h4>
+            <h4 className="text-dark px-5">Mantiene una apariencia natural</h4>
+            <h4 className="text-dark px-5">Es practicamente inperceptible</h4>
 
             <Button className="mx-5 my-5 px-5 ">
               <a className="btn-primary text-secondary " href="/opoitment ">
@@ -36,13 +35,9 @@ export default function Section6() {
               </a>
             </Button>
           </Col>
-          <Col lg={6} sm={12} className="bg-primary  py-5 px-5 my-5">
-            <h1 className="bold text-light font-3rem"> 50% de descuento</h1>
-            <p className="text-light">Aplicable: 25 Feb al 11 de Marzo</p>
-          </Col>
         </Row>
       </div>
-      <div id="sectionSection6-mobile"></div>
+      <div className="mobile"></div>
     </Container>
   );
 }

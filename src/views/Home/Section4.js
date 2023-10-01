@@ -4,39 +4,57 @@ import { Container, Row, Col } from "react-bootstrap";
 export default function Section4() {
   const data = [
     {
-      title_banner: "AboutUs",
+      title_banner: "Cosmetic Dentistry",
       description:
         "We hire the best specialists to deliver top-notch diagnostic services for you.",
       picture: "servicios1",
     },
     {
-      title_banner: "Equipo Moderno",
+      title_banner: "General Dentistry",
       description:
         "We use the first-class medical equipment for timely diagnostics of various diseases.",
       picture: "servicios2",
     },
     {
-      title_banner: "Servicio de Emergencias",
+      title_banner: "Children`s Dentistry",
       description:
         "Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.",
       picture: "servicios3",
     },
     {
-      title_banner: "AboutUs",
+      title_banner: "Dental Implants",
       description:
         "We hire the best specialists to deliver top-notch diagnostic services for you.",
       picture: "servicios4",
     },
     {
-      title_banner: "Equipo Moderno",
+      title_banner: "Orthodontics",
       description:
         "We use the first-class medical equipment for timely diagnostics of various diseases.",
       picture: "servicios5",
     },
     {
-      title_banner: "Servicio de Emergencias",
+      title_banner: "Dental Emergency",
       description:
         "Our emergency diagnostics services help you get the most accurate diagnosis in a minimal time.",
+      picture: "servicios6",
+    },
+    {
+      title_banner: "Periodontics",
+      description:
+        "The Periodontal department provides diagnosis, prevention and treatment of simple to severe periodontal (gum) disease,Gingivitis,Mild Periodontitis,Moderate Periodontitis,Severe Periodontitis",
+      picture: "servicios4",
+    },
+    {
+      title_banner: "Dental Surgery",
+      description:
+        "Surgeries are carried out in cases when other methods of therapeutic treatment can’t be used.Teeth extraction, Curettage, Plastic surgery,Other types of surgeries",
+      picture: "servicios5",
+    },
+    {
+      title_banner: "Crowns & Bridgets",
+      description:
+        "Crowns and bridges are the most usual dental restoration work in dentistry,Removable dentures,Fixed dentures,Veneers",
       picture: "servicios6",
     },
   ];
@@ -46,8 +64,8 @@ export default function Section4() {
       className="content bg-light alpha-4 mb-5"
       style={{ width: "100%", margin: " 0 auto" }}
     >
-      <div id="section4-home">
-        <Row className="d-flex justify-content-between  flex-row mb-5 mt-5 mx-5">
+      <div id="section4-home-desktop">
+        <Row className="d-flex justify-content-between  flex-row mb-5 mt-5 ">
           <Col md={6} lg={8} sm={12}>
             <h1 className="text-primary bold font-3rem">Nuestros servicios</h1>{" "}
           </Col>
@@ -84,7 +102,7 @@ export default function Section4() {
           })}
         </Row>
       </div>
-      <div id="section4-home-mobile"></div>
+      <div id="section4-home-mobile">asdfasdfad</div>
     </Container>
   );
 }
