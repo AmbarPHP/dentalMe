@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button, Container } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Hero.scss";
 import Menu from "../../components/Menu";
 import BarraSup from "../../components/BarraSup";
@@ -9,9 +9,9 @@ import BarraSupDesktop from "../../components/BarraSupDesktop";
 export default function Hero() {
   /* Muestra el menu y la barra superior */
   return (
-    <div className="overlay">
+    <div>
       {/* // gb-primary-img */}
-      <Container className="gb-dr_bg  h-100">
+      <Container className="  h-100 gb-dr_bg">
         {/* cambie el tamaño de la imagend de hero en el css */}
 
         <Row>
@@ -26,10 +26,10 @@ export default function Hero() {
 
             <span className="text-light font-2rem vh-100">Dental Center</span>
 
-            <h4 className="text-light font-1rem pt-3 mt-5 mb-5">
-              <p>Clínica dental, realizamos</p>
-              <p>odontología integral,</p>
-              <p>cirugías, implantes ortodoncia y prótesis</p>
+            <h4 className="text-light pt-3 mt-5 mb-5">
+              "Sonríe con confianza, confía en nosotros. Nuestros dentistas te
+              brindan sonrisas impecables y atención personalizada para que
+              luzcas tu mejor sonrisa todos los días."
             </h4>
             <div className=" mt-5 mb-5 mx-5">
               <Button>

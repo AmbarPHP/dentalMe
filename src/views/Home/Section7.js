@@ -20,13 +20,17 @@ function OppointmentCard({ schedule, doctorName, items, color, number }) {
       {/* lado derecho */}
       <Row>
         <span
-          className={`text-${
+          className={` font-1rem text-${
             color === "light" ? "primary" : "light"
           }  d-block mt-2`}
         >
           {doctorName}
         </span>
-        <h2 className={`text-${color === "light" ? "primary" : "light"} mt-3 `}>
+        <h2
+          className={` font-1rem text-${
+            color === "light" ? "primary" : "light"
+          } mt-3 `}
+        >
           {schedule}
         </h2>
       </Row>
@@ -48,13 +52,15 @@ function OppointmentCard({ schedule, doctorName, items, color, number }) {
           ))}
         </ul> */}
         <p
-          className={`text-${color === "light" ? "primary" : "light"} mt-3 `}
-          style={{ width: "50%" }}
+          className={`font-1rem text-${
+            color === "light" ? "primary" : "light"
+          } mt-3 `}
+          style={{ width: "100%" }}
         >
-          Lorem
+          Horario :{` ${items[1]}-${items[2]}`}
           <span
             // style={{ backgroundColor: "#ff6" }}
-            className={`text-${
+            className={`font-1rem text-${
               color === "light" ? "dark" : "light"
             }  d-block mt-2`}
           >
@@ -131,7 +137,7 @@ function HeadDescription() {
         md={12}
         lg={12}
       >
-        <h4 className="text-light  my-5 text-center">
+        <h4 className=" font-1rem text-light  my-5 text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
           enim ut in, quam inventore obcaecati est delectus. Laborum facere
           placeat et mollitia aperiam officia sit cumque, non natus, ea

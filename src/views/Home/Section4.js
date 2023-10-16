@@ -102,7 +102,7 @@ export default function Section4() {
           })}
         </Row>
       </div>
-      <div id="section4-home-mobile">asdfasdfad</div>
+      <div id="section4-home-mobile"></div>
     </Container>
   );
 }
