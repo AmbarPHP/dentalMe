@@ -5,33 +5,35 @@ function PackageCard({ packageName, price, items, color, number }) {
   return (
     <Col
       xs={12}
-      sm={6}
-      md={6}
+      sm={12}
+      md={12}
       lg={6}
-      className={`package-card bg-${color}  px-5 col-lg-3 col-sm-12`}
+      className={`package-card bg-${color}  px-1 col-lg-3 col-sm-12`}
     >
       <div style={{ height: "50%", alignItems: "center" }}>
         <h1
           className={`text-${
             color === "light" ? "primary" : "light"
-          } mt-3 text-center`}
+          } mt-3  font-1rem text-center`}
         >
           {packageName}{" "}
           <span
             className={`text-${
               color === "light" ? "primary" : "light"
-            } bold d-block mt-2`}
+            } font-1rem bold d-block mt-2`}
           >
             {number}
           </span>
         </h1>
         <ul
-          className={`lead mx-3 ${
+          className={`lead mx-3 font-1rem ${
             color === "light" ? "text-dark" : "text-light"
           }`}
         >
           {items.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li className="font-1rem" key={index}>
+              {item}
+            </li>
           ))}
         </ul>
       </div>
@@ -39,7 +41,7 @@ function PackageCard({ packageName, price, items, color, number }) {
         <p
           className={`text-center text-${
             color === "light" ? "primary" : "light"
-          } font-2rem bold mt-5`}
+          } font-1rem bold mt-5`}
         >
           ${price}
         </p>
@@ -68,12 +70,13 @@ export default function Section1() {
       </Row>
       <Row>
         <Col
-          className="d-flex justify-content-center align-items-center mx-0 gradient-primary-dark"
+          className="d-flex justify-content-center align-items-center mx-0 
+          gradient-primary-dark"
           sm={12}
           md={12}
           lg={12}
         >
-          <h3 className="text-light bold my-5 text-center">
+          <h3 className="text-light bold my-5 font-3rem text-center">
             Haz una cita hoy mismo, con nosotros ahorras tiempo y dinero
           </h3>
         </Col>
