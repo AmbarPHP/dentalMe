@@ -44,6 +44,9 @@
     background-image: url("../../assets/img/carrusel/carrusel3.png");
     background-size: cover;
 }
+ img {
+     height: auto;
+ }
 
 /*
 ///////////////////////////////////////////////////////////
@@ -156,7 +159,24 @@ DESKTOP Estilos para pantallas de escritorio con un ancho mínimo de 769px */
         }
     }
 
+    #section7-home.desktop{
+        
+    }
+    #section7-home.mobile{
+        display: none;
+    }
 
+        // seccion Nosotros 
+        #sectionNosotros-home.mobile {
+            display: none;
+        }
+    
+        #sectionNosotros-home.desktop {
+            img{
+                height: auto;
+            }
+           
+        }
 
     .content {
         /* Aplicar estilos específicos para escritorio aquí */
@@ -244,15 +264,23 @@ MOBILE Estilos para pantallas de escritorio con un ancho mínimo de 769px*/
         }
     
 
-
-
-    // seccion Nosotros 
-    #sectionNosotros-home {
+    #section7-home.desktop {
         display: none;
     }
 
-    #sectionNosotros-mobile {
-        background-color: aqua;
+    #section7-home.mobile {
+        
+    }
+
+    // seccion Nosotros 
+    #sectionNosotros-home.mobile{
+        img {
+                height: auto;
+            }
+    }
+
+    #sectionNosotros-mobile.desktop {
+            display: none;
     }
 
     #sectionTestimonilas-home {
