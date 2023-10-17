@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import "../../custom.scss";
 
+//mOBILE
+@media (max-width:571px) {
 
-
+  div.package-card {
+    height: 226px;
+    // width: 25%;
+  }
+}
+  /// DESKTOP
+  @media (min-width:572px) {
     div.package-card {
-      height: 226px;
+      height: 256px;
+      // width: 20vw; 
+    }
 
-.container {
+  }
+
+  .container {
     margin-top: 50px;
     margin-bottom: 50px;
     padding-top: 0px;
@@ -16,55 +28,58 @@
 
   }
 
-    .title-inicio {
-        font-family: "Montserrat";
-        font-weight: 700;
-        color: $primary;
-        // display: "flex",
-        // justifyContent:"space around",
-        // marginLeft:"20%",
-        // marginRight:"20%",
-        font-size: 1.8rem;
-        padding-left: 3.2rem;
-        padding-bottom: 40px;
-        padding-top: 40px;
-    }
+  .title-inicio {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: $primary;
+    // display: "flex",
+    // justifyContent:"space around",
+    // marginLeft:"20%",
+    // marginRight:"20%",
+    font-size: 1.8rem;
+    padding-left: 3.2rem;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
 
-    .numero-grande {
-        font-family: "Montserrat";
-        font-weight: 700;
-        color: $primary;
-        font-size: 2.5rem;
-        padding-left: 2rem;
+  .numero-grande {
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: $primary;
+    font-size: 2.5rem;
+    padding-left: 2rem;
+  }
+
+  //para section 4
+  .address {
+    p {
+      font-family: "Montserrat";
+      color: $primary;
+      font-size: 1.5rem;
+      padding-left: 2rem;
+      line-height: 1rem;
     }
-    //para section 4
-   .address{
-     p{
-        font-family: "Montserrat";
-        color: $primary;
-        font-size: 1.5rem;
-        padding-left: 2rem;
-        line-height: 1rem;
-     }
-   } 
-   .whatsap_icon{
+  }
+
+  .whatsap_icon {
     color: rgb(29, 173, 84);
     font-size: 3rem;
-    
-   }
 
-   img{
+  }
+
+  img {
     height: 4rem;
-   }
-   .boton-cita{
-    margin-top: 4rem;
-   }
+  }
 
-   .div-diente{
-    box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+  .boton-cita {
+    margin-top: 4rem;
+  }
+
+  .div-diente {
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
     height: 300px;
     width: 500px;
-    margin:auto;
+    margin: auto;
     background-color: $primary;
     border-radius: 1rem;
     // p{
@@ -72,29 +87,29 @@
     //     font-weight: 700;
     // }
 
-   }
-  
+  }
 
-   .tamaño-diente{
+
+  .tamaño-diente {
     height: 38px;
-   }
+  }
 
-   @media only screen and (min-width: 1200px) {
-    .img-responsponsive{
-        max-width: 100%;
-        height: 100%;
-       }
+  @media only screen and (min-width: 1200px) {
+    .img-responsponsive {
+      max-width: 100%;
+      height: 100%;
+    }
   }
 
   @media only screen and (max-width: 571px) {
-    .img-responsponsive{
-        display:none;
-       }
+    .img-responsponsive {
+      display: none;
+    }
   }
-   
-}
 
-.gb-primary-img-servicios{
+
+
+.gb-primary-img-servicios {
   background-image: url("../../assets/img/servicios_bg.png");
   //background-size: cover;
   //background-size: 100vw;

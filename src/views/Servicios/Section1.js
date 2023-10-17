@@ -5,13 +5,9 @@ import "./servicios.scss";
 function PackageCard({ packageName, price, items, color, number }) {
   return (
     <Col
-      xs={12}
-      sm={12}
-      md={12}
-      lg={6}
-      className={`package-card bg-${color} px-0 col-lg-3 col-sm-12 d-flex flex-column align-items-center`}
+      className={`package-card bg-${color} px-0 d-flex flex-column text-center`}
     >
-      <div className="flex-grow-1 text-center">
+      <div className="text-center">
         <h1
           className={`text-${
             color === "light" ? "primary" : "light"
@@ -52,10 +48,41 @@ function PackageCard({ packageName, price, items, color, number }) {
 }
 
 export default function Section1() {
+  const packageData = [
+    {
+      packageName: "Paquete",
+      price: 950,
+      items: ["Consulta", "Radiografía", "Limpieza"],
+      color: "light",
+      number: "1",
+    },
+    {
+      packageName: "Paquete",
+      price: 3600,
+      items: ["Blanqueamiento", "Limpieza", "Pulido de dientes"],
+      color: "primary",
+      number: "2",
+    },
+    {
+      packageName: "Paquete",
+      price: 600,
+      items: ["Limpieza", "Pulido de dientes", "Aplicación de fluor"],
+      color: "light",
+      number: "3",
+    },
+    {
+      packageName: "Paquete",
+      price: 600,
+      items: ["Consulta", "Valoración", "Cámara intraoral", "Radiografía"],
+      color: "primary",
+      number: "4",
+    },
+  ];
+
   return (
     <Container
       name="section1-servicios"
-      className="gradient-primary-dark mx-auto text-center my-5 py-5 "
+      className="gradient-primary-dark mx-auto text-center my-5 py-5"
     >
       <Row>
         <Col
@@ -71,8 +98,7 @@ export default function Section1() {
       </Row>
       <Row>
         <Col
-          className="d-flex mx-auto text-center  mx-0 
-          gradient-primary-dark"
+          className="d-flex mx-auto text-center mx-0 gradient-primary-dark"
           sm={12}
           md={12}
           lg={12}
@@ -82,45 +108,25 @@ export default function Section1() {
           </h3>
         </Col>
       </Row>
-      <div className="d-flex justify-content-around">
-        <Row>
-          <PackageCard
-            packageName="Paquete"
-            price={950}
-            items={["Consulta", "Radiografía", "Limpieza"]}
-            color="light"
-            number={"1"}
-          />
-
-          <PackageCard
-            packageName="Paquete"
-            price={3600}
-            items={["Blanqueamiento", "Limpieza", "Pulido de dientes"]}
-            color="primary"
-            number={"2"}
-          />
-        </Row>
-        <Row>
-          <PackageCard
-            packageName="Paquete"
-            price={600}
-            items={["Limpieza", "Pulido de dientes", "Aplicación de fluor"]}
-            color="light"
-            number={"3"}
-          />
-          <PackageCard
-            packageName="Paquete"
-            price={600}
-            items={[
-              "Consulta",
-              "Valoración",
-              "Camara intra-oral",
-              "Radiografía",
-            ]}
-            color="primary"
-            number={"4"}
-          />
-        </Row>
+      <div className="d-flex  flex-wrap justify-content-around">
+        {packageData.map((pack, index) => (
+          <Col
+            key={index}
+            xs={12}
+            sm={12}
+            md={6}
+            lg={3}
+            className="d-flex flex-row"
+          >
+            <PackageCard
+              packageName={pack.packageName}
+              price={pack.price}
+              items={pack.items}
+              color={pack.color}
+              number={pack.number}
+            />
+          </Col>
+        ))}
       </div>
     </Container>
   );
