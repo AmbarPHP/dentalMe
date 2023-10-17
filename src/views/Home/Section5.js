@@ -21,7 +21,7 @@ export default function Section5() {
           }}
           className="text-light "
         >
-          Diagnosticos rapidos y eficientes
+          Conocemos somos los especialistas que te ayudaran
         </h1>
         <h4
           style={{
