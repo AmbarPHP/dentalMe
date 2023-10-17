@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import mapa from "../../assets/img/mapa.png";
+import mapa from "../../assets/img/mapa1.png";
 
 export default function Ubicanos() {
   return (
