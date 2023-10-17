@@ -1,13 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import doc1 from "../../assets/img/Doctores/team1.jpg";
-import doc2 from "../../assets/img/Doctores/team2.jpg";
-import doc3 from "../../assets/img/Doctores/team3.jpg";
-import doc4 from "../../assets/img/Doctores/team4.jpg";
 
-import Nosotros2 from "./Nosotros2";
-import Banner from "../../components/Banner";
-import Footer from "../../components/Footer";
+// import doc1 from "../../assets/img/Doctores/team1.jpg";
+// import doc2 from "../../assets/img/Doctores/team2.jpg";
+// import doc3 from "../../assets/img/Doctores/team3.jpg";
+// import doc4 from "../../assets/img/Doctores/team4.jpg";
 
 export default function Nosotros() {
   const datos = [
@@ -38,7 +35,7 @@ export default function Nosotros() {
   ];
   return (
     <Container className="content  mb-4 bg-light">
-      <div id="sectionNosotros-home">
+      <div id="sectionNosotros-home" className="desktop">
         {/* TODO poner los datos en un map y repetir por 4  */}
         <Row>
           <Col
@@ -60,8 +57,8 @@ export default function Nosotros() {
                 <div className="picture-border">
                   <Row className="mt-5">
                     <img
-                      height="auto"
                       alt={item.name}
+                      height="50%"
                       src={require("../../assets/img/Doctores/" +
                         item.picture +
                         ".jpg")}
@@ -86,7 +83,10 @@ export default function Nosotros() {
           })}
         </Row>
       </div>
-      <div id="sectionNosotros-home-mobile"></div>
+      <div id="sectionNosotros-home" className="mobile">
+        {" "}
+        section 7 mobile
+      </div>
     </Container>
   );
 }
