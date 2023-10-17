@@ -19,7 +19,7 @@ export default function Home() {
       {/* es la imagen principal la que llama la atencion */}
       <Hero></Hero>
       {/* aqui las secciones seran los componentes en la carpeta home */}
-      <Section2></Section2>
+      {/* <Section2></Section2> */}
       {/* ==========Nuestros Servicios=============== */}
       <Section4></Section4>
 

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Section4() {
-  const data = [
+  const serviceData = [
     {
       title_banner: "Cosmetic Dentistry",
       description:
@@ -58,15 +58,35 @@ export default function Section4() {
       picture: "servicios6",
     },
   ];
+
+  function ServicioItem({ title, description, picture }) {
+    return (
+      <Col md={6} lg={4}>
+        <Row>
+          <img
+            alt="rounded_pill"
+            className="rounded-pill"
+            style={{ maxWidth: 100 + "%", height: "auto" }}
+            src={require(`../../assets/img/servicios/${picture}.png`)}
+          />
+        </Row>
+        <Row>
+          <h4 className="bold text-primary mt-5">{title}</h4>
+          <p>{description}</p>
+        </Row>
+      </Col>
+    );
+  }
   // nuestros servicios
   return (
     <Container
-      className="content bg-light alpha-4 mb-5"
-      style={{ width: "100%", margin: " 0 auto" }}
+      className=" bg-light alpha-4 my-5"
+      id="section-4"
+      style={{ width: "100%" }}
     >
-      <div id="section4-home-desktop">
-        <Row className="d-flex justify-content-between  flex-row mb-5 mt-5 ">
-          <Col md={6} lg={8} sm={12}>
+      <div id="section4-home" className="desktop">
+        <Row className="d-flex text-center my-5  ">
+          <Col md={12} lg={12} sm={12}>
             <h1 className="text-primary bold font-3rem">Nuestros servicios</h1>{" "}
           </Col>
           <p>
@@ -78,31 +98,17 @@ export default function Section4() {
         </Row>
 
         <Row>
-          {data.map((item, index) => {
-            return (
-              <Col md={6} lg={4} key={index}>
-                <Row>
-                  <img
-                    alt="rounded_pill"
-                    className="rounded-pill"
-                    style={{ maxWidth: 100 + "%", height: "auto" }}
-                    src={require("../../assets/img/servicios/" +
-                      item.picture +
-                      ".png")}
-                  />
-                </Row>
-                <Row>
-                  <h4 className="bold text-primary mt-5">
-                    {item.title_banner}
-                  </h4>
-                  <p>{item.description}</p>
-                </Row>
-              </Col>
-            );
-          })}
+          {serviceData.map((item, index) => (
+            <ServicioItem
+              key={index}
+              title={item.title_banner}
+              description={item.description}
+              picture={item.picture}
+            />
+          ))}
         </Row>
       </div>
-      <div id="section4-home-mobile"></div>
+      <div id="section4-home" className="mobile"></div>
     </Container>
   );
 }
