@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import "./servicios.scss";
 
 function PackageCard({ packageName, price, items, color, number }) {
   return (
@@ -8,13 +9,13 @@ function PackageCard({ packageName, price, items, color, number }) {
       sm={12}
       md={12}
       lg={6}
-      className={`package-card bg-${color}  px-1 col-lg-3 col-sm-12`}
+      className={`package-card bg-${color} px-0 col-lg-3 col-sm-12 d-flex flex-column align-items-center`}
     >
-      <div style={{ height: "50%", alignItems: "center" }}>
+      <div className="flex-grow-1 text-center">
         <h1
           className={`text-${
             color === "light" ? "primary" : "light"
-          } mt-3  font-1rem text-center`}
+          } mt-3 font-1rem`}
         >
           {packageName}{" "}
           <span
@@ -37,9 +38,9 @@ function PackageCard({ packageName, price, items, color, number }) {
           ))}
         </ul>
       </div>
-      <div style={{ height: "50%", alignItems: "center" }}>
+      <div className="text-center">
         <p
-          className={`text-center text-${
+          className={`text-${
             color === "light" ? "primary" : "light"
           } font-1rem bold mt-5`}
         >
@@ -54,7 +55,7 @@ export default function Section1() {
   return (
     <Container
       name="section1-servicios"
-      className="gradient-primary-dark mt-0 pt-5 pb-5"
+      className="gradient-primary-dark mx-auto text-center my-5 py-5 "
     >
       <Row>
         <Col
@@ -70,7 +71,7 @@ export default function Section1() {
       </Row>
       <Row>
         <Col
-          className="d-flex justify-content-center align-items-center mx-0 
+          className="d-flex mx-auto text-center  mx-0 
           gradient-primary-dark"
           sm={12}
           md={12}
