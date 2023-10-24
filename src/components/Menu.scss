@@ -230,17 +230,18 @@
         height: 3rem;
         position: 'fixed ';
         top: 30px;
+        left: 60px;
         width: 300px;
         z-index: 99999;
-        background-color: rgba(#345, 1);
+        //background-color: rgba($primary, 1);
 
         a {
-            color: $primary;
+            color: $light;
         }
 
         a:hover {
             //background-color: rgba($primary, 0.5);
-            color: $primary;
+            color: $light;
             font-weight: 400;
             font-size: 18px;
             //border-radius: 100px;

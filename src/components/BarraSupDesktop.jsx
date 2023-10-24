@@ -8,11 +8,11 @@ export default function     BarraSupDesktop() {
     return (
         
         <Container className="sup-area" index="999" >
-            <Row className='desktop w-100 ' style={{ backgroundColor:"#2E9B84"}} >
+            <Row className='desktop mx-0'  > 
                 
                 <Col lg={{ span: 2}} className="pb-1 pt-1" >
                     <div className='d-flex 
-                    justify-content-between align-items-center'>
+                    text-center align-items-center'>
                         <a href="http://locahost:3000/" style={{ fontSize: 15 + "px" }} className="me-0 text-light ">
                             <FaWhatsapp />
                         </a>

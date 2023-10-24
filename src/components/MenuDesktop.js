@@ -49,7 +49,7 @@ export default function MenuDesktop() {
             Ubícanos
           </Nav.Link>
           <Nav.Link href="/testimoniales" className=" text-uppercase">
-            testimoniales
+            Testimoniales
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

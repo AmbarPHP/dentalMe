@@ -1,28 +1,27 @@
-
 @import "../custom.scss";
-.sup-area{
-    display: flex;
+div{
+    margin: 0;
+}
+
+div.sup-area.container {
+    
     flex-direction: row;
+    padding: 0;
+    margin: 0;
+
     // mobile
-    @media (max-width:571px) {
+    @media (max-width: 571px) {
         background-color: black;
     }
-    // tablet
-    @media (max-width:572px) and (max-width: 768px) {
-    
-            .desktop{
-                background-color: rgba($primary, 1);
-                display: none;
-            }
-        
-        
-    }
-    // desktop
-    @media (min-width:769px) {
-        
-            .mobile{
-                display: none;
-            }
-    
+
+    // tablet and desktop
+    @media (min-width: 572px) {
+        .desktop {
+            background-color: rgba($primary, 1);
+        }
+
+        .mobile {
+            display: none;
+        }
     }
 }

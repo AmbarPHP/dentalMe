@@ -82,7 +82,7 @@ export default function Section1() {
   return (
     <Container
       name="section1-servicios"
-      className="gradient-primary-dark mx-auto text-center my-5 py-5"
+      className=" gradient-primary-dark mx-auto text-center my-5 py-5"
     >
       <Row>
         <Col
@@ -92,21 +92,17 @@ export default function Section1() {
           lg={12}
         >
           <h3 className="text-light bold mb-5 font-3rem text-center">
-            Con nuestros paquetes ahorras
+            Promociones
           </h3>
         </Col>
       </Row>
       <Row>
         <Col
-          className="d-flex mx-auto text-center mx-0 gradient-primary-dark"
+          className="d-flex mx-auto text-center mx-0 "
           sm={12}
           md={12}
           lg={12}
-        >
-          <h3 className="text-light bold my-5 font-3rem text-center">
-            Haz una cita hoy mismo, con nosotros ahorras tiempo y dinero
-          </h3>
-        </Col>
+        ></Col>
       </Row>
       <div className="d-flex  flex-wrap justify-content-around">
         {packageData.map((pack, index) => (

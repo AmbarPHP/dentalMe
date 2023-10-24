@@ -11,22 +11,26 @@ export default function Section6() {
           <Col lg={6} sm={12} className="bg_right  px-5 my-5"></Col>
 
           <Col lg={6} sm={12} className="mt-5">
+            <h1 className="text-white bold mx-5">En Nuestros Servicios</h1>
+
+            <p className="text-dark my-5 mx-5">
+              Estamos ofreciendo una aplia gama de servicios con descuento.
+              Aplicable: 25 Feb al 11 de Marzo
+            </p>
+
             <h1
               className="text-title-mobile text-title-desktop text-border-round-light
-           bold text-white font-3rem  mb-3 px-5"
+           text-white font-2rem  mb-3 px-5 my-5"
             >
-              Ofertas <span> especiales</span>
+              Los mejores trabajos en resinas :
             </h1>
-            <h1 className="text-white  mx-5"> 50% de descuento</h1>
-            <p className="text-dark mx-5">Aplicable: 25 Feb al 11 de Marzo</p>
 
             {/* text-border-round-primary text-light */}
 
-            <h4 className=" text-dark mt-5 px-5">
-              Se adhiere a la superficie del diente.
+            <h4 className=" text-dark px-5 ">Respetamos la estética dental.</h4>
+            <h4 className="text-dark px-5">
+              Nos gusta dar una apariencia natural
             </h4>
-            <h4 className=" text-dark px-5 ">Respeta la estetica dental.</h4>
-            <h4 className="text-dark px-5">Mantiene una apariencia natural</h4>
             <h4 className="text-dark px-5">Es practicamente inperceptible</h4>
 
             <Button className="mx-5 my-5 px-5 ">
