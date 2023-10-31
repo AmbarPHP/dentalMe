@@ -6,11 +6,11 @@ import {
   FaTwitter,
   FaInstagram,
   FaYoutube,
-  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { Container, Row, Col } from "react-bootstrap";
 // import logo from "../assets/img/logo.png";
 import "./Footer.scss";
+import "../App.scss";
 
 const Footer = () => {
   return (
