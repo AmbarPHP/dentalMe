@@ -110,11 +110,13 @@ export default function Section4() {
       </div>
       <div id="section4-home" className="mobile">
         <Row>
-          <h1 className="font-3rem bold text-center">Nuestro servicios</h1>
+          <h1 className="font-3rem bold text-primary text-center">
+            Nuestro servicios
+          </h1>
         </Row>
         <Row>
           <Col>
-            <p className="font-1rem bold">Nuestro servicios</p>
+            <p className="font-1rem bold">Tenemos para ti:</p>
           </Col>
           <Col>
             <Row>Implantes y Ortodoncia</Row>
