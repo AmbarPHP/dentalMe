@@ -1,25 +1,19 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-// import Resina from "../../assets/img/carrusel/carrusel4.png"
-/* <Row className="justify-content-lg-left  ">
-        <Col
-          md={{ span: 5, offset: 1 }}
-          style={{ paddingTop: 10 + "rem" }}
-          sm={12}
-        > */
+import { Container, Row, Col } from "react-bootstrap";
+
 export default function Section5() {
   return (
     // anters tenia este background gb-primary-img-resina1
     <Container id="section5-home">
-      <Row>
-        <Col className="sm-12 lg-12">
+      <Row className="desktop-title">
+        <Col md={12} lg={12} sm={12} my-5>
           <h1 className="font-3rem bold text-center text-primary ">
             Conocenos
           </h1>
         </Col>
       </Row>
-      <Row>
-        <Col className="sm-12 lg-12 desktop  ">
+      <Row className="desktop ">
+        <Col>
           <h1
             style={{
               width: "30%",
