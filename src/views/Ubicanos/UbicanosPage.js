@@ -1,21 +1,18 @@
-import React from 'react'
-import { Col } from 'react-bootstrap';
-import mapa from "../../assets/img/mapa.png";
-import Banner from '../../components/Banner';
-import Footer from '../../components/Footer';
-import AboutUs from './AboutUs';
-import Ubicanos from './Ubicanos';
+import React from "react";
 
+import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
+import AboutUs from "./AboutUs";
+import Ubicanos from "./Ubicanos";
 
 export default function UbicanosPage() {
   return (
-    <div >
+    <div>
       <Banner name="Ubicanos"></Banner>
+      <Ubicanos />
       <AboutUs></AboutUs>
-      <Ubicanos/>
-      
+
       <Footer></Footer>
     </div>
-  )
+  );
 }
-

@@ -21,7 +21,7 @@ export default function AboutUs() {
             precios.
           </p>
         </Col>
-        <Col lg={{ span: 7, offset: 1 }}>
+        {/* <Col lg={{ span: 7, offset: 1 }}>
           <h3 className="text-secondary text-uppercase my-1"> Dirección:</h3>
 
           <div className="text-primary">
@@ -32,7 +32,7 @@ export default function AboutUs() {
             <p>Col. Universidad Tepic, Nay.</p>
             <p>CP 63138</p>
           </div>
-        </Col>
+        </Col> */}
       </Row>
     </Container>
   );
