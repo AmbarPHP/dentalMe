@@ -68,26 +68,28 @@ const Footer = () => {
               href="https://www.facebook.com/HealthSmileCenter/"
               className="me-4 icon-circle  text-primary"
             >
-              <FaTwitter className="icon-style" />
-            </a>
+              <FaInstagram className="icon-style" />
+            </a> 
             <a
               href="https://www.facebook.com/HealthSmileCenter/"
               className="me-4 icon-circle  text-primary"
             >
               <FaWhatsapp className="icon-style" />
             </a>
-            <a
-              href="https://www.facebook.com/HealthSmileCenter/"
-              className=" icon-circle  text-primary"
-            >
-              <FaInstagram className="icon-style" />
-            </a>
-            <a
+             <a
               href="https://www.facebook.com/HealthSmileCenter/"
               className=" icon-circle  text-primary"
             >
               <FaYoutube className="icon-style" />
             </a>
+         
+            {/* <a
+              href="https://www.facebook.com/HealthSmileCenter/"
+              className=" icon-circle  text-primary"
+            >
+              <FaInstagram className="icon-style" />
+            </a> */}
+           
           </div>
           <div className="columna-doble d-flex justify-content-start align-items-start">
             <span className="bold">311 269 7923</span>
