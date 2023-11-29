@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Menu from "./Menu";
 
+//es pra poner una presentacion a cada section servicios, home
 export default function Banner({ name }) {
   return (
     <div className="overlay-blue  h-100">
@@ -15,7 +16,7 @@ export default function Banner({ name }) {
           <Col md={12} lg={12} sm={12}>
             <h1 className="text-light bold font-3rem text-center my-5">
               {name}
-            </h1>{" "}
+            </h1>
           </Col>
         </Row>
       </div>
