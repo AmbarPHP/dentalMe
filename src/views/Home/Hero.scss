@@ -11,13 +11,14 @@ h5 {
 }
 
 .icon-circle {
-    
+
     line-height: 40px;
     font-size: 28px;
 }
+
 .icon-style {
     width: 50px;
-        height: 40px;
+    height: 40px;
     background-color: $primary;
     border-radius: 20px;
     font-size: "2rem";
@@ -39,78 +40,94 @@ h5 {
     width: 300px;
 
     border: 2px solid $primary;
-        /* Establece el grosor y el color del borde */
-        border-radius: 20px;
-        /* Define el radio de curvatura para redondear los bordes */
-        background-color:$primary;
-        /* Establece el color de fondo del botón */
-    
-        /* Establece el color del texto dentro del botón */
-        padding: 10px 10px;
-        /* Añade relleno al botón para darle espacio al texto */
-        text-align: center;
-        /* Centra el texto horizontalmente dentro del botón */
-        text-decoration: none;
-        /* Quita la subrayado predeterminado en los enlaces (si el botón es un enlace) */
-        display: inline-block;
-        /* Hace que el botón se comporte como un elemento en línea */
-        cursor: pointer;
+    /* Establece el grosor y el color del borde */
+    border-radius: 20px;
+    /* Define el radio de curvatura para redondear los bordes */
+    background-color: $primary;
+    /* Establece el color de fondo del botón */
+
+    /* Establece el color del texto dentro del botón */
+    padding: 10px 10px;
+    /* Añade relleno al botón para darle espacio al texto */
+    text-align: center;
+    /* Centra el texto horizontalmente dentro del botón */
+    text-decoration: none;
+    /* Quita la subrayado predeterminado en los enlaces (si el botón es un enlace) */
+    display: inline-block;
+    /* Hace que el botón se comporte como un elemento en línea */
+    cursor: pointer;
 }
 
 
 
-    /* Desktop Establece el fondo de imagen para diferentes resoluciones */
-    @media (min-width: 572px) {
-       
-        .gb-dr_bg {
-            //background-image: url("../../assets/img/DraHero_bg3.png");
-            background-image: url("../../assets/img/Slice2.png");
-            background-size: cover;
-            height: 600px;
-            
-        }
+/* Desktop Establece el fondo de imagen para diferentes resoluciones */
+@media (min-width: 572px) {
 
-        .gb-primary-img-resina2 {
-            background-image: url("../../assets/img/landing_theme1.png");
-            height: 740px;
-        }
+    /* Estilos para .overlay-hero-bg */
+    div.overlay-hero-bg {
+        //background-image: linear-gradient(to right bottom, $primary, #f4f5f5);
+        background-image: url("../../assets/img/Bgr_Hero.png");
+        background-size: contain;
+        z-index: 10;
+        //height: 100vh;
+        margin-bottom: 10vh;
+        width: 100vw;
+        background-repeat: no-repeat;
 
-                div.location-1{
-                    position: relative;
-                    top:37px;
-                }
-                                 div.location-2 {
-                                     position: relative;
-                                     top: 319px;
-                                     left :-176px;
-                                 }
     }
-    //mobile
-    @media (max-width: 571px) {
-        .gb-dr_bg.container {
-            background-image: url("../../assets/img/DraHero_bg1_mobile.png");
-            background-size: cover;
-            height: 100vw;
-        }
-        div.location-2{
-            position: absolute;
-            top:55%;
-            left: 0%;
 
-            button.button-light {
-                width: 445px;
-            }
+    .img_space {
+
+        // background-color: black;
+        img {
+            margin-top: 20%;
+            width: 80%;
+            height: 80%;
+            // max-width: 100%;
+            // max-height: 100%;
+            object-fit: contain;
         }
-        
     }
+
+    div.location-1 {
+        position: relative;
+        top: 10vh;
+    }
+
+    div.location-2 {
+        position: relative;
+        top: 60vh;
+        left: -176px;
+    }
+}
+
+//mobile
+@media (max-width: 571px) {
+    .gb-dr_bg.container {
+        background-image: url("../../assets/img/DraHero_bg1_mobile.png");
+        background-size: cover;
+        height: 100vw;
+    }
+
+    div.location-2 {
+        position: absolute;
+        top: 55%;
+        left: 0%;
+
+        button.button-light {
+            width: 445px;
+        }
+    }
+
+}
 
 
 /* Estilos para .overlay-hero-bg */
-.overlay-hero-bg {
-    background-image: linear-gradient(to right bottom, $primary, #f4f5f5);
-    z-index: 10;
-    height: 10vh;
-}
+// .overlay-hero-bg {
+//     background-image: linear-gradient(to right bottom, $primary, #f4f5f5);
+//     z-index: 10;
+//     height: 60vh;
+// }
 
 /* Estilos para .left-box */
 .left-box {
