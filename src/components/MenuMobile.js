@@ -2,7 +2,7 @@ import { React, useState, useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Menu.scss";
-import logo from "../assets/img/logo.png";
+// import logo from "../assets/img/logo.png";
 
 export default function MenuMobile() {
   const [sticky, setSticky] = useState(true);
@@ -24,10 +24,10 @@ export default function MenuMobile() {
     // SE DESPLAZA CUANDO EL SCRIOLL AVANZA 380, POR ESO TIENE EL EVENT LISTENER
 
     <Navbar
-      expand="sm"
-      className={`menu-container_mobile  ${
+      expand="md"
+      className={` ${
         sticky ? "position_fixed" : "position_initial"
-      }  `}
+      } menu-container_mobile  `}
     >
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Brand className="text-primary"> Health & Smile</Navbar.Brand>

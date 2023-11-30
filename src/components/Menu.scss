@@ -1,18 +1,6 @@
 @import '../custom';
 
-/* Estilos generales para enlaces */
-a {
-    text-decoration: none;
-    position: relative;
-    transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
-    color: $secondary;
-}
 
-a:hover {
-    transform: translateY(0);
-    transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
-    color: $secondary;
-}
 
 /* Estilos para diferentes resoluciones */
 /* Mobile */
@@ -50,24 +38,23 @@ a:hover {
             font-size: 1.1rem;
         }
 
-// gesto de subrayado
+        // gesto de subrayado
         a:hover::after {
             content: '';
             position: absolute;
             width: 10%;
             height: 2px;
-/* Grosor del subrayado */
+            /* Grosor del subrayado */
             bottom: 2px;
             left: 0px;
-/* Coloca el subrayado justo debajo del texto */
+            /* Coloca el subrayado justo debajo del texto */
             background-color: $light;
-/* Color del subrayado */
+            /* Color del subrayado */
         }
     }
 
     .menu-container_mobile {
         display: 'flex';
-        
         flex-direction: row; //pone todos los subelementos uno debajo de otro
         margin-top: -1%;
         margin-left: 0%;
@@ -90,17 +77,19 @@ a:hover {
             color: rgba($dark, 0.7);
             top: 10px;
             left: 10px;
-transition: left 0.1s ease;
+            transition: left 0.1s ease;
 
             a {
                 background-color: rgba($primary, 1);
-                color: rgba($light, 1);
+                color: $secondary;
                 padding-left: 20px;
             }
 
             a:hover {
                 font-weight: 400;
                 font-size: 1.3rem;
+                background-color: rgba($secondary, 0.5);
+                color: rgba($primary, 1);
             }
         }
 
@@ -113,42 +102,60 @@ transition: left 0.1s ease;
     }
 }
 
-/* Desktop */
-@media (min-width: 769px) {
-   
+/*Between */
+@media (min-width: 572px) and (max-width: 1199px) {
 
-    
-
+    //desaparece el menu mobile
     nav.menu-container_mobile {
         display: none;
     }
 
-   // Definición de la clase para el menú
-   .menu-container_desktop {
-    height: 3rem;
+    // aprece el menu desktop
+    .menu-container_desktop {
+        background-color: rgba($color: #F1F3F9, $alpha: 1.0);
+        color: $primary;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+
+    //desaparece el menu mobile
+    nav.menu-container_mobile {
+        display: none;
+    }
+
+    // aprece el menu desktop
+    .menu-container_desktop {
+        height: 3rem;
         position: relative;
         top: 10px;
-   
+
         margin-left: 16%;
         margin-right: 0%;
         width: 60%;
         z-index: 99999;
-        //background-color: rgba($primary, 1);
-        a {
-                color: $light;
-                font-weight: 500;
-                font-size: 1.2rem;
-            }
-        
-            a:hover {
-                color: $light;
-                font-weight: 400;
-                font-size: 18px;
-            }
-        
-      
 
-       &.position_initial {
+        //background-color: rgba($primary, 1);
+        /* Estilos generales para enlaces */
+        a {
+            text-decoration: none;
+            position: relative;
+            transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+            color: $secondary;
+            font-size: medium;
+        }
+
+        a:hover {
+            background-color: #F1F3F9;
+            transform: translateY(0);
+            transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+            color: $secondary;
+        }
+
+
+
+        &.position_initial {
             position: fixed;
             top: 10%;
             transition: .3s ease-in-out;
@@ -156,14 +163,14 @@ transition: left 0.1s ease;
             //background-image: linear-gradient(to right top, $primary, $secondary);
             //background-color: $primary;
             color: $light;
-    
+
             a:hover {
                 transform: translateY(0);
                 color: $primary;
                 font-weight: 400;
                 font-size: 1.1rem;
             }
-    
+
             // gesto de subrayado
             a:hover::after {
                 content: '';
@@ -178,32 +185,32 @@ transition: left 0.1s ease;
                 /* Color del subrayado */
             }
         }
-       
-                &.position_fixed {
-                    ///no estoy viendo como se ve 
-                    position: fixed;
-                    top: 0%;
-                    transition: .3s ease-in-out;
-                    overflow: hidden;
-                    background-color:rgba($primary, 0.9);
-        
-                    a {
-                        text-decoration: none;
-                        /* Elimina el subrayado predeterminado */
-                        position: relative;
-                        transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
-                        //color: $secondary;
-                    }
-        
-                    a:hover {
-                        transform: translateY(0);
-                        background-color: $contrast;
-                        text-transform: capitalize;
-                        color: $secondary;
-                    }
-                }
 
-       
+        &.position_fixed {
+            ///no estoy viendo como se ve 
+            position: fixed;
+            top: 0%;
+            transition: .3s ease-in-out;
+            overflow: hidden;
+            background-color: rgba($primary, 0.9);
+
+            a {
+                text-decoration: none;
+                /* Elimina el subrayado predeterminado */
+                position: relative;
+                transition: 1.2s 0.1s cubic-bezier(0.35, 0, 0.07, 1);
+                //color: $secondary;
+            }
+
+            a:hover {
+                transform: translateY(0);
+                background-color: $contrast;
+                text-transform: capitalize;
+                color: $secondary;
+            }
+        }
+
+
     }
 
     .margin-20 {

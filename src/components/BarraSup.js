@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import BarraSupMobile from "./BarraSupMobile";
 import BarraSupDesktop from "./BarraSupDesktop";
 
+//muestra datos de la empresa, telefono y direccion
 export default function BarraSup() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -17,9 +18,19 @@ export default function BarraSup() {
         window.removeEventListener("resize", handleResize);
       };
     }, []);
+
   }
 
+  
+    
   DetectDiviseSize();
+    if (windowWidth < 572) {
 
-  return <>{windowWidth <= 768 ? "" : <BarraSupDesktop />}</>;
+      return <BarraSupMobile />;
+    } else {
+      if (windowWidth > 572) {
+        return <BarraSupDesktop />;
+      }
+      
+    }
 }

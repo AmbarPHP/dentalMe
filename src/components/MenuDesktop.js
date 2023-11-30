@@ -25,10 +25,10 @@ export default function MenuDesktop() {
     // SE DESPLAZA CUANDO EL SCRIOLL AVANZA 380, POR ESO TIENE EL EVENT LISTENER
     <Col className="lg-12 md-12">
       <Navbar
-        expand="sm"
-        className={`menu-container_desktop  ${
+        expand="md"
+        className={`menu-container_desktop ${
           sticky ? "position_fixed" : "position_initial"
-        } mt-4 mb-4  `}
+        } mb-4  `}
       >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Brand></Navbar.Brand>
