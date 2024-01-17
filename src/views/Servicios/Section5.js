@@ -7,6 +7,9 @@ import bg_diente3 from "../../assets/img/dientes/background_diente3.png";
 import bg_diente4 from "../../assets/img/dientes/background_diente4.png";
 
 export default function Section5() {
+  function getDiente() { 
+    return <img src={diente1} className="tamaño-diente" />
+  }
   return (
     <Container
       name="section5-servicios"
@@ -34,8 +37,8 @@ export default function Section5() {
         <Col lg={6}>
           <Row className="gb-light">
             <Col lg={6}>
-              <img src={diente1} />
-              <h3 className="text-primary bold"> Servicios Estéticos </h3>
+             
+              <h3 className="text-primary bold">  {getDiente()} Servicios Estéticos </h3>
               <ul className="text-primary lead">
                 <li>Blanqueamientos</li>
                 <li>Carilla de porcelana</li>
@@ -46,8 +49,8 @@ export default function Section5() {
               </ul>
             </Col>
             <Col lg={6}>
-              <img src={diente1} />
-              <h3 className="text-primary bold"> Restauración </h3>
+            
+              <h3 className="text-primary bold">   {getDiente()} Restauración </h3>
               <ul className="text-primary lead">
                 <li>Blanqueamientos</li>
                 <li>Carilla de porcelana</li>
@@ -61,10 +64,10 @@ export default function Section5() {
 
           <Row className="gb-light">
             <Col lg={6}>
-              <img src={diente1} />
+           
               <h3 className="text-primary bold">
-                {" "}
-                Prótesis fijas y removibles{" "}
+                   {getDiente()}{" "}
+                Prótesis fijas y removibles
               </h3>
               <ul className="text-primary lead">
                 <li>Coronas de porcelana en zirconia</li>
@@ -77,8 +80,8 @@ export default function Section5() {
               </ul>
             </Col>
             <Col lg={6}>
-              <img src={diente1} />
-              <h3 className="text-primary bold"> Otros servicios generales </h3>
+             
+              <h3 className="text-primary bold">  { getDiente()} Otros servicios generales </h3>
               <ul className="text-primary lead">
                 <li> Otros servicios generales</li>
                 <li> Rayos X</li>

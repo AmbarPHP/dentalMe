@@ -20,7 +20,7 @@ export default function Section2() {
           <span className="text-primary font-3rem  ">
             Aprovecha nuestras
             <span className="text-secondary font-3rem ">
-              {" "}
+
               promociones vigentes
             </span>
           </span>
