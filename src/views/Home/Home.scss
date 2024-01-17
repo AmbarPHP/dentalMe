@@ -1,7 +1,10 @@
 @import "../../custom.scss";
+@import "../../App.scss";
+
 .img-logo {
     width: 38px;
 }
+
 
 .hero {
     background-image: url("https://picsum.photos/1920/1200/?random&amp;gravity=south");
@@ -12,8 +15,8 @@
 
 .overlay {
 
-    background-image:linear-gradient(to right top,rgba($light,.5),rgba($gray,.9));
-     //background-color: rgba(78, 148, 186, 1);
+    background-image: linear-gradient(to right top, rgba($light, .5), rgba($primary, .9));
+    //background-color: rgba(78, 148, 186, 1);
     // z-index: 10;
     height: 100%;
     position: relative;
@@ -24,75 +27,310 @@
     padding: 1rem;
     border-radius: calc(.25rem - 1px)
 }
-.row-space{
-     height: '100%';
-     align-items: 'center' ;
-     padding: 24px, 24px, 40px;
-    }
-.position-relative{
+
+.row-space {
+    height: '100%';
+    align-items: 'center';
+    padding: 24px, 24px, 40px;
+}
+
+.position-relative {
     z-index: 999;
     position: relative;
     right: 0px;
-    top:-85px;
-}    
-// Diseño Large or Desktop
-@media (min-width:1200px) {
-    .img-section2 {
-        height: 100%;
-        width: auto;
-        padding: 0%;
-        margin-left: 0%;
-    }
-    .bt-size-md {
-        width: 100px;
-        height: 38px;
-    }
-
-    // sectio6
-    .bg-img {
-        //opacity: 1;
-        //background-image: url("../../assets/img/dientes/light_background1.png");
-        //background-image: url("../../assets/img/dental6.jpg");
-        background-image: url("../../assets/img/redondo.png");
-        //background-color:$gray;
-        //background-size: cover;
-        width: 100vw;
-        height: 100%;
-        background-repeat: no-repeat;
-        padding: 0%;
-        margin-left: 0%;
-
-    }
-    .text-title-desktop{
-        color:$primary;
-        font-size: 3rem;
-    }
-      
-    .text-border-round-secondary{
-        border-radius: 90px;
-        background-color: $secondary;
-        padding: 10px;
-        width: 80%;
-        margin-left: 20%;
-    }
-    .text-border-round-light{
-        border-radius: 100px;
-        background-color: $light;
-        padding-left: 15px;
-        padding-top:10px;
-        width: 100%;
-        //margin-left: -40px;
-      
-
-    }
+    top: -85px;
 }
 
 
 
+img {
+    height: auto;
+}
+
+/*
+///////////////////////////////////////////////////////////
+ TABLETAS ----Estilos para tabletas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .content {
+
+        /* Aplicar estilos específicos para tabletas aquí */
+        /* Ejemplo: Cambiar colores, tamaños de fuente, márgenes, etc. */
+        .gb-primary-img-resina1 {
+            //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
+            background-image: url("../../assets/img/Conocenos.png");
+            background-size: cover;
+            background-size: 100vh;
+            //width: 190%;
+            height: 100%; //640px;
+            opacity: 1;
+            margin: 0%;
+            background-size: 1200px 640px;
 
 
-// Diseño Mobile
-@media (max-width:1199px) {
+        }
+    }
+}
+
+/*  /////////////////////////////////////////////
+DESKTOP Estilos para pantallas de escritorio con un ancho mínimo de 769px */
+@media (min-width: 572px) {
+    .btn-rounded {
+        border-radius: 10rem;
+        height: 72px;
+        width: 72px;
+
+    }
+
+
+    #section4-home.mobile {
+        display: none;
+    }
+
+    #section4-home.desktop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* Opcional: ajusta según tus preferencias */
+        align-items: center;
+        /* Alinea las imágenes verticalmente */
+    }
+
+
+    #section5-home {
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
+            background-image: url("../../assets/img/Conocenos.png");
+            background-size: cover;
+            //background-size: 100wh;
+            width: 100%;
+            height: 640px;
+            opacity: 1;
+            margin: 0%;
+            background-repeat: no-repeat;
+            //background-size: 1200px 640px;
+
+        }
+    }
+
+    //section 5
+
+    #section5-home {
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
+            background-image: url("../../assets/img/Conocenos.png");
+            background-size: cover;
+            //background-size: 100wh;
+            width: 100%;
+            height: 640px;
+            opacity: 1;
+            margin: 0%;
+            background-repeat: no-repeat;
+            //background-size: 1200px 640px;
+
+        }
+    }
+
+    #section6-home {
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            .bg_right {
+                background-image: url("../../assets/img/dental4.jpg");
+                background-size: cover;
+                width: 50%;
+                height: 640px;
+                opacity: 0.5;
+                margin: 0%;
+                background-repeat: no-repeat;
+
+            }
+
+
+        }
+    }
+
+    #section7-home.desktop {}
+
+    #section7-home.mobile {
+        display: none;
+    }
+
+    // seccion Nosotros 
+
+    #sectionNosotros-home.mobile {
+        display: none;
+    }
+
+    #sectionNosotros-home.desktop {
+        img {
+            height: auto;
+        }
+
+    }
+
+    .content {
+        /* Aplicar estilos específicos para escritorio aquí */
+
+
+        .img-section2 {
+            height: 100%;
+            width: auto;
+            padding: 0%;
+            margin-left: 0%;
+        }
+
+        .bt-size-md {
+            width: 100px;
+            height: 38px;
+        }
+
+        // sectio6
+        .bg-img {
+            //opacity: 1;
+            //background-image: url("../../assets/img/dientes/light_background1.png");
+            background-image: url("../../assets/img/dental6.jpg");
+ 
+            //background-color:$gray;
+            //background-size: cover;
+            width: 100vw;
+            height: 100%;
+            background-repeat: no-repeat;
+            padding: 0%;
+            margin-left: 0%;
+
+        }
+
+        .text-title-desktop {
+            color: $primary;
+            font-size: 3rem;
+        }
+
+        .text-border-round-secondary {
+            border-radius: 90px;
+            background-color: $secondary;
+            padding: 10px;
+            width: 80%;
+            margin-left: 20%;
+        }
+
+        .text-border-round-light {
+            border-radius: 100px;
+            background-color: $light;
+            padding-left: 15px;
+            padding-top: 10px;
+            width: 100%;
+            //margin-left: -40px;
+
+
+        }
+    }
+}
+
+/*
+////////////////////////////////////////////////////////////////////
+MOBILE Estilos para pantallas de escritorio con un ancho mínimo de 769px*/
+@media (max-width:571px) {
+
+    // section nuestros servicios deja de verse como se veia
+
+    #section4-home.desktop {
+        display: none;
+    }
+
+    // #section4-home.mobile {
+
+    //     // background-image: url("../../assets/img/DraHero_bg_section4.png");
+    //     // //background-image: url(http://localhost:3000/static/media/HeroServicios.51e2440….png);
+    //     // width: 100%;
+    //     // height: 793px;
+    //     // background-repeat: no-repeat;
+    //     // padding: 0%;
+    //     // margin-left: 0%;
+    //     // margin-top: 0%;
+    //     // background-size: 100%;
+    //     // display: flex;
+    //     // flex-direction: column;
+
+    // }
+
+
+    #section7-home.desktop {
+        display: none;
+    }
+
+    div#sectionNosotros-home.desktop {
+        display: none;
+    }
+
+    #sectionTestimonilas-home {
+        display: none;
+    }
+
+    #sectionTestimonilas-mobile {
+        background-color: aqua;
+    }
+
+    // section 6 
+    #sectionSection6-home {
+        display: none;
+    }
+
+    #sectionSection6-mobile {
+        background-color: aqua;
+    }
+
+    //section 5 
+    #section5-home {
+        .mobile {
+            background-image: url(../../assets/img/HeroServicios.png);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            padding: 0%;
+            margin-left: 0%;
+            margin-top: 0%;
+            background-size: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .desktop {
+            display: none;
+        }
+
+        .desktop-title {
+            display: none;
+        }
+    }
+
+    .gb-primary-img-resina1 {
+        //background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
+        background-image: url("../../assets/img/DraHero_bg1_mobile.png");
+        background-size: cover;
+        //background-size: 100vh;
+        width: 571px;
+        height: 500px;
+        opacity: 1;
+        margin: 0%;
+        background-size: 571px 500px;
+
+        div.desktop {
+            display: none;
+        }
+
+        div.mobile {}
+    }
 
     // Nota: "aplicac para section 2 -->los guters y los margin estan en una clase de bootstrap, pero no puedo quitar los margin laterales sin modificarla"
     .container,
@@ -104,12 +342,14 @@
     .container-sm {
         // --bs-gutter-x: 1.5rem;
         // --bs-gutter-y: 0;
-        width: 120% !important;
+        width: 100% !important;
         // padding-right: calc(var(--bs-gutter-x) * 0.5);
         // padding-left: calc(var(--bs-gutter-x) * 0.5);
         // margin-right: auto;
         // margin-left: auto;
     }
+
+
 
     .img-section2 {
         height: auto;
@@ -120,7 +360,7 @@
 
     .bg-img {
         opacity: 0.8;
-        background:$primary;
+        background: $primary;
         //background-color: black;
         width: 100%;
         padding: 0%;
@@ -134,36 +374,7 @@
         margin-right: 15%;
     }
 
-    .text-title-mobile{
-        color:$light;
+    .text-title-mobile {
+        color: $light;
     }
-}
-
-
-
-.gb-primary-img-resina1{
-    background-image: url("https://ld-wt73.template-help.com/wt_prod-20176/images/slide-02.jpg");
-    background-size: cover;
-    background-size: 100vw;
-    //width: 190%;
-    height: 740px;
-    opacity: 1;
-    margin: 0%;
-    background-size: 1900px 640px;
-}
-.gb-primary-img-resina2{
-    //background-image: url("../../assets/img/carrusel/carrusel1.png");
-    background-image: url("../../assets/img/landing_theme1.png");
-    background-size: cover;
-    //background-size: 100vw;
-    //width: 190%;
-    // height: 740px;
-    opacity: 1;
-    padding-bottom: 5%;
-    margin-bottom: 0%;
-    background-size: 1900px 740px;
-}
-.gb-primary-img-resina3{
-    background-image: url("../../assets/img/carrusel/carrusel3.png");
-    background-size: cover;
 }

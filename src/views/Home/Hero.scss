@@ -1,36 +1,138 @@
-p,h1,h2,h3,h4,h5 {
-    font-family:"Montserrat";
-  }
+@import "../../custom";
 
-.hero-container{
+/* Establece la fuente para los elementos de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Montserrat";
+}
+
+.icon-circle {
+
+    line-height: 40px;
+    font-size: 28px;
+}
+
+.icon-style {
+    width: 50px;
+    height: 40px;
+    background-color: $primary;
+    border-radius: 20px;
+    font-size: "2rem";
+}
+
+/* Estilos para .hero-container */
+.hero-container {
     display: flex;
     width: 100%;
     height: 640px;
     opacity: 1;
-    margin: 0%;
+    margin: 0;
 }
 
-.overlay-blue {
-    //background-image:linear-gradient(to right top,rgba(167,114,255,.1),rgba(0,131,221,.1));
-    background-color: rgba(29, 16, 96, 0.2);
-    z-index: 10;
-    height: 10vh;
+/* Estilos para .button-light */
+.button-light {
+
+    height: 50px;
+    width: 300px;
+
+    border: 2px solid $primary;
+    /* Establece el grosor y el color del borde */
+    border-radius: 20px;
+    /* Define el radio de curvatura para redondear los bordes */
+    background-color: $primary;
+    /* Establece el color de fondo del botón */
+
+    /* Establece el color del texto dentro del botón */
+    padding: 10px 10px;
+    /* Añade relleno al botón para darle espacio al texto */
+    text-align: center;
+    /* Centra el texto horizontalmente dentro del botón */
+    text-decoration: none;
+    /* Quita la subrayado predeterminado en los enlaces (si el botón es un enlace) */
+    display: inline-block;
+    /* Hace que el botón se comporte como un elemento en línea */
+    cursor: pointer;
 }
-.left-box{
+
+
+
+/* Desktop Establece el fondo de imagen para diferentes resoluciones */
+@media (min-width: 572px) {
+
+    /* Estilos para .overlay-hero-bg */
+    div.overlay-hero-bg {
+        //background-image: linear-gradient(to right bottom, $primary, #f4f5f5);
+        background-image: url("../../assets/img/Bgr_Hero.png");
+        background-size: contain;
+        z-index: 10;
+        //height: 100vh;
+        margin-bottom: 10vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+
+    }
+
+    .img_space {
+
+        // background-color: black;
+        img {
+            margin-top: 20%;
+            width: 80%;
+            height: 80%;
+            // max-width: 100%;
+            // max-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    div.location-1 {
+        position: relative;
+        top: 10vh;
+    }
+
+    div.location-2 {
+        position: relative;
+        top: 60vh;
+        left: -176px;
+    }
+}
+
+//mobile
+@media (max-width: 571px) {
+    .gb-dr_bg.container {
+        background-image: url("../../assets/img/DraHero_bg1_mobile.png");
+        background-size: cover;
+        height: 100vw;
+    }
+
+    div.location-2 {
+        position: absolute;
+        top: 55%;
+        left: 0%;
+
+        button.button-light {
+            width: 445px;
+        }
+    }
+
+}
+
+
+/* Estilos para .overlay-hero-bg */
+// .overlay-hero-bg {
+//     background-image: linear-gradient(to right bottom, $primary, #f4f5f5);
+//     z-index: 10;
+//     height: 60vh;
+// }
+
+/* Estilos para .left-box */
+.left-box {
     display: flex;
     justify-content: left;
+    /* Esto puede ser "flex-start" para alinear a la izquierda */
     align-items: center;
 }
-
-.btn_round{
-    border-radius: 23px;
-    width: 350px;
-    text-decoration: none;
-    background-color: aliceblue;
-    padding: 10px 10px;
-    border-style: none;
-    a{
-        font-style: none;
-    }
-    }
-

@@ -1,20 +1,30 @@
+@import "../custom.scss";
 
-.sup-area{
-    display: flex;
+div {
+    margin: 0;
+    padding-top: 0%;
+}
+
+div.sup-area.container {
+
     flex-direction: row;
-    @media (max-width:1199px) {
-    
-            .desktop{
-                display: none;
-            }
-        
-        
+    padding: 0;
+    margin-top: -2%;
+
+    // mobile
+    @media (max-width: 571px) {
+        background-color: rgba($primary, 1);
+        margin-bottom: 2%;
     }
-    @media (min-width:1199px) {
-        
-            .mobile{
-                display: none;
-            }
-    
+
+    // tablet and desktop
+    @media (min-width: 572px) {
+        .desktop {
+            background-color: rgba($primary, 1);
+        }
+
+        .mobile {
+            display: none;
+        }
     }
 }

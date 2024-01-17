@@ -1,42 +1,47 @@
-import React from 'react'
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import "../../App.scss";
 
 export default function Section6() {
-    return (
-        <div className='my-0 bg-secondary '>
-            <Row className=" d-flex  align-items-start gradient-primary-dark ">
-                
-                <Col lg={6} sm={12} className="mt-5"  >
+  return (
+    // esto es un promocional
+    <Container id="section6-home" className="my-5 bg-secondary ">
+      <div className="desktop overlay">
+        <Row className=" d-flex  align-items-start  mb-5">
+          <Col lg={6} sm={12} className="bg_right  px-5 my-5"></Col>
 
-                    <h1 className='text-title-mobile text-title-desktop text-border-round-light font-3rem bold mb-3 px-5'>Beneficios de la <span>resina dental</span></h1>
-                  
-{/* text-border-round-primary text-light */}
-                    <h4 className="  text-border-round-secondary text-light mt-5">Se adhiere a la superficie del diente.</h4>
+          <Col lg={6} sm={12} className="mt-5">
+            <h1 className="text-white bold mx-5">En Nuestros Servicios</h1>
 
-                    <h4 className=" text-border-round-secondary text-light ">Respeta la estetica dental.</h4>
-                    <h4 className=" text-border-round-secondary text-light ">Mantiene una apariencia natural</h4>
-                    <h4 className="text-border-round-secondary text-light  ">Es practicamente inperceptible</h4>
+            <p className="text-dark my-5 mx-5">
+              Estamos ofreciendo una aplia gama de servicios con descuento.
+              Aplicable: 25 Feb al 11 de Marzo
+            </p>
 
-                    <Button  className='mt-5 mb-0'>
-                        <a className="btn-primary text-light "
-                            href="/opoitment ">Consultas Gratis</a>
-                    </Button>
+            <h1
+              className="text-title-mobile text-title-desktop text-border-round-light
+           text-white font-2rem  mb-3 px-5 my-5"
+            >
+              Los mejores trabajos en resinas :
+            </h1>
 
+            {/* text-border-round-primary text-light */}
 
-                </Col>
-                <Col lg={6} sm={12} className='bg-primary  py-5 px-5 my-5' >
+            <h4 className=" text-dark px-5 ">Respetamos la estética dental.</h4>
+            <h4 className="text-dark px-5">
+              Nos gusta dar una apariencia natural
+            </h4>
+            <h4 className="text-dark px-5">Es practicamente inperceptible</h4>
 
-                    <h1 className='bold text-light font-3rem'> 50% de descuento</h1>
-                    <p className='text-light'>Aplicable: 25 Feb al 11 de Marzo</p>
-
-
-                </Col>
-
-
-
-            </Row>
-        </div>
-
-
-    )
+            <Button className="mx-5 my-5 px-5 ">
+              <a className="btn-primary text-secondary " href="/opoitment ">
+                Haz una cita
+              </a>
+            </Button>
+          </Col>
+        </Row>
+      </div>
+      <div className="mobile"></div>
+    </Container>
+  );
 }

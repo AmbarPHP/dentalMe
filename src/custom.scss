@@ -1,17 +1,18 @@
 
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap');
- $primary:#0e6bb7;//#7E5725; //;
- $secondary:#4facd4;//#C69549
- $secondary-light:#CACBCE;
+ $primary:#2E9B84;//#7E5725; //;00CCCC
+ $primary-dark:#408b7c;
+ $secondary:#F6F6F6;//#C69549
+ $secondary-light:#fff;
  $success:#00c9b7;
  $info: #00a0e0;;
  $warning:#E4A11B;
  $danger:#DC4C64;
  $light:#F1F3F9;
- $dark:#161c2d;
+ $dark:#244f44;
  $gray:#868686;
- $contrast:#c02323;
+ $contrast:#3b23c0;
 
 $theme-colors: (
   "primary":    $primary,
