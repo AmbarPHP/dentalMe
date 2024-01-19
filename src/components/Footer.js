@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="d-flex flex-column justify-content-start ">
               <p>Lunes a Viernes 9 a 2 PM y 4 a 8 PM</p>
               <p>Sábados 9 a 2 PM y 4 a 8 PM</p>
-              <p>Domingo Cerrado</p>
+              <p>Domingo Cerrado y ds</p>
             </div>
           </Row>
         </div>
