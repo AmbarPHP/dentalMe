@@ -8,9 +8,10 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FB_AUTHENTICATION_266FD }}'
-          projectId: fb-authentication-266fd
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MANGLARLABS_E5674 }}'
+          projectId: manglarlabs-e5674
